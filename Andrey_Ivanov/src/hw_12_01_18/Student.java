@@ -1,3 +1,5 @@
+package hw_12_01_18;
+
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Student {

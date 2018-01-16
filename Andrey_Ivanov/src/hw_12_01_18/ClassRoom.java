@@ -1,3 +1,5 @@
+package hw_12_01_18;
+
 public class ClassRoom {
     String classWord;
     int classLimit;
