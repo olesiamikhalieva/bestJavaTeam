@@ -14,7 +14,7 @@ public class Student {
     public String getName() {
         return name;
     }
-
+    // Todo update
     public void setName() {
         String [] str = new String [20];
         str[0] = "Лютик";

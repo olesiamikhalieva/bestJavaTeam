@@ -2,6 +2,8 @@ package hw_12_01_18;
 
 import java.util.Scanner;
 
+//Todo  разбить код на методы, вынести логику из мейна, убрать свитчи.
+
 public class Main {
     public static void main(String[] args) {
         Student [] studMass= new Student[40];

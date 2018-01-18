@@ -2,6 +2,8 @@ package hw_12_01_18;
 
 import java.util.Scanner;
 
+
+// Todo  вынести логику в методы, конструкцию свитч убрать, сканер также выпилить из проекта
 public class Main {
 
     static Scanner in = new Scanner(System.in);

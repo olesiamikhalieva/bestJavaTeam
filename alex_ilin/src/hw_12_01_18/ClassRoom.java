@@ -1,5 +1,6 @@
 package hw_12_01_18;
 
+
 public class ClassRoom {
     private String classWord;
     private int classLimit;
@@ -86,6 +87,7 @@ public class ClassRoom {
         }
     }
 
+    // Todo в массиве студентов ищешь букву класса?
     public String findClass(String name){
         for (int i = 0; i < studMass.length; i++){
             if (studMass[i].getName().equals(name)){

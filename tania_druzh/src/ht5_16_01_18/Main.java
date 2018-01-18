@@ -2,6 +2,7 @@ package ht5_16_01_18;
 
 import java.util.Scanner;
 
+//Todo почему копия? конструкцию свитч убрать, логику вынести в методы по максимуму.
 public class Main {
     public static void main(String[] args) {
         Student[] studArr= new Student[40];
