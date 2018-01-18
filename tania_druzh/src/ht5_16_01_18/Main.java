@@ -2,12 +2,19 @@ package ht5_16_01_18;
 
 import java.util.Scanner;
 
+
 public class Main {
+    private static int studCountTotal = 40;
+    private static Student[] studArr= new Student[studCountTotal];
     public static void main(String[] args) {
-        Student[] studArr= new Student[40];
-        int countA = 0;
+        createTotalStudList();
+    }
+
+
+    public static void createTotalStudList()
+    {int countA = 0;
         int countB = 0;
-        for (int i = 0; i < 40; i++) {
+        for (int i = 0; i < studCountTotal; i++) {
             Student stud = new Student();
             studArr[i] = stud;
             if (stud.getAge() <12 ) {
@@ -19,10 +26,10 @@ public class Main {
         }
         int n = 0;
         if (countA < 12) {
-           n = countA;
+            n = countA;
         }
         else {
-           n = 12;
+            n = 12;
         }
         int n1 = 0;
         Student[] stA = new Student[n];
@@ -56,7 +63,6 @@ public class Main {
             }
         }
         ClassRoom clB = new ClassRoom("B",15,stB);
-
         System.out.println("----------ALL----------");
         for (Student student : studArr) {
             System.out.println(student.getName() +" "+ student.getAge());
@@ -91,6 +97,10 @@ public class Main {
             }
         }
         System.out.println("Total not in B: " + countNEnB);
+        printClassTests(clA,clB);
+    }
+
+    public static void printClassTests(ClassRoom clA, ClassRoom clB){
 
         boolean fl = true;
         while (fl) {

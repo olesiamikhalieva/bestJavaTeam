@@ -5,17 +5,45 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Student {
     private String name;
     private int age;
+    Adres adres;
+    private String lang;
 
     public Student() {
-        setName();
-        setAge();
+        setRandomName();
+        setRandomAge();
+        adres = new Adres("Kirova St.","Dnepr","Zapad","123-456");
+        lang = "rus";
+
+    }
+
+    public String fullStudentInformation()
+    {
+        String st = getName() +" " + getAge() +  " " + adres.getFullAdres() + " " + getLang();
+        return  st;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName() {
+    public void setRandomName() {
         String [] str = new String [20];
         str[0] = "Vasia";
         str[1] = "Petia";
@@ -44,7 +72,7 @@ public class Student {
         return age;
     }
 
-    public void setAge() {
+    public void setRandomAge() {
         int randomNum = ThreadLocalRandom.current().nextInt(7, 16 + 1) ;
         this.age = randomNum;
     }
