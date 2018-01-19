@@ -95,7 +95,7 @@ public class Main {
         }
         System.out.println("Total not in B: " + countNEnB);
 
-        boolean fl = true;
+       // boolean fl = true;
 //        while (fl) {
 //            System.out.println("Choose method");
 //            System.out.println("1. Count of students in classes");
