@@ -93,31 +93,31 @@ public class Main {
         System.out.println("Total not in B: " + countNEnB);
 
         boolean fl = true;
-        while (fl) {
-            System.out.println("Choose method");
-            System.out.println("1. Count of students in classes");
-            System.out.println("2. List of students in classes");
-            System.out.println("3. Short list of students in classes");
-            System.out.println("4. Sort list of students on age asc in classes");
-            System.out.println("5. Sort list of students on age desc in classes");
-            System.out.println("6. Sort list of students on name asc in classes");
-            System.out.println("7. Sort list of students on age desc in classes");
-            System.out.println("8. Find student by name");
-            System.out.println("9. Find class by student's name");
+//        while (fl) {
+//            System.out.println("Choose method");
+//            System.out.println("1. Count of students in classes");
+//            System.out.println("2. List of students in classes");
+//            System.out.println("3. Short list of students in classes");
+//            System.out.println("4. Sort list of students on age asc in classes");
+//            System.out.println("5. Sort list of students on age desc in classes");
+//            System.out.println("6. Sort list of students on name asc in classes");
+//            System.out.println("7. Sort list of students on age desc in classes");
+//            System.out.println("8. Find student by name");
+//            System.out.println("9. Find class by student's name");
 
-            Scanner in = new Scanner(System.in);
-            int ans = in.nextInt();
+//            Scanner in = new Scanner(System.in);
+//            int ans = in.nextInt();
 
-            switch (ans) {
-                case 1: {
+//            switch (ans) {
+//                case 1: {
                     System.out.println("--------------------");
                     System.out.println("----------A----------");
                     System.out.println("Count students in A class is " + clA.getClassCount());
                     System.out.println("----------B----------");
                     System.out.println("Count students in B class is " + clB.getClassCount());
-                    break;
-                }
-                case 2: {
+//                    break;
+//                }
+//                case 2: {
                     System.out.println("--------------------");
                     System.out.println("----------A----------");
                     System.out.println("Students list in A class is: ");
@@ -125,9 +125,9 @@ public class Main {
                     System.out.println("----------B----------");
                     System.out.println("Students list in B class is: ");
                     clB.getClassList();
-                    break;
-                }
-                case 3: {
+//                    break;
+//                }
+//                case 3: {
                     System.out.println("--------------------");
                     System.out.println("----------A----------");
                     System.out.println("Students list in A class is: ");
@@ -135,9 +135,9 @@ public class Main {
                     System.out.println("----------B----------");
                     System.out.println("Students list in B class is: ");
                     clB.getShortClassList();
-                    break;
-                }
-                case 4: {
+//                    break;
+//                }
+//                case 4: {
                     System.out.println("--------------------");
                     System.out.println("----------A----------");
                     System.out.println("Sorted students list in A class is: ");
@@ -147,9 +147,9 @@ public class Main {
                     System.out.println("Sorted students list in B class is: ");
                     clB.ageSort();
                     clB.getClassList();
-                    break;
-                }
-                case 5: {
+//                    break;
+//                }
+//                case 5: {
                     System.out.println("--------------------");
                     System.out.println("----------A----------");
                     System.out.println("Sorted rev students list in A class is: ");
@@ -159,10 +159,10 @@ public class Main {
                     System.out.println("Sorted rev students list in B class is: ");
                     clB.ageRevSort();
                     clB.getClassList();
-                    break;
-                }
-
-                case 6: {
+//                    break;
+//                }
+//
+//                case 6: {
                     System.out.println("--------------------");
                     System.out.println("----------A----------");
                     System.out.println("Sorted name students list in A class is: ");
@@ -172,10 +172,10 @@ public class Main {
                     System.out.println("Sorted name students list in B class is: ");
                     clB.nameSort();
                     clB.getClassList();
-                    break;
-                }
-
-                case 7: {
+//                    break;
+//                }
+//
+//                case 7: {
                     System.out.println("--------------------");
                     System.out.println("----------A----------");
                     System.out.println("Sorted rev name students list in A class is: ");
@@ -185,9 +185,9 @@ public class Main {
                     System.out.println("Sorted rev name students list in B class is: ");
                     clB.nameRevSort();
                     clB.getClassList();
-                    break;
-                }
-                case 8:{
+//                    break;
+//                }
+//                case 8:{
                     System.out.println("Enter student's name:");
                     Scanner inN = new Scanner(System.in);
                     String fName = inN.nextLine();
@@ -197,27 +197,27 @@ public class Main {
                     System.out.println("----------B----------");
                     System.out.println("Students in B class with name  " + fName + ":");
                     clB.findStudent(fName);
-                    break;
-                }
-
-                case 9:{
-                    System.out.println("Enter student's name:");
-                    Scanner inN = new Scanner(System.in);
-                    String fName = inN.nextLine();
+//                    break;
+//                }
+//
+//                case 9:{
+//                    System.out.println("Enter student's name:");
+//                    Scanner inN = new Scanner(System.in);
+                    String sName = "Vasia";
                     System.out.println("----------A----------");
-                    System.out.println("Students with name " + fName +" in class " +  clA.findClass(fName));
+                    System.out.println("Students with name " + sName +" in class " +  clA.findClass(fName));
                     System.out.println("----------B----------");
-                    System.out.println("Students with name " + fName + " in class  " +  clB.findClass(fName));
-                    break;
-                }
-
-                default:{
-                    fl = false;
-                    System.out.println("GoodBye!!");
-                    break;
-                }
-            }
+                    System.out.println("Students with name " + sName + " in class  " +  clB.findClass(fName));
+//                    break;
+//                }
+//
+//                default:{
+//                    fl = false;
+//                    System.out.println("GoodBye!!");
+//                    break;
+                //}
+            //}
         }
 
     }
-}
+//}
