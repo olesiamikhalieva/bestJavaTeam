@@ -1,3 +1,4 @@
+class Homework{
 int quolityHomework;
 int hoursHomework;
 
@@ -13,4 +14,9 @@ return quolityHomewok;}
 
 public void sethoursHomework(){
 this.hoursHomework=hoursHomework;
+}
+  Homework(){
+  }
+  Homework(int quolityHomework){
+  this.quolityHomework=quolityHomework;}
 }
