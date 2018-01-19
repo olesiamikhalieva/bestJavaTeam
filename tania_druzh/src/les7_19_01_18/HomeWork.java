@@ -1,4 +1,6 @@
-publik class HomeWork
+package les7_19_01_18;
+
+public class HomeWork
 {
   private int countHours;
   private int countWorks;
