@@ -2,8 +2,17 @@ package hw_12_01_18;
 
 public class Student
 {
-    String name = "Student";
-    int age = 21;
+    private String name = "Student";
+    private int age = 21;
+
+    public Student() {
+    }
+
+    public Student(int age, String name)
+    {
+        this.age = age;
+        this.name = name;
+    }
 
     public String getName() {
         return name;
