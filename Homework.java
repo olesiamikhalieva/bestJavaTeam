@@ -2,15 +2,16 @@ class Homework{
 int quolityHomework;
 int hoursHomework;
 
-public getquolityHomewok(int qoulityHomework){
-return quolityHomewok;}
-
-public void setquolityHomewok(){
+public void setquolityHomewok(int qoulityHomework){
 this.quolityHomework=quolityHomework;
 }
 
-public hoursHomework(int hoursHomework){
-return quolityHomewok;}
+public void qetquolityHomewok(){
+return quolityHomewok;
+}
+
+public gethoursHomework(int hoursHomework){
+return hoursHomework;}
 
 public void sethoursHomework(){
 this.hoursHomework=hoursHomework;
