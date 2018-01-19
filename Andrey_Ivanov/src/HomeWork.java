@@ -22,7 +22,7 @@ public HomeWork(){
 }
 
 public HomeWork(){
-  setCountHomeWorks();
-  setCountHours();
+  this.countHomeWorks();
+  this.countHours();
 }
 }
