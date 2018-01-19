@@ -34,6 +34,16 @@ public class ClassRoom {
         return studMass.length;
     }
 
+    public Student[] getStudMass() {
+        return studMass;
+    }
+
+
+
+    public void setStudMass(Student[] studMass) {
+        this.studMass = studMass;
+    }
+
     public void getClassList(){
         for (Student mass : studMass) {
             System.out.println(mass.getName() + " " + mass.getAge());

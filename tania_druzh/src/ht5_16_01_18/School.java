@@ -47,6 +47,7 @@ public class School {
 
     }
 
+    /*показывающий сколько и какие классы есть в школе*/
     public void printClassList(){
         System.out.println("There are " + classList.length + " classes in school.");
         for (ClassRoom classR : classList) {
@@ -55,6 +56,7 @@ public class School {
         }
     }
 
+    /*сколько украино язычных, сколько англоязычных классов*/
     public void colClassesByLang(){
         int engCount = 0;
         int ukrCount = 0;
@@ -70,5 +72,23 @@ public class School {
         System.out.println("There are " + engCount + " english classes and " + ukrCount + " ukrainian.");
     }
 
-    //public
+    /*сколько студентов в каждом классе*/
+    public void colStusEachClass()
+    {
+        for (ClassRoom classRoom : classList) {
+            System.out.println("Class " + classRoom.getClassWord() + " has " + classRoom.getClassCount());
+        }
+    }
+
+    /*сколько всего студентов учится в школе*/
+    public void colSchoolStud()
+    {
+        int col = 0;
+        for (ClassRoom classRoom : classList) {
+            col = col + classRoom.getClassCount();
+        }
+        System.out.println("School " + number + " has " + col + " students.");
+    }
+
+    /**/
 }
