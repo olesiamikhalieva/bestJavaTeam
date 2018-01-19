@@ -1,4 +1,6 @@
-ptivate int countHomeWorks;
+Class HomeWork{
+
+private int countHomeWorks;
 private int countHours;
 
 public getCountHomeWorks(){
@@ -22,4 +24,5 @@ public HomeWork(){
 public HomeWork(){
   setCountHomeWorks();
   setCountHours();
+}
 }
