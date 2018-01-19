@@ -10,10 +10,10 @@ public void qetquolityHomewok(){
 return quolityHomewok;
 }
 
-public gethoursHomework(int hoursHomework){
+public void gethoursHomework({
 return hoursHomework;}
 
-public void sethoursHomework(){
+public sethoursHomework(){
 this.hoursHomework=hoursHomework;
 }
   Homework(){
