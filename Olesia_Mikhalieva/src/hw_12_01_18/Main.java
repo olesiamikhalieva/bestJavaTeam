@@ -1,8 +1,9 @@
+package hw_12_01_18;
+
 import java.util.Arrays;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-import static java.util.Arrays.*;
 
 public class Main {
     private static int limitStudents = 40;
@@ -45,7 +46,7 @@ public class Main {
         System.out.println("Find student by name in classes:");
         findStudentName(classA, classB, "Ivan");
 
-        }
+    }
 
     public static void addStudentToClass(ClassRoom classA, ClassRoom classB) {
         for (Student stud : studMass) {
@@ -183,37 +184,38 @@ public class Main {
     public static void findStudentName(ClassRoom classA, ClassRoom classB, String name) {
         int n = 0;
         int k = 0;{
-        System.out.println("Students at class A:");
+            System.out.println("Students at class A:");
 
-        for (Student stud : classA.getStudMass()) {
-            if (stud!=null){
-            if (stud.getName().compareTo(name)==0) {
-                System.out.println(name);
-                n++;
+            for (Student stud : classA.getStudMass()) {
+                if (stud!=null){
+                    if (stud.getName().compareTo(name)==0) {
+                        System.out.println(name);
+                        n++;
+                    }
+                }}
+            if (n == 0) {
+                System.out.println("There are no students that name at class A.");
             }
-        }}
-        if (n == 0) {
-            System.out.println("There are no students that name at class A.");
-        }
 
-        System.out.println("Students at class B:");
+            System.out.println("Students at class B:");
 
-        for (Student stud : classB.getStudMass()) {
-            if (stud!=null){
-            if (stud.getName().compareTo(name)==0) {
-                System.out.println(name);
-                k++;
+            for (Student stud : classB.getStudMass()) {
+                if (stud!=null){
+                    if (stud.getName().compareTo(name)==0) {
+                        System.out.println(name);
+                        k++;
+                    }
+                }
             }
-        }
-        }
-        if (k == 0) {
-            System.out.println("There are no students that name at class B.");
-        }
+            if (k == 0) {
+                System.out.println("There are no students that name at class B.");
+            }
         }
     }
 
 
 }
+
 
 
 

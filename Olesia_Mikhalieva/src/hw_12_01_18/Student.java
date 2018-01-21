@@ -1,5 +1,4 @@
-import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
+package hw_12_01_18;
 
 public class Student {
     private int age;
@@ -8,7 +7,7 @@ public class Student {
     public Student() {
     }
 
-    public Student(String name, int age ) {
+    public Student(String name, int age) {
         this.age = age;
         this.name = name;
     }
@@ -28,9 +27,5 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
-
-
-
-
-
 }
+
