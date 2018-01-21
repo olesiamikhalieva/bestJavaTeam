@@ -3,9 +3,9 @@ package hw_12_01_18;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class ClassRoom {
-    private String classWord = "N";
-    private int classLimit = 40;
-    private Student[] studMass = new Student[40];
+    private String classWord;
+    private int classLimit;
+    private Student[] studMass;
     private int sCounter = 0;
 
     public ClassRoom(int nLimit) {
@@ -17,7 +17,27 @@ public class ClassRoom {
         this.classWord = classWord;
         studMass = new Student[classLimit];
     }
+    // Вывод классов
+    public void printClass() {
+        System.out.println(this.classWord);
+        Student[] nStud = this.studMass;
+        for (int i = 0; i < this.classLimit; ++i) {
+            if (nStud[i] != null) {
+                System.out.println(nStud[i].getName() + " " + nStud[i].getAge());
+            }
+        }
+    }
 
+    // Поиск студента с одинаковым именем в массиве
+    public void findStudent(String Name) {
+        for (int i = 0; i < studMass.length; ++i) {
+            if (Name.equals(studMass[i].getName())) {
+                System.out.println(Name);
+            }
+        }
+    }
+
+    // Добавляем данного студента в массив студентов класса Classroom
     public void studToClass(Student studRand) {
         if (sCounter < studMass.length) {
             for (int i = sCounter; i <= studMass.length; ++i) {
@@ -26,20 +46,7 @@ public class ClassRoom {
                     sCounter++;
                     break;
                 }
-                else {
-                    break;
-                }
             }
-        } else {
-            System.out.println("error");
-        }
-    }
-
-    public static void printClass(ClassRoom N) {
-        System.out.println(N.getClassWord());
-        Student[] nStud = N.getStudMass();
-        for (int i = 0; i < nStud.length; ++i) {
-            System.out.println(nStud[i].getName() + " " + nStud[i].getAge());
         }
     }
 
@@ -74,4 +81,5 @@ public class ClassRoom {
     public void setsCounter(int sCounter) {
         this.sCounter = sCounter;
     }
+
 }
