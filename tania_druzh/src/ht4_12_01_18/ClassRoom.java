@@ -5,16 +5,20 @@ public class ClassRoom {
     private int classLimit;
     private Student[] studMass;
 
+
+
     public ClassRoom(String classWord, int classLimit, Student[] studMass) {
         this.classWord = classWord;
         this.classLimit = classLimit;
         this.studMass = studMass;
     }
 
+    /*показывающие сколько человек есть в в конкретном классе*/
     public int getClassCount() {
         return studMass.length;
     }
 
+    /*показывающей всех студентов класса(их имена и возраст)*/
     public void getClassList(){
         for (Student mass : studMass) {
             System.out.println(mass.getName() + " " + mass.getAge());
@@ -22,6 +26,7 @@ public class ClassRoom {
         }
     }
 
+    /*показывающей всех студентов класса(только имя)*/
     public void getShortClassList(){
         for (Student mass : studMass) {
             System.out.println(mass.getName());
@@ -29,6 +34,7 @@ public class ClassRoom {
         }
     }
 
+    /*показывающий всех   в отсортированном порядке по возрасту*/
     public void ageSort() {
         for (int i = studMass.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
@@ -41,6 +47,8 @@ public class ClassRoom {
             }
         }
     }
+
+    /*показывающий всех   в отсортированном обратном порядке по возрасту*/
     public void ageRevSort() {
         for (int i = studMass.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
@@ -54,6 +62,7 @@ public class ClassRoom {
         }
     }
 
+    /*показывающий всех   в отсортированном порядке по алфавиту*/
     public void nameSort() {
         for (int i = studMass.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
@@ -66,6 +75,8 @@ public class ClassRoom {
             }
         }
     }
+
+    /*показывающий всех   в отсортированном обратном порядке по алфавиту*/
     public void nameRevSort() {
         for (int i = studMass.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
@@ -78,6 +89,8 @@ public class ClassRoom {
             }
         }
     }
+
+    /*метод который находит конкретного студента по имени в конкретном классе*/
     public void findStudent(String name){
         for (int i = 0; i < studMass.length; i++){
             if (studMass[i].getName().equals(name)){
@@ -86,6 +99,7 @@ public class ClassRoom {
         }
     }
 
+    /*метод который ищет и показывает в каких классах есть студент с таким именем*/
     public String findClass(String name){
         for (int i = 0; i < studMass.length; i++){
             if (studMass[i].getName().equals(name)){
