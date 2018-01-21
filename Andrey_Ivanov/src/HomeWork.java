@@ -3,18 +3,18 @@ Class HomeWork{
 private int countHomeWorks;
 private int countHours;
 
-public getCountHomeWorks(){
+public int getCountHomeWorks(){
 return countHomeWorks;
 }
 
-public setCountHomeWorks(int HomeWorks){
+public void setCountHomeWorks(int countHomeWorks){
 this.countHomeWorks=HomeWorks;
 }
-public getCountHours(){
+public int getCountHours(){
 return countHours;
 }
 
-public setCountHours(int countHours){
+public void setCountHours(int countHours){
 this.countcountHours=countHours;
 }
 
@@ -22,7 +22,7 @@ public HomeWork(){
 }
 
 public HomeWork(){
-  this.countHomeWorks();
-  this.countHours();
+  this.countHomeWorks=countHomeWorks();
+  this.countHours=countHours;
 }
 }
