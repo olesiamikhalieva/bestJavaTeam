@@ -2,40 +2,45 @@ package hw_12_01_18;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class ClassRoom
-{
+public class ClassRoom {
     private String classWord = "N";
-    private int classLimit = 10;
+    private int classLimit = 40;
     private Student[] studMass = new Student[40];
     private int sCounter = 0;
 
-    public ClassRoom(int classLimit)
-    {
-        studMass = new Student[classLimit];
+    public ClassRoom(int nLimit) {
+        this.studMass = new Student[nLimit];
     }
 
-    public ClassRoom(String classWord, int classLimit)
-    {
+    public ClassRoom(String classWord, int classLimit) {
         this.classLimit = classLimit;
         this.classWord = classWord;
         studMass = new Student[classLimit];
     }
 
-    public /*Student[]*/void studToClass(Student studRand)
-    {
-        if (sCounter <= studMass.length )
-        {
-            for(int i = 0; i <= studMass.length; ++i)
-            {
-                if(studMass[i] == null)
-                {
+    public void studToClass(Student studRand) {
+        if (sCounter < studMass.length) {
+            for (int i = sCounter; i <= studMass.length; ++i) {
+                if (studMass[i] == null) {
                     studMass[i] = studRand;
                     sCounter++;
                     break;
                 }
+                else {
+                    break;
+                }
             }
+        } else {
+            System.out.println("error");
         }
-//        return studMass;
+    }
+
+    public static void printClass(ClassRoom N) {
+        System.out.println(N.getClassWord());
+        Student[] nStud = N.getStudMass();
+        for (int i = 0; i < nStud.length; ++i) {
+            System.out.println(nStud[i].getName() + " " + nStud[i].getAge());
+        }
     }
 
     public String getClassWord() {
