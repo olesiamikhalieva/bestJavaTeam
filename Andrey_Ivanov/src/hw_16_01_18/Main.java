@@ -1,7 +1,7 @@
 package hw_16_01_18;
 
 import java.util.Scanner;
-
+ // Todo почему все в мейне? почему логика не в методах?
 public class Main {
 
     static Scanner in = new Scanner(System.in);
