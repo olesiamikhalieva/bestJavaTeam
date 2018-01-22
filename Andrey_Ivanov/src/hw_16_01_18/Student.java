@@ -1,7 +1,7 @@
 package hw_16_01_18;
 
 import java.util.concurrent.ThreadLocalRandom;
-
+// Todo вынести дополнительную информацию о студенте в  отдельный класс.
 public class Student {
 
     private int age;
