@@ -48,7 +48,7 @@ public class Main {
 
     }
 
-    public static void addStudentToClass(ClassRoom classA, ClassRoom classB) {
+    private static void addStudentToClass(ClassRoom classA, ClassRoom classB) {
         for (Student stud : studMass) {
             if (stud.getAge() >= 7 && stud.getAge() <= 12) {
                 classA.addStudent(stud, classA);
@@ -58,7 +58,7 @@ public class Main {
         }
     }
 
-    public static int coutStudents(ClassRoom classRoom) {
+    private static int coutStudents(ClassRoom classRoom) {
         for (Student stud : studMass) {
             if (stud.getAge() >= 7 && stud.getAge() <= 12) {
                 countStudent++;
@@ -70,7 +70,7 @@ public class Main {
     }
 
 
-    public static Student[] initStudents() {
+    private static Student[] initStudents() {
         studMass = new Student[limitStudents];
         //name
         for (int i = 0; i < limitStudents; i++) {
@@ -104,13 +104,13 @@ public class Main {
         return studMass;
     }
 
-    public static void printAllStudents() {
+    private static void printAllStudents() {
         for (Student student : studMass) {
             System.out.println(student.getName() + " " + student.getAge());
         }
     }
 
-    public static void printAllStudentsbySortName() {
+    private static void printAllStudentsbySortName() {
         String[] massNameStudent = new String[limitStudents];
         for (int i = 0; i < massNameStudent.length; i++) {
             massNameStudent[i] = studMass[i].getName();
@@ -119,7 +119,7 @@ public class Main {
         System.out.println(Arrays.toString(massNameStudent));
     }
 
-    public static void printAllStudentsSortAge() {
+    private static void printAllStudentsSortAge() {
         for (int i = studMass.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (studMass[j].getAge() > studMass[j + 1].getAge()) {
@@ -134,7 +134,7 @@ public class Main {
         }
     }
 
-    public static void printAllStudentsSortAlphabet() {
+    private static void printAllStudentsSortAlphabet() {
         for (int i = studMass.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (studMass[j].getName().compareTo(studMass[j + 1].getName()) > 0) {
@@ -150,7 +150,7 @@ public class Main {
         }
     }
 
-    public static void printAllStudentsSortAgeReverse() {
+    private static void printAllStudentsSortAgeReverse() {
         for (int i = studMass.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (studMass[j].getAge() < studMass[j + 1].getAge()) {
@@ -165,7 +165,7 @@ public class Main {
         }
     }
 
-    public static void printAllStudentsSortAlphabetReverse() {
+    private static void printAllStudentsSortAlphabetReverse() {
         for (int i = studMass.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (studMass[j].getName().compareTo(studMass[j + 1].getName()) < 0) {
@@ -181,7 +181,7 @@ public class Main {
         }
     }
 
-    public static void findStudentName(ClassRoom classA, ClassRoom classB, String name) {
+    private static void findStudentName(ClassRoom classA, ClassRoom classB, String name) {
         int n = 0;
         int k = 0;{
             System.out.println("Students at class A:");
