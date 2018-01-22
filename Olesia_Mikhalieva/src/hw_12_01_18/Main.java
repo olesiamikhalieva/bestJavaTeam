@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-
+// Где часть со школдой?
 public class Main {
     private static int limitStudents = 40;
     private static Student[] studMass;
