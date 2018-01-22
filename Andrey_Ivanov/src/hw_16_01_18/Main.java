@@ -7,9 +7,8 @@ public class Main {
     static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-
+        //создание 40 студентов с именем, возрастом и адресом
         Student[] allMassStud = new Student[40];
-
         int inA = 0;
         int inB = 0;
         int n = 0, a = 0, k = 0, b = 0;
@@ -27,6 +26,7 @@ public class Main {
                 inB++;
             }
         }
+        //запись студентов меньше 12 лет в класс А
         if (inA < 12) {
             n = inA;
         } else {
@@ -43,7 +43,7 @@ public class Main {
             }
         }
         ClassRoom classA = new ClassRoom("A", 12, studA);
-
+        //запись студентов больше 12 лет в класс Б
         if (inB < 15) {
             k = inB;
         } else {
@@ -70,6 +70,7 @@ public class Main {
         for (Student student : studA) {
             System.out.println(student.getName() + "  " + student.getAge());
         }
+        //Сколько студетнов не вошли в клаас А
         System.out.println("---Не вошли в класс А---");
         int ostA = 0;
         for (int i = a; i < allMassStud.length; i++) {
@@ -84,6 +85,7 @@ public class Main {
         for (Student student : studB) {
             System.out.println(student.getName() + "  " + student.getAge());
         }
+        //Сколько студетнов не вошли в клаас Б
         System.out.println("---Не вошли в класс Б---");
         int ostB = 0;
         for (int i = b; i < allMassStud.length; i++) {
@@ -93,96 +95,50 @@ public class Main {
             }
         }
         System.out.println("Всего не вошло в класс Б:  " + ostB + " студентов\n");
-
-        int num;
-        do {
-            System.out.println("Введите цифру для выбора метода (для выхода нажмите 111) :  \n" +
-                    " 1-Количество студентов в каждом классе;\n" +
-                    " 2-Список студетов каждого класса(имена и возраст\n" +
-                    " 3-Список только имен студентов каждого класса\n" +
-                    " 4-Сортировка каждого класса по возрасту(по возрастанию)\n" +
-                    " 5-Сортировка каждого класса по возрасту(по убыванию)\n" +
-                    " 6-Поиск студента по имени в конкретном классе\n" +
-                    " 7-Поиск студента по имени во всех классах\n" +
-                    " 8-Поиск студента по атрибуту(город,адрес,имя,телефон,область)\n");
-            num = in.nextInt();
-            switch (num) {
-                case 1:
-                    System.out.println("Количество студентов в классе А; " + classA.countStudent());
-                    System.out.println("Количество студентов в классе Б; " + classB.countStudent());
-                    System.out.println();
-                    break;
-                case 2:
-                    System.out.println("Список студентов класса А: ");
-                    classA.listStudent();
-                    System.out.println("Список студентов класса Б: ");
-                    classB.listStudent();
-                    break;
-                case 3:
-                    System.out.println("Список имен студентов классе А: ");
-                    classA.listNamesOfStudents();
-                    System.out.println("Список имен студентов классе Б: ");
-                    classB.listNamesOfStudents();
-                    break;
-                case 4:
-                    System.out.println("Список студентов классе А по возрасту(по возрастанию): ");
-                    classA.sortAge();
-                    classA.listStudent();
-                    System.out.println("Список студентов классе Б по возрасту(по возрастанию): ");
-                    classB.sortAge();
-                    classB.listStudent();
-                    break;
-                case 5:
-                    System.out.println("Список студентов классе А по возрасту(по убыванию): ");
-                    classA.sortAgeRevers();
-                    classA.listStudent();
-                    System.out.println("Список студентов классе Б по возрасту(по убыванию): ");
-                    classB.sortAgeRevers();
-                    classB.listStudent();
-                    break;
-                case 6:
-                    System.out.println("Введите имя студента для класса A:");
-                    Scanner scan1 = new Scanner(System.in);
-                    String name1 = scan1.nextLine();
-                    System.out.println("Студент " + name1 + " в классе А: " + classA.findName(name1));
-                    System.out.println("Введите имя студента для класса Б:");
-                    Scanner scan2 = new Scanner(System.in);
-                    String name2 = scan2.nextLine();
-                    System.out.println("Студент " + name2 + " в классе Б: " + classB.findName(name2));
-                    break;
-                case 7:
-                    System.out.println("Введите имя студента для поиска");
-                    Scanner scan3 = new Scanner(System.in);
-                    String name3 = scan3.nextLine();
-                    System.out.println("Студент " + name3 + " в классе A: " + classA.findNameInClass(name3));
-                    System.out.println("Студент " + name3 + " в классе Б: " + classB.findNameInClass(name3));
-                    break;
-                case 8:
-                    int count = 0;
-                    System.out.println("Введите атрибут студента для поиска");
-                    Scanner scan4 = new Scanner(System.in);
-                    String name4 = scan4.nextLine();
-                    for (Student student : allMassStud) {
-                        if (student.getName().equals(name4) || student.getCity().equals(name4) || student.getOblast().equals(name4) || student.getTelefon().equals(name4) || student.getAdress().equals(name4)) {
-                            System.out.println("Найден студент с данным атрибутом: " + student.getName() + "-" + student.getAge() + "-" + student.getCity() + "-" + student.getOblast() + "-" + student.getAdress() + "-" + student.getTelefon());
-                            count++;
-                        }
-                    }
-                    if (count == 0) {
-                        System.out.println("Студент с заданным атрибутом не найден!");
-                    }
-                    break;
-                default:
-
-                    if (num == 111) {
-                        System.out.println("Программа окончена");
-                        System.exit(0);
-                    }
-                    System.out.println("Неверно ввели номер метода,повторите ввод!");
-                    break;
-
+        // Количество студентов к каждом классе
+        System.out.println("Количество студентов в классе А: " + classA.countStudent());
+        System.out.println("Количество студентов в классе Б: " + classB.countStudent());
+        //Имена астудентов каждого класса
+        System.out.println("Список студентов класса А: ");
+        classA.listStudent();
+        System.out.println("Список студентов класса Б: ");
+        classB.listStudent();
+        //Список студентов по количеству лет_по возрастанию
+        System.out.println("Список студентов классе А по возрасту(по возрастанию): ");
+        classA.sortAge();
+        classA.listStudent();
+        System.out.println("Список студентов классе Б по возрасту(по возрастанию): ");
+        classB.sortAge();
+        classB.listStudent();
+        //Список студентов по количеству лет_по убыванию
+        System.out.println("Список студентов классе А по возрасту(по убыванию): ");
+        classA.sortAgeRevers();
+        classA.listStudent();
+        System.out.println("Список студентов классе Б по возрасту(по убыванию): ");
+        classB.sortAgeRevers();
+        classB.listStudent();
+        //Поиск студента по имени в конкретном классе
+        System.out.println("Введите имя студента для класса A:");
+        Scanner scan1 = new Scanner(System.in);
+        String name1 = scan1.nextLine();
+        System.out.println("Студент " + name1 + " в классе А: " + classA.findName(name1));
+        System.out.println("Введите имя студента для класса Б:");
+        Scanner scan2 = new Scanner(System.in);
+        String name2 = scan2.nextLine();
+        System.out.println("Студент " + name2 + " в классе Б: " + classB.findName(name2));
+        //Поиск студента по артрибуту(имя,город,область,телефон,адрес
+        int count = 0;
+        System.out.println("Введите атрибут студента для поиска");
+        Scanner scan4 = new Scanner(System.in);
+        String name4 = scan4.nextLine();
+        for (Student student : allMassStud) {
+            if (student.getName().equals(name4) || student.getCity().equals(name4) || student.getOblast().equals(name4) || student.getTelefon().equals(name4) || student.getAdress().equals(name4)) {
+                System.out.println("Найден студент с данным атрибутом: " + student.getName() + "-" + student.getAge() + "-" + student.getCity() + "-" + student.getOblast() + "-" + student.getAdress() + "-" + student.getTelefon());
+                count++;
             }
-        } while (num != 111);
+        }
+        if (count == 0) {
+            System.out.println("Студент с заданным атрибутом не найден!");
+        }
     }
 }
-
