@@ -1,4 +1,4 @@
-package hw_12_01_18.src.magaz.sport_goods;
+package magaz.sport_goods;
 
 /**
  * Created by java on 19.01.2018.
@@ -9,6 +9,8 @@ public class Booots {
     private String brend;
     private int price;
     private int count;
+
+    private Info info;
 
 
 
@@ -24,6 +26,14 @@ public class Booots {
         this.size = size;
         this.brend = brend;
         this.price = price;
+    }
+
+    public Info getInfo() {
+        return info;
+    }
+
+    public void setInfo(Info info) {
+        this.info = info;
     }
 
     public int getSize() {

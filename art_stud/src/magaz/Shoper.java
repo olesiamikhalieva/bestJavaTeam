@@ -1,4 +1,4 @@
-package hw_12_01_18.src.magaz;
+package magaz;
 
 /**
  * Created by java on 19.01.2018.

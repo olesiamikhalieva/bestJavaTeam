@@ -1,13 +1,11 @@
-package hw_12_01_18.src.magaz;
+package magaz;
 
 import magaz.sport_goods.Booots;
 import magaz.sport_goods.Dress;
 
-/**
- * Created by java on 19.01.2018.
- */
 public class Shop {
 
+    private String name;
     private Booots sportBoots;
 
     private Dress dress;
@@ -34,5 +32,13 @@ public class Shop {
 
     public void setDress(Dress dress) {
         this.dress = dress;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
