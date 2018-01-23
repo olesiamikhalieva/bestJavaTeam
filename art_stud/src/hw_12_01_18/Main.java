@@ -6,6 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * Created by java on 16.01.2018.
  */
+//Todo bad work
 public class Main {
 
     private static int studentAgeFrom7To12Count = 0;
