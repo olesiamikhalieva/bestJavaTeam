@@ -24,7 +24,7 @@ public class Robot {
         this.leg1 = leg1;
         this.leg2 = leg2;
         this.torso = torso;
-        System.out.println("Робот собран правильно");
+        System.out.println("\nРобот собран правильно\n");
     }
 
     public Robot(Head head, Hand hand1, Leg leg1, Leg leg2, Torso torso) {

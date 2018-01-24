@@ -1,7 +1,7 @@
 package Robot.ComponentsRobot;
 
 public class Torso {
-    private void torso(){
+    public void create(){
         System.out.println("Торс создан");
     }
 }

@@ -58,7 +58,6 @@ public class Main {
         System.out.println("\nПоиск студентов в обоих классах по имени\n");
 
         callStudentByNameFromAnyClass(student, classA, classB);
-
     }
 
     public static Student[] initStudents() {      //инициализация студентов
@@ -71,6 +70,7 @@ public class Main {
             allStudents[i] = student;
             System.out.println(student.getName() + " " + student.getAge());
         }
+
         System.out.println("\nСтуденты не попали:\n");
         return allStudents;
     }

@@ -7,6 +7,7 @@ public class ClassRoom {
     private int countOfStudents = 0;
     private int missedStudents = 0;
 
+
     public ClassRoom() {
     }
 
@@ -38,6 +39,8 @@ public class ClassRoom {
 
 
     public void addStudentToClass(Student student) {// запись конкретного студента в класс
+
+
         if (countOfStudents < studMass.length) {
             for (int i = 0; i < studMass.length; i++) {
                 if (studMass[i] == null) {
@@ -45,12 +48,25 @@ public class ClassRoom {
                     countOfStudents++;
                     break;
                 }
+                if (studMass[i] == null){
+                    Student st = new Student();
+                    studMass[i] = st;
+                }
             }
         } else {
             missedStudents++;
             System.out.println(student.getAge() + " имя " + student.getName());
         }
 
+    }
+
+    public void checker() {
+        for (int i = 0; i < studMass.length; i++) {
+            if (studMass[i] == null) {
+                Student student = new Student();
+                studMass[i] = student;
+            }
+        }
     }
 
     public void showAllStudents() {// показать всех студентов

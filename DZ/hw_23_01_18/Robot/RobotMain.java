@@ -18,13 +18,17 @@ public class RobotMain {
 
         robot.setHead(head);
         robot.setHand1(hand1);
-        robot.getLeg1();
+        robot.setLeg1(leg1);
+        robot.setTorso(torso);
+
         robot.getHead().speak();
         robot.getHand1().write();
         robot.getLeg1().run();
+        robot.getTorso().create();
 
         Robot robot1 = new Robot(head,hand1,hand2,leg1,leg2,torso);
         Robot robot2 = new Robot(head,hand1,leg1,leg2,torso);
-        Robot robot3 = new Robot(hand1,hand2,leg1,leg2,torso);
+        Robot robot3 = new Robot(head,hand1,hand2,leg1,torso);
+        Robot robot4 = new Robot(hand1,hand2,leg1,leg2,torso);
     }
 }
