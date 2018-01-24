@@ -40,7 +40,6 @@ public class ClassRoom {
 
     public void addStudentToClass(Student student) {// запись конкретного студента в класс
 
-
         if (countOfStudents < studMass.length) {
             for (int i = 0; i < studMass.length; i++) {
                 if (studMass[i] == null) {
@@ -54,15 +53,6 @@ public class ClassRoom {
             System.out.println(student.getAge() + " имя " + student.getName());
         }
 
-    }
-
-    public void checker() {
-        for (int i = 0; i < studMass.length; i++) {
-            if (studMass[i] == null) {
-                Student student = new Student();
-                studMass[i] = student;
-            }
-        }
     }
 
     public void showAllStudents() {// показать всех студентов
