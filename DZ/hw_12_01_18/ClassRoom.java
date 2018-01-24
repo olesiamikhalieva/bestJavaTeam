@@ -48,10 +48,6 @@ public class ClassRoom {
                     countOfStudents++;
                     break;
                 }
-                if (studMass[i] == null){
-                    Student st = new Student();
-                    studMass[i] = st;
-                }
             }
         } else {
             missedStudents++;
