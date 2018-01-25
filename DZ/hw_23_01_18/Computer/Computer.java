@@ -5,6 +5,7 @@ import Computer.ComputerElement.Mouse;
 import Computer.ComputerElement.Monitor;
 import Computer.ComputerElement.SystemUnit;
 
+// Todo - good
 public class Computer {
 
     private Keyboard keyboard = new Keyboard();

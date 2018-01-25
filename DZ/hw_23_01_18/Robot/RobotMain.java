@@ -5,6 +5,7 @@ import Robot.ComponentsRobot.Head;
 import Robot.ComponentsRobot.Leg;
 import Robot.ComponentsRobot.Torso;
 
+//Todo - good
 public class RobotMain {
     private static Robot robot = new Robot();
 
