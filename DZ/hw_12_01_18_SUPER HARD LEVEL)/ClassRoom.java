@@ -48,6 +48,7 @@ public class ClassRoom {
                     break;
                 }
             }
+           // Main.allStudents;
         } else {
             missedStudents++;
             System.out.println(student.getAge() + " имя " + student.getName());
