@@ -4,6 +4,8 @@ import ht7_23_01_18.Computer.SystemUnit.HDD;
 import ht7_23_01_18.Computer.SystemUnit.SystemUnit;
 import ht7_23_01_18.Computer.SystemUnit.VideoCard;
 
+
+//Todo good
 public class ComputerMaker {
     public static void main(String[] args) {
         HDD hdd = new HDD("Prod","500 Gb");

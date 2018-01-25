@@ -1,5 +1,6 @@
 package ht7_23_01_18.Robot;
 
+//Todo - good
 public class RobotMaker {
     private static Head heads1[] = new Head[1];
     private static Head heads2[] = new Head[2];
