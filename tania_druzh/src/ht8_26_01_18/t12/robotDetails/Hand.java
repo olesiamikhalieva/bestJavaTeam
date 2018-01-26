@@ -17,4 +17,5 @@ public class Hand {
     public void setCountOfFingers(int countOfFingers) {
         this.countOfFingers = countOfFingers;
     }
+
 }
