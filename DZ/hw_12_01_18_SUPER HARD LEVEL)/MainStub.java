@@ -1,21 +1,14 @@
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Main {
-
-    public static Student[] allStudents = initStudents();
-    private static int classALimit = 0;
-    private static int classBLimit = 0;
-
-
+public class MainStub {
     public static void main(String[] args) {
         programm();
 
     }
 
     public static void programm() {//отработка программы
-        checkAgeStudents();
-        ClassRoom classA = new ClassRoom("A", classALimit);
-        ClassRoom classB = new ClassRoom("Б", classBLimit);
+        ClassRoom classA = new ClassRoom("A", 12);
+        ClassRoom classB = new ClassRoom("Б", 15);
         addStudentsToClasses(classA, classB);
 
 
@@ -30,13 +23,13 @@ public class Main {
         classA.showAllStudentsByName();
         classB.showAllStudentsByName();
 
-        System.out.println("\nСортировки\n Класс А\n");
+        System.out.println("\nСортировка по имени: \n Класс А\n");
 
         classA.sortByName();
         System.out.println("\nКласс Б\n");
         classB.sortByName();
 
-        System.out.println("\nПо возрасту\n Класс А\n");
+        System.out.println("\nПо возрасту: \n Класс А\n");
 
         classA.sortByAge();
         System.out.println("\nКласс Б\n");
@@ -82,8 +75,8 @@ public class Main {
 
     public static void addStudentsToClasses(ClassRoom classA, ClassRoom classB) {     //запись студентов в класс
 
-        for (Student student : allStudents) {
-            if (student.getAge() >= 7 && student.getAge() <= 12) {
+        for (Student student : initStudents()) {
+            if (student.getAge() <= 12) {
                 classA.addStudentToClass(student);
             } else {
                 classB.addStudentToClass(student);
@@ -97,11 +90,13 @@ public class Main {
         System.out.println("Ищем студента по имени во обоих классах: " + s.getName());
         System.out.println("В классе А:\n");
         for (int i = 0; i < classA.studMass.length; i++) {
-            if (s.getName().equals(classA.studMass[i].getName())) {
-                System.out.println(classA.studMass[i].getName() + " ему(ей) " + classA.studMass[i].getAge() + " лет");
-                countCalledStudents++;
+            if (classA.checkStudentOnNull(classA.studMass[i]) == true){
+                break;
             }
-
+                if (s.getName().equals(classA.studMass[i].getName())) {
+                    System.out.println(classA.studMass[i].getName() + " ему(ей) " + classA.studMass[i].getAge() + " лет");
+                    countCalledStudents++;
+                }
         }
         if (countCalledStudents == 0) {
             System.out.println("\nНикого тут нет\n");
@@ -109,25 +104,17 @@ public class Main {
         countCalledStudents = 0;
         System.out.println("В классе Б:\n");
         for (int i = 0; i < classB.studMass.length; i++) {
-            if (s.getName().equals(classB.studMass[i].getName())) {
-                System.out.println(classB.studMass[i].getName() + " ему(ей) " + classB.studMass[i].getAge() + " лет");
-                countCalledStudents++;
+            if (classB.checkStudentOnNull(classB.studMass[i]) == true){
+                break;
             }
+            if (s.getName().equals(classB.studMass[i].getName())) {
+                    System.out.println(classB.studMass[i].getName() + " ему(ей) " + classB.studMass[i].getAge() + " лет");
+                    countCalledStudents++;
+                }
         }
         if (countCalledStudents == 0) {
             System.out.println("\nНикого тут нет\n");
         }
     }
 
-    public static void checkAgeStudents(){
-        for (int i = 0; i < allStudents.length; i++) {
-            if (allStudents[i].getAge()>=7 && allStudents[i].getAge() <=12){
-                if (classALimit == 12) {continue;}
-                classALimit++;
-            }else if (allStudents[i].getAge()>12){
-                if (classBLimit == 15) {continue;}
-                classBLimit++;
-            }
-        }
-    }
 }

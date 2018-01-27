@@ -1,3 +1,5 @@
+import java.lang.reflect.Array;
+
 public class ClassRoom {
 
     private String classWord;
@@ -48,7 +50,6 @@ public class ClassRoom {
                     break;
                 }
             }
-           // Main.allStudents;
         } else {
             missedStudents++;
             System.out.println(student.getAge() + " имя " + student.getName());
@@ -58,33 +59,32 @@ public class ClassRoom {
 
     public void showAllStudents() {// показать всех студентов
         System.out.println("Класс " + classWord);
-        for (Student student : studMass) {
-            System.out.println("Имя несчастного: " + student.getName() + ". Его возраст - " + student.getAge());
+        for (int i = 0; i < studMass.length; i++) {
+            if (checkStudentOnNull(studMass[i]) == true) {
+                break;
+            } else {
+                System.out.println("Имя ученика(ученицы): " + studMass[i].getName() + ". Его(её) возраст - " + studMass[i].getAge());
+            }
         }
     }
 
     public void showAllStudentsByName() {// показать всех студентов по имени
         System.out.println("Класс " + classWord);
-        for (Student student : studMass) {
-            System.out.println("Имя несчастного: " + student.getName());
+        for (int i = 0; i < studMass.length; i++) {
+            if (checkStudentOnNull(studMass[i]) == true) {
+                break;
+            } else {
+                System.out.println("Имя ученика(ученицы): " + studMass[i].getName());
+            }
         }
     }
 
     public void sortByAge() {//сортировка по имени в прямом порядке
-        for (int i = studMass.length - 1; i > 0; i--) {
-            for (int j = 0; j < i; j++) {
-                if (studMass[j].getAge() > studMass[j + 1].getAge()) {
-                    Student tmp;
-                    tmp = studMass[j];
-                    studMass[j] = studMass[j + 1];
-                    studMass[j + 1] = tmp;
-                }
+        for (int i = 0; i < studMass.length; i++) {
+            if (checkStudentOnNull(studMass[i]) == true) {
+                studMass = updateStudMass(studMass);
             }
-            System.out.println(studMass[i].getAge() + " Имя " + studMass[i].getName());
         }
-    }
-
-    public void sortRevByAge() {//сортировка по возрасту в обратном порядке
         for (int i = studMass.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (studMass[j].getAge() < studMass[j + 1].getAge()) {
@@ -98,7 +98,30 @@ public class ClassRoom {
         }
     }
 
+    public void sortRevByAge() {//сортировка по возрасту в обратном порядке
+        for (int i = 0; i < studMass.length; i++) {
+            if (checkStudentOnNull(studMass[i]) == true) {
+                studMass = updateStudMass(studMass);
+            }
+        }
+        for (int i = studMass.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (studMass[j].getAge() > studMass[j + 1].getAge()) {
+                    Student tmp;
+                    tmp = studMass[j];
+                    studMass[j] = studMass[j + 1];
+                    studMass[j + 1] = tmp;
+                }
+            }
+            System.out.println(studMass[i].getAge() + " Имя " + studMass[i].getName());
+        }
+    }
     public void sortByName() {//сортировка по имени в прямом порядке
+        for (int i = 0; i < studMass.length; i++) {
+            if (checkStudentOnNull(studMass[i]) == true) {
+                studMass = updateStudMass(studMass);
+            }
+        }
         for (int i = studMass.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (studMass[j].getName().compareTo(studMass[j + 1].getName()) < 0) {
@@ -112,7 +135,13 @@ public class ClassRoom {
         }
     }
 
+
     public void sortRevByName() {//сортировка по имени в реверсном порядке
+        for (int i = 0; i < studMass.length; i++) {
+            if (checkStudentOnNull(studMass[i]) == true) {
+                studMass = updateStudMass(studMass);
+            }
+        }
         for (int i = studMass.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (studMass[j].getName().compareTo(studMass[j + 1].getName()) > 0) {
@@ -141,5 +170,24 @@ public class ClassRoom {
         if (countCalledStudents == 0) {
             System.out.println("\nНикого тут нет\n");
         }
+    }
+
+    public boolean checkStudentOnNull(Student student) {
+        if (student == null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public Student[] updateStudMass(Student[] studMass) {
+        for (int i = 0; i < studMass.length; i++) {
+            if (studMass[i] == null) {
+                Student[] updateStudMass = new Student[i];
+                System.arraycopy(studMass, 0, updateStudMass, 0, i);
+                studMass = updateStudMass;
+            }
+        }
+        return studMass;
     }
 }

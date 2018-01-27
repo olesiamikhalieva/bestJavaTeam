@@ -4,6 +4,7 @@ public class Student {
 
     private String name;
     private int age;
+    private Address address;
 
     public Student() {
     }
@@ -30,6 +31,15 @@ public class Student {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
     public void generateName(){//генератор имен
         String [] str = new String [20];
         str[0] = "Лютик";
