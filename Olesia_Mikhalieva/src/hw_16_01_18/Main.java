@@ -1,9 +1,5 @@
 package hw_16_01_18;
 
-import java.util.Arrays;
-import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
-
 
 public class Main {
     private static int limitStudents = 100;
@@ -12,21 +8,66 @@ public class Main {
     private static Student student;
     private static ClassRoom[] classRoomMass;
     private static ClassRoom classRoom;
+    private static Adress adress;
 
 
     public static void main(String[] args) {
 
         School school = new School();
+        System.out.println("Classroom at school default:");
         printClassSchoolDefault(school);
 
-        School newSchool = new School(3);
-        setClassWord(newSchool);
+        System.out.println();
 
+        System.out.println("Classword if classCount=2 at newSchool: ");
+        School newSchool = new School(2);
+        newSchool.setClassWordClassDirectionAuto();
 
+        System.out.println();
+
+        adress = new Adress("Dnepropetrovsk region", "Dnepr", "Gagarina", 7423323);
+        newSchool.setAdress(adress);
+        printAdressOfSchool(newSchool);
+
+        System.out.println("Only city of school:");
+        printOnlyCityOfSchool(newSchool);
+
+        System.out.println();
+
+        System.out.println("Quality of classes at school: "+newSchool.getClassCount());
+        classRoom = new ClassRoom();
+        newSchool.addClassToSchool(classRoom);
+        System.out.println("Quality of classes at school after addition 1 class: " +newSchool.getClassCount());
+
+        newSchool.printClassesAtSchool();
+
+        System.out.println();
+
+        Student student = new Student(15,"Vova","ukr");
+        newSchool.getClassRoom(classRoom).addStudentToClass(student,classRoom);
+        classRoom.printAllStudentAtClass();
+
+        System.out.println();
+
+        System.out.println("30 students:");
+        print30Students(newSchool.add30Students());
+
+        System.out.println();
+        newSchool.distrStudents();
+        newSchool.printClasses();
 
 
     }
 
+
+    private static void printAdressOfSchool(School school){
+        System.out.println("Adress of school:");
+        System.out.println(school.getAdress().getRegion()+", "+school.getAdress().getCity()+ ", "+school.getAdress().getStreet()+", "+school.getAdress().getPhone());
+    }
+
+    private static void printOnlyCityOfSchool(School school){
+        System.out.println(school.getAdress().getCity());
+    }
 
     private static void printClassSchoolDefault(School school) {
         for (ClassRoom classRoom : school.getSchoolListOfClass()) {
@@ -34,48 +75,17 @@ public class Main {
         }
     }
 
-    private static void setClassWord(School school) {
-        int classCount = school.getClassCount();
-        for (ClassRoom classRoom : school.getSchoolListOfClass()) {
-            school.classWordClassCount(classCount,school.getSchoolListOfClass());
-            System.out.println("Class is "+classRoom.getClassWord());
+    private static void print30Students(Student [] studMass){
+        for (Student stud: studMass){
+            System.out.println(stud.getName()+" "+stud.getAge()+" "+stud.getSkills());
         }
     }
 
 
-    public static Student[] initStudents() {
-        studMass = new Student[limitStudents];
-        //name
-        for (int i = 0; i < limitStudents; i++) {
-            int maxQuolityRandomNames = 100;
-            Random random = new Random();
-            String[] names = new String[15];
-            String[] randomNames = new String[maxQuolityRandomNames];
-            names[0] = "Ivan";
-            names[1] = "Irina";
-            names[2] = "Artem";
-            names[3] = "Elena";
-            names[4] = "Katia";
-            names[5] = "Serger";
-            names[6] = "Vasia";
-            names[7] = "Denis";
-            names[8] = "Pasha";
-            names[9] = "Sasha";
-            names[10] = "Petia";
-            names[11] = "Vova";
-            names[12] = "Yulia";
-            names[13] = "Macksim";
-            names[14] = "Alex";
-            for (int j = 0; j < maxQuolityRandomNames; j++) {
-                randomNames[j] = names[random.nextInt(names.length)];
-                String name = randomNames[i];
-                int age = ThreadLocalRandom.current().nextInt(7, 16 + 1);
-                Student student = new Student(name, age);
-                studMass[i] = student;
-            }
-        }
-        return studMass;
-    }
+
+
+
+
 
 
 }

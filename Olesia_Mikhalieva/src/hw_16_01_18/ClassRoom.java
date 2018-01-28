@@ -1,18 +1,36 @@
 package hw_16_01_18;
 
-public class ClassRoom {
-    private  String classWord;
-    private int classLimit;
-    private  Student[] studMass;
-    private  int limitStudent = 100;
-    private int countClass = 0;
-    private String classRoomDirection;
+import java.util.concurrent.ThreadLocalRandom;
 
+public class ClassRoom {
+    private String classWord;
+    private Student[] studMass;
+    private Student[] studMassUkr = new Student[30];
+    private Student[] studMassEng = new Student[30];
+    private int studentLimitAtClass = 15;
+    private String classRoomDirection;
+    private Student student;
+
+
+    public ClassRoom() {
+    }
 
     public ClassRoom(String classWord, String classRoomDirection) {
         this.classWord = classWord;
         this.classRoomDirection = classRoomDirection;
     }
+
+    public ClassRoom(String classWord, int studentLimitAtClass) {
+        this.classWord = classWord;
+        this.studentLimitAtClass = studentLimitAtClass;
+    }
+
+    public ClassRoom(String classWord, int classLimit, String classRoomDirection) {
+        this.classWord = classWord;
+        this.studentLimitAtClass = classLimit;
+        this.classRoomDirection = classRoomDirection;
+    }
+
 
     public void setClassRoomDirection(String classRoomDirection) {
         this.classRoomDirection = classRoomDirection;
@@ -22,20 +40,6 @@ public class ClassRoom {
         return classRoomDirection;
     }
 
-    public ClassRoom(String classWord, int classLimit, String classRoomDirection) {
-        this.classWord = classWord;
-        this.classLimit = classLimit;
-        this.classRoomDirection = classRoomDirection;
-    }
-
-    public ClassRoom() {
-    }
-
-    public ClassRoom(String classWord, int classLimit) {
-        this.classWord = classWord;
-        this.classLimit = classLimit;
-        studMass = new Student[limitStudent];
-    }
 
     public String getClassWord() {
         return classWord;
@@ -45,68 +49,68 @@ public class ClassRoom {
         this.classWord = classWord;
     }
 
-    public int getClassLimit() {
-        return classLimit;
+    public int getClassRandomLimit() {
+        return studentLimitAtClass;
+    }
+
+    public int getStudentLimitAtClass() {
+        return studentLimitAtClass;
     }
 
     public void setClassLimit(int classLimit) {
-        this.classLimit = classLimit;
-    }
-
-    public Student[] getStudMass() {
-        return studMass;
+        this.studentLimitAtClass = classLimit;
     }
 
 
-    public void setStudMass(Student[] studMass) {
-        this.studMass = studMass;
+    public void addStudentToClass(Student student, ClassRoom classRoom) {
+            if (student.getSkills() == "eng") {
+                addStudentToClassEng(student);
+            }
+            if (student.getSkills() == "ukr") {
+                addStudentToClassUkr(student);
+            }
+        }
+
+
+    public Student[] addStudentToClassUkr(Student student) {
+        for (int i = 0; i < studentLimitAtClass * 2; i++) {
+            if (this.studMassUkr[i] == null) {
+                this.studMassUkr[i] = student;
+                break;
+            }
+        }
+        return studMassUkr;
     }
 
-    private int k = 0;
-    public void addStudent(Student stud, ClassRoom classRoom,String classRoomDirection) {
-        if (k < classRoom.getClassLimit()) {
-            for (int i = 0; i < studMass.length; i++) {
-                if (studMass[i] == null) {
-                    studMass[i] = stud;
-                    k++;
-                    break;
+    public Student[] addStudentToClassEng(Student student) {
+        for (int i = 0; i < studentLimitAtClass * 2; i++) {
+            if (this.studMassEng[i] == null) {
+                this.studMassEng[i] = student;
+                break;
+            }
+        }
+            return studMassEng;
+    }
+
+            public void printAllStudentAtClass() {
+                for (Student stud : studMassEng) {
+                    if (stud != null) {
+                        System.out.println("English students:");
+                        System.out.println(stud.getName() + " " + stud.getAge());
+                    }
+                }
+                for (Student stud: studMassUkr){
+                    if (stud!=null){
+                        System.out.println("Ukr students:");
+                        System.out.println(stud.getName()+" "+stud.getAge());
+                    }
                 }
             }
+
         }
-    }
 
 
 
-
-
-    public void printClassName() {
-        for (Student stud : studMass) {
-            if (stud != null) {
-                System.out.print(stud.getName()+", ");
-            }
-        }
-    }
-
-    public void printClassNameAndAge() {
-        for (Student stud : studMass) {
-            if (stud != null) {
-                System.out.print(stud.getName()+" "+stud.getAge()+"; ");
-            }
-        }
-    }
-
-    public int printCountClass(){
-        for (Student stud: studMass){
-            if (stud!=null){
-                countClass++;
-            }
-        }
-        return countClass;
-    }
-
-
-
-}
 
 
 

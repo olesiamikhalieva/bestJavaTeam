@@ -1,4 +1,4 @@
-package Robot;
+package hw_23_01_18.Robot;
 
 
 public class Robot {
@@ -16,7 +16,7 @@ public class Robot {
     public static void main(String[] args) {
         robot.getBody(1);
         robot.getHand(2);
-        robot.getLeg(5);
+        robot.getLeg(2);
         robot.getHead(1);
         ifRobotRight(robot);
     }
@@ -63,28 +63,28 @@ public class Robot {
         return leg;
     }
 
-    private void getHand(int quolityOfHand) {
+    public void getHand(int quolityOfHand) {
         this.quolityOfHand = quolityOfHand;
         for (int i = 0; i < quolityOfHand; i++) {
             Hand hand = new Hand();
         }
     }
 
-    private void getLeg(int quolityOfLeg) {
+    public void getLeg(int quolityOfLeg) {
         this.quolityOfLeg = quolityOfLeg;
         for (int i = 0; i < quolityOfLeg; i++) {
             Leg leg = new Leg();
         }
     }
 
-    private void getHead(int quolityOfHead) {
+    public void getHead(int quolityOfHead) {
         this.quolityOfHead = quolityOfHead;
         for (int i = 0; i < quolityOfHead; i++) {
             Head head = new Head();
         }
     }
 
-    private void getBody(int quolityOfBody) {
+    public void getBody(int quolityOfBody) {
         this.quolityOfBody = quolityOfBody;
         for (int i = 0; i < quolityOfBody; i++) {
             Body body = new Body();

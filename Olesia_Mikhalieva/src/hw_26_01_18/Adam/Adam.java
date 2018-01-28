@@ -1,4 +1,4 @@
-package hw_26_01_18.Adam_eva;
+package hw_26_01_18.Adam;
 
 public class Adam {
 }

@@ -3,14 +3,14 @@ package hw_16_01_18;
 public class Adress {
     private String street;
     private String city;
-    private String phone;
+    private int phone;
     private String region;
     Student[] studMass;
 
     public Adress() {
     }
 
-    public Adress(String street, String city, String phone, String region) {
+    public Adress(String region, String city, String street, int phone ) {
         this.street = street;
         this.city = city;
         this.phone = phone;
@@ -33,11 +33,11 @@ public class Adress {
         this.city = city;
     }
 
-    public String getPhone() {
+    public int getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhone(int phone) {
         this.phone = phone;
     }
 

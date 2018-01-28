@@ -1,4 +1,7 @@
 package hw_26_01_18.Robot2;
 
-public class Terminator {
+import hw_23_01_18.Robot.Robot;
+
+public class Terminator extends Robot {
+
 }

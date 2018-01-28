@@ -1,4 +1,4 @@
 package hw_26_01_18.House_and_others;
 
-public class Dog {
+public class Dog extends Animal {
 }
