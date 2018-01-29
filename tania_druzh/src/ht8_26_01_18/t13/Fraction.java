@@ -50,6 +50,31 @@ public class Fraction {
     /*метод, умножающий (произведение) текущую дробь на число типа double,
     переданное ему в параметре и возвращающий дробь - результат умножения;*/
     public Fraction multiplicationDouble(double d){
-        
+        double num = d;
+        int denominatorOther = 1;
+        double ost = num - (int) num;
+        while (ost > 0){
+            num *= 10;
+            denominatorOther *= 10;
+            ost = num - (int) num;
+        }
+        this.numerator = this.numerator * (int)num;
+        this.denominator = this.denominator * denominatorOther;
+        return this;
+    }
+
+    /*метод, делящий (деление) текущую дробь на число типа double, переданное ему в параметре и возвращающий дробь - результат деления*/
+    public Fraction divisionDouble(double d){
+        double num = d;
+        int denominatorOther = 1;
+        double ost = num - (int) num;
+        while (ost > 0){
+            num *= 10;
+            denominatorOther *= 10;
+            ost = num - (int) num;
+        }
+        this.numerator = this.numerator * denominatorOther;
+        this.denominator = this.denominator * (int) num;
+        return this;
     }
 }

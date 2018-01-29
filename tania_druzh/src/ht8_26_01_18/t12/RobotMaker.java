@@ -3,6 +3,9 @@ package ht8_26_01_18.t12;
 import ht8_26_01_18.t12.robotDetails.Hand;
 import ht8_26_01_18.t12.robotDetails.Head;
 import ht8_26_01_18.t12.robotDetails.Leg;
+import ht8_26_01_18.t12.robots.AstromechanicsDroid;
+import ht8_26_01_18.t12.robots.BattleDroid;
+import ht8_26_01_18.t12.robots.MedicalDroid;
 import ht8_26_01_18.t12.robots.Robot;
 
 public class RobotMaker {
@@ -21,6 +24,17 @@ public class RobotMaker {
     private static Robot robot1;
     private static Robot robot2;
     private static Robot robot3;
+
+    private static AstromechanicsDroid robotAstro1;
+    private static AstromechanicsDroid robotAstro2;
+    private static AstromechanicsDroid robotAstro3;
+
+    private static BattleDroid robotBattler1;
+    private static BattleDroid robotBattler2;
+
+    private static MedicalDroid robotMedic1;
+    private static MedicalDroid robotMedic2;
+
 
     public static void main(String[] args) {
         createHeads();
@@ -69,11 +83,21 @@ public class RobotMaker {
         robot1 = new Robot("Protocol droid","C-3PO",legs2,hands1,heads3);
         robot2 = new Robot("Astromech droid"," R2-D2",legs2,hands2,heads1);
         robot3 = new Robot("Battle droid"," HK-47",legs1,hands3,heads2);
+
+        robotAstro1 = new AstromechanicsDroid("Astromech droid"," R2-D2",legs2,hands2,heads1,"SuperAstroMaps");
+        robotAstro2 = new AstromechanicsDroid("Astromech droid"," D4-V3",legs1,hands2,heads3,"AstroMaps");
+        robotAstro3 = new AstromechanicsDroid("Astromech droid"," D4-V3",legs1,hands2,heads3,"AstroMaps");
+
+        robotBattler1 = new BattleDroid("Battle droid"," HK-47",legs1,hands3,heads2,"TunelBlast");
+        robotBattler2 = new BattleDroid("Battle droid"," 2C-TA",legs1,hands3,heads2,"TunelBlast");
+
     }
 
     public static void getInfoAboutRobots(){
         robot1.printRobotStatus();
         robot2.printRobotStatus();
         robot3.printRobotStatus();
+
+        robot1.equals(robotAstro1);
     }
 }
