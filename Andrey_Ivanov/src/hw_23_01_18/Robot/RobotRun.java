@@ -33,4 +33,3 @@ public class RobotRun {
         robot.makeRobot();//метод который проверяет сколько рук, ног и есть ли голова.
     }
 }
-

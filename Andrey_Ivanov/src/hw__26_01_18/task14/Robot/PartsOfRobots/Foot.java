@@ -1,4 +1,4 @@
-package hw_23_01_18.Robot;
+package hw__26_01_18.task14.Robot.PartsOfRobots;
 
 import java.util.concurrent.ThreadLocalRandom;
 

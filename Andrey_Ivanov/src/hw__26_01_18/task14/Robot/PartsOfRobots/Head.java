@@ -1,6 +1,4 @@
-package hw_23_01_18.Robot;
-
-import java.util.concurrent.ThreadLocalRandom;
+package hw__26_01_18.task14.Robot.PartsOfRobots;
 
 public class Head {
     private boolean head;
