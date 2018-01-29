@@ -1,4 +1,4 @@
 package task9;
 
-public class Car extends Assest {
+public class Car extends Assets {
 }

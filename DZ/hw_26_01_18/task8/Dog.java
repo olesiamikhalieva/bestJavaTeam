@@ -1,4 +1,4 @@
 package task8;
 
-public class Dog extends Cat {
+public class Dog {
 }
