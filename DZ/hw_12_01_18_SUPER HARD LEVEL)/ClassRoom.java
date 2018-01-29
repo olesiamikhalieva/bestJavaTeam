@@ -3,12 +3,14 @@ import java.lang.reflect.Array;
 public class ClassRoom {
 
     private String classWord;
-
     private int classLimit;
+
     Student[] studMass;
+
     private int countOfStudents = 0;
     private int missedStudents = 0;
 
+    private String languageOfClass;
 
     public ClassRoom() {
     }
@@ -39,6 +41,41 @@ public class ClassRoom {
         return missedStudents;
     }
 
+    public Student[] getStudMass() {
+        return studMass;
+    }
+
+    public void setStudMass(Student[] studMass) {
+        this.studMass = studMass;
+    }
+
+    public int getCountOfStudents() {
+        return countOfStudents;
+    }
+
+    public void setCountOfStudents(int countOfStudents) {
+        this.countOfStudents = countOfStudents;
+    }
+
+    public void setMissedStudents(int missedStudents) {
+        this.missedStudents = missedStudents;
+    }
+
+    public String getLanguageOfClass() {
+        return languageOfClass;
+    }
+
+    public void setLanguageOfClass(String languageOfClass) {
+        this.languageOfClass = languageOfClass;
+    }
+
+    public int getCountCalledStudents() {
+        return countCalledStudents;
+    }
+
+    public void setCountCalledStudents(int countCalledStudents) {
+        this.countCalledStudents = countCalledStudents;
+    }
 
     public void addStudentToClass(Student student) {// запись конкретного студента в класс
 
@@ -116,6 +153,7 @@ public class ClassRoom {
             System.out.println(studMass[i].getAge() + " Имя " + studMass[i].getName());
         }
     }
+
     public void sortByName() {//сортировка по имени в прямом порядке
         for (int i = 0; i < studMass.length; i++) {
             if (checkStudentOnNull(studMass[i]) == true) {
@@ -173,11 +211,7 @@ public class ClassRoom {
     }
 
     public boolean checkStudentOnNull(Student student) {
-        if (student == null) {
-            return true;
-        } else {
-            return false;
-        }
+        return student == null;
     }
 
     public Student[] updateStudMass(Student[] studMass) {

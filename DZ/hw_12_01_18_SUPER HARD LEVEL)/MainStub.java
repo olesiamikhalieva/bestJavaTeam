@@ -1,14 +1,18 @@
 import java.util.concurrent.ThreadLocalRandom;
 
 public class MainStub {
+
+    public static ClassRoom[] classRoomMass;
+
     public static void main(String[] args) {
-        programm();
 
-    }
+        School school = new School();
 
-    public static void programm() {//отработка программы
-        ClassRoom classA = new ClassRoom("A", 12);
-        ClassRoom classB = new ClassRoom("Б", 15);
+        ClassRoom classA = createNewClass("A", 12);
+        ClassRoom classB = createNewClass("Б", 15);
+
+        school.showAllClassesLetter(classRoomMass);
+
         addStudentsToClasses(classA, classB);
 
 
@@ -90,13 +94,13 @@ public class MainStub {
         System.out.println("Ищем студента по имени во обоих классах: " + s.getName());
         System.out.println("В классе А:\n");
         for (int i = 0; i < classA.studMass.length; i++) {
-            if (classA.checkStudentOnNull(classA.studMass[i]) == true){
+            if (classA.checkStudentOnNull(classA.studMass[i]) == true) {
                 break;
             }
-                if (s.getName().equals(classA.studMass[i].getName())) {
-                    System.out.println(classA.studMass[i].getName() + " ему(ей) " + classA.studMass[i].getAge() + " лет");
-                    countCalledStudents++;
-                }
+            if (s.getName().equals(classA.studMass[i].getName())) {
+                System.out.println(classA.studMass[i].getName() + " ему(ей) " + classA.studMass[i].getAge() + " лет");
+                countCalledStudents++;
+            }
         }
         if (countCalledStudents == 0) {
             System.out.println("\nНикого тут нет\n");
@@ -104,17 +108,34 @@ public class MainStub {
         countCalledStudents = 0;
         System.out.println("В классе Б:\n");
         for (int i = 0; i < classB.studMass.length; i++) {
-            if (classB.checkStudentOnNull(classB.studMass[i]) == true){
+            if (classB.checkStudentOnNull(classB.studMass[i]) == true) {
                 break;
             }
             if (s.getName().equals(classB.studMass[i].getName())) {
-                    System.out.println(classB.studMass[i].getName() + " ему(ей) " + classB.studMass[i].getAge() + " лет");
-                    countCalledStudents++;
-                }
+                System.out.println(classB.studMass[i].getName() + " ему(ей) " + classB.studMass[i].getAge() + " лет");
+                countCalledStudents++;
+            }
         }
         if (countCalledStudents == 0) {
             System.out.println("\nНикого тут нет\n");
         }
     }
 
+    public static ClassRoom createNewClass(String classWord, int classLimit) {
+       ClassRoom newSchoolClass = new ClassRoom(classWord,classLimit);
+        if (classRoomMass == null) {
+            classRoomMass = new ClassRoom[1];
+            classRoomMass[0] = newSchoolClass;
+        } else {
+            ClassRoom[] updateClassRoomMass = new ClassRoom[classRoomMass.length + 1];
+            System.arraycopy(classRoomMass,0,updateClassRoomMass,0,classRoomMass.length);
+            for (int i = 0; i < updateClassRoomMass.length; i++){
+                if (updateClassRoomMass[i] == null){
+                    updateClassRoomMass[i] = newSchoolClass;
+                    classRoomMass = updateClassRoomMass;
+                }
+            }
+        }
+        return newSchoolClass;
+    }
 }
