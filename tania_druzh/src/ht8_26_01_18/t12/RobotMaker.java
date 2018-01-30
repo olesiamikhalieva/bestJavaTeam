@@ -177,4 +177,5 @@ public class RobotMaker {
         System.out.println(robotAstro2.equals(robotAstro1));
         System.out.println(robotAstro2.equals(robotAstro2));
     }
+    
 }
