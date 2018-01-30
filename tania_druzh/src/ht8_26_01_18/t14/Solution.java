@@ -1,5 +1,7 @@
 package ht8_26_01_18.t14;
 
+import java.io.BufferedReader;
+
 /* Building и School
 1. Расставь правильно наследование между Building(здание) и School(здание школы).
 2. Подумай, объект какого класса должны возвращать методы getSchool и getBuilding.
@@ -16,8 +18,9 @@ public class Solution
     }
     public static Building getSchool()
     {
-        Building b = new Building();
-        return b;
+        Building s;
+        s = new School("Kir",15);
+        return s;
     }
     public static Building getBuilding()
     {
