@@ -30,6 +30,13 @@ public class AstromechanicsDroid extends Robot {
     }
 
     @Override
+    public String toString() {
+        return super.toString() +
+                "{knowledge='" + knowledge + '\'' +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof AstromechanicsDroid)) return false; else System.out.println("brother");

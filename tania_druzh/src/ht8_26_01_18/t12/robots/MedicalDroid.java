@@ -30,6 +30,13 @@ public class MedicalDroid extends Robot {
     }
 
     @Override
+    public String toString() {
+        return super.toString() +
+                "{medicine='" + medicine + '\'' +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof MedicalDroid))  return false; else System.out.println("brother");

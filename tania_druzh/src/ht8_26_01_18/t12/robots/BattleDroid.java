@@ -30,6 +30,13 @@ public class BattleDroid extends Robot{
     }
 
     @Override
+    public String toString() {
+        return super.toString() +
+                "{weapon='" + weapon + '\'' +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof BattleDroid))  return false; else System.out.println("brother");

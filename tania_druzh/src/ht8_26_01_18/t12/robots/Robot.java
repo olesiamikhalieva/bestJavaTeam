@@ -26,6 +26,14 @@ public class Robot {
     }
 
     @Override
+    public String toString() {
+        return "Robot{" +
+                "name='" + name + '\'' +
+                ", model='" + model + '\'' +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Robot)) return false;
