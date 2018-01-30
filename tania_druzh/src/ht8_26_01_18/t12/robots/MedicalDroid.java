@@ -32,7 +32,7 @@ public class MedicalDroid extends Robot {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof MedicalDroid)) return false;
+        if (!(o instanceof MedicalDroid))  return false; else System.out.println("brother");
         if (!super.equals(o)) return false;
         MedicalDroid that = (MedicalDroid) o;
         return Objects.equals(getMedicine(), that.getMedicine());

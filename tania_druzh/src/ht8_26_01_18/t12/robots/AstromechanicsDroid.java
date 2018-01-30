@@ -32,7 +32,7 @@ public class AstromechanicsDroid extends Robot {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof AstromechanicsDroid)) return false;
+        if (!(o instanceof AstromechanicsDroid)) return false; else System.out.println("brother");
         if (!super.equals(o)) return false;
         AstromechanicsDroid that = (AstromechanicsDroid) o;
         return Objects.equals(getKnowledge(), that.getKnowledge());

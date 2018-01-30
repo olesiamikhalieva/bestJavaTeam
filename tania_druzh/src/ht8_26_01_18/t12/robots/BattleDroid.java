@@ -32,7 +32,7 @@ public class BattleDroid extends Robot{
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof BattleDroid)) return false;
+        if (!(o instanceof BattleDroid))  return false; else System.out.println("brother");
         if (!super.equals(o)) return false;
         BattleDroid that = (BattleDroid) o;
         return Objects.equals(getWeapon(), that.getWeapon());

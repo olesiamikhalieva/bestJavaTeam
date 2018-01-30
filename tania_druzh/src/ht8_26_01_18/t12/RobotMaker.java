@@ -98,6 +98,7 @@ public class RobotMaker {
         robot2.printRobotStatus();
         robot3.printRobotStatus();
 
-        robot1.equals(robotAstro1);
+        System.out.println(robot1.equals(robotAstro1));
+        System.out.println(robotAstro2.equals(robotAstro1));
     }
 }
