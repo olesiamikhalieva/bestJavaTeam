@@ -4,6 +4,7 @@ public class School {
     private String address;
     private String numberPhoneOfSchoolReception;
     private String classLetter = "";
+    private String languageOfStudent;
 
     public void showAllClassesLetter(ClassRoom[] classRoomMass) {
         System.out.println("В этой школе есть классы: ");
