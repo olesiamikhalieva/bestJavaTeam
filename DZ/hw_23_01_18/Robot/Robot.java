@@ -1,57 +1,70 @@
 package Robot;
 
-import Robot.ComponentsRobot.Hand;
+import Robot.ComponentsRobot.Arm;
 import Robot.ComponentsRobot.Head;
 import Robot.ComponentsRobot.Leg;
 import Robot.ComponentsRobot.Torso;
 
+import java.util.Objects;
+
 public class Robot {
 
+    private String name;
     private Head head;
-    private Hand hand1;
-    private Hand hand2;
+    private Arm arm1;
+    private Arm arm2;
     private Leg leg1;
     private Leg leg2;
     private Torso torso;
+    private String str = "Робот-брат";
 
     public Robot() {
     }
 
-    public Robot(Head head, Hand hand1, Hand hand2, Leg leg1, Leg leg2, Torso torso) {
+    public Robot(String name, Head head, Arm arm1, Arm arm2, Leg leg1, Leg leg2, Torso torso) {
+        this.name = name;
         this.head = head;
-        this.hand1 = hand1;
-        this.hand2 = hand2;
+        this.arm1 = arm1;
+        this.arm2 = arm2;
         this.leg1 = leg1;
         this.leg2 = leg2;
         this.torso = torso;
-        System.out.println("\nРобот собран правильно\n");
+        //System.out.println("\nРобот собран правильно\n");
     }
 
-    public Robot(Head head, Hand hand1, Leg leg1, Leg leg2, Torso torso) {
+    public Robot(Head head, Arm arm1, Leg leg1, Leg leg2, Torso torso) {
         this.head = head;
-        this.hand1 = hand1;
+        this.arm1 = arm1;
         this.leg1 = leg1;
         this.leg2 = leg2;
         this.torso = torso;
         System.out.println("могу писать только одной рокой");
     }
 
-    public Robot(Head head, Hand hand1, Hand hand2, Leg leg1, Torso torso) {
+    public Robot(Head head, Arm arm1, Arm arm2, Leg leg1, Torso torso) {
         this.head = head;
-        this.hand1 = hand1;
-        this.hand2 = hand2;
+        this.arm1 = arm1;
+        this.arm2 = arm2;
         this.leg1 = leg1;
         this.torso = torso;
         System.out.println("могу прыгать на 1 ноге");
     }
 
-    public Robot(Hand hand1, Hand hand2, Leg leg1, Leg leg2, Torso torso) {
-        this.hand1 = hand1;
-        this.hand2 = hand2;
+    public Robot(Arm arm1, Arm arm2, Leg leg1, Leg leg2, Torso torso) {
+        this.arm1 = arm1;
+        this.arm2 = arm2;
         this.leg1 = leg1;
         this.leg2 = leg2;
         this.torso = torso;
         System.out.println("не могу говорить");
+    }
+
+    public Robot(String name, Head head, Leg leg1, Leg leg2, Torso torso) {
+        this.name = name;
+        this.head = head;
+        this.leg1 = leg1;
+        this.leg2 = leg2;
+        this.torso = torso;
     }
 
     public Head getHead() {
@@ -62,12 +75,12 @@ public class Robot {
         this.head = head;
     }
 
-    public Hand getHand1() {
-        return hand1;
+    public Arm getArm1() {
+        return arm1;
     }
 
-    public void setHand1(Hand hand1) {
-        this.hand1 = hand1;
+    public void setArm1(Arm arm1) {
+        this.arm1 = arm1;
     }
 
     public Leg getLeg1() {
@@ -86,12 +99,12 @@ public class Robot {
         this.torso = torso;
     }
 
-    public Hand getHand2() {
-        return hand2;
+    public Arm getArm2() {
+        return arm2;
     }
 
-    public void setHand2(Hand hand2) {
-        this.hand2 = hand2;
+    public void setArm2(Arm arm2) {
+        this.arm2 = arm2;
     }
 
     public Leg getLeg2() {
@@ -100,5 +113,32 @@ public class Robot {
 
     public void setLeg2(Leg leg2) {
         this.leg2 = leg2;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Robot robot = (Robot) o;
+        return Objects.equals(head, robot.head) &&
+                Objects.equals(arm1, robot.arm1) &&
+                Objects.equals(arm2, robot.arm2) &&
+                Objects.equals(leg1, robot.leg1) &&
+                Objects.equals(leg2, robot.leg2) &&
+                Objects.equals(torso, robot.torso);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(head, arm1, arm2, leg1, leg2, torso);
+    }
+
+    @Override
+    public String toString() {
+        return "\nRobot{" +
+                "name='" + name + '\'' +
+                ", class=" + getClass() +
+                '}';
     }
 }

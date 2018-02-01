@@ -1,6 +1,6 @@
 package Robot.ComponentsRobot;
 
-public class Hand {
+public class Arm {
 
     public void write() {
         System.out.println("Пишу");
