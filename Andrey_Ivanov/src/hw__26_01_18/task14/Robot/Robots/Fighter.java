@@ -4,23 +4,25 @@ import hw__26_01_18.task14.Robot.PartsOfRobots.Foot;
 import hw__26_01_18.task14.Robot.PartsOfRobots.Hand;
 import hw__26_01_18.task14.Robot.PartsOfRobots.Head;
 
+import java.util.Objects;
+
 public class Fighter extends Robot {
 
-    private String fight;
+    private int fight;
 
     public Fighter() {
     }
 
-    public String getFight() {
+    public int getFight() {
         return fight;
     }
 
-    public Fighter(Hand hand, Foot foot, Head head, String name, String fight) {
+    public Fighter(Hand hand, Foot foot, Head head, String name, int fight) {
         super(hand, foot, head, name);
         this.fight = fight;
     }
 
-    public void setFight(String fight) {
+    public void setFight(int fight) {
         this.fight = fight;
     }
     public void infoFighter() {
@@ -39,5 +41,26 @@ public class Fighter extends Robot {
             System.out.println("Требуется доработка: могу только прыгать на одной ноге.");
         if (getHead().isHead() != true)
             System.out.println("Требуется доработка: не могу говорить.");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Fighter fighter = (Fighter) o;
+        return Objects.equals(fight, fighter.fight);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(fight);
+    }
+
+    @Override
+    public String toString() {
+        return "Fighter{" +
+                "fight='" + fight + '\'' +
+                '}';
     }
 }

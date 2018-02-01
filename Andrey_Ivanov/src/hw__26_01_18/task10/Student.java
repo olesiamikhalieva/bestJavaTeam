@@ -28,8 +28,10 @@ public class Student extends Man {
 
     public static void main(String[] args) {
         Student student = new Student();
+        System.out.println(student);
         student.setSex("women");
-        student.changesNameAgeWeight();//метод изменения имени,возраста и веса
-        System.out.println(student.getName() + " " + student.getAge() + " " + student.getWeight());
+        //student.changesNameAgeWeight();//метод изменения имени,возраста и веса
+       // System.out.println(student.getName() + " " + student.getAge() + " " + student.getWeight());
+        System.out.println(student.getName());
     }
 }

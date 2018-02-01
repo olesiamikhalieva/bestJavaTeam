@@ -1,8 +1,8 @@
-package hw__26_01_18.task14.Robot.Robots;
+package hw__26_01_18.task12.Robot.Robots;
 
-import hw__26_01_18.task14.Robot.PartsOfRobots.Foot;
-import hw__26_01_18.task14.Robot.PartsOfRobots.Hand;
-import hw__26_01_18.task14.Robot.PartsOfRobots.Head;
+import hw__26_01_18.task12.Robot.PartsOfRobots.Foot;
+import hw__26_01_18.task12.Robot.PartsOfRobots.Hand;
+import hw__26_01_18.task12.Robot.PartsOfRobots.Head;
 
 import java.util.Objects;
 
@@ -25,10 +25,6 @@ public class Robot {
         this.foot = foot;
         this.head = head;
         this.name = name;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public Hand getHand() {
@@ -55,21 +51,23 @@ public class Robot {
         this.head = head;
     }
 
-
+    public String getName() {
+        return name;
+    }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void infoRobot() {
-        System.out.println("Кол-во рук у робота " + getName() + ":" + getHand().getCountOfHands());
-        System.out.println("Кол-во ног у робота " + getName() + ":" + getFoot().getCountOfFoots());
-        System.out.println("У робота " + getName() + " есть голова:" + getHead().isHead());
-        System.out.println(getName() + " умеет писать:" + getHand().isWrite());
-        System.out.println(getName() + " умеет ходить:" + getFoot().isWalk());
-        System.out.println(getName() + " умеет говорить:" + getHead().isSpeak() + "\n");
+    public void infoRobot(){
+        System.out.println("Кол-во рук у робота "+getName()+":"+getHand().getCountOfHands());
+        System.out.println("Кол-во ног у робота "+getName()+":"+getFoot().getCountOfFoots());
+        System.out.println("У робота "+getName()+" есть голова:"+getHead().isHead());
+        System.out.println(getName()+" умеет писать:"+getHand().isWrite());
+        System.out.println(getName()+" умеет ходить:"+getFoot().isWalk());
+        System.out.println(getName()+" умеет говорить:"+getHead().isSpeak()+"\n");
         if (hand.getCountOfHands() == 2 && foot.getCountOfFoots() == 2 && getHead().isHead() == true)
-            System.out.println("Робот " + name + " готов, я умею говорить,я умею ходить,я умею писать.");
+            System.out.println("Робот "+name+" готов, я умею говорить,я умею ходить,я умею писать.");
         if (hand.getCountOfHands() != 2)
             System.out.println("Требуется доработка: могу писать только одной рукой.");
         if (foot.getCountOfFoots() != 2)
@@ -93,12 +91,5 @@ public class Robot {
     public int hashCode() {
 
         return Objects.hash(hand, foot, head, name);
-    }
-
-    @Override
-    public String toString() {
-        return "Robot{" +
-                "name='" + name + '\'' +
-                '}';
     }
 }

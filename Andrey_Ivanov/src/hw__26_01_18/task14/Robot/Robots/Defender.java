@@ -4,23 +4,25 @@ import hw__26_01_18.task14.Robot.PartsOfRobots.Foot;
 import hw__26_01_18.task14.Robot.PartsOfRobots.Hand;
 import hw__26_01_18.task14.Robot.PartsOfRobots.Head;
 
+import java.util.Objects;
+
 public class Defender extends Robot {
 
-    private String armor;
+    private int armor;
 
     public Defender() {
     }
 
-    public Defender(Hand hand, Foot foot, Head head, String name, String armor) {
+    public Defender(Hand hand, Foot foot, Head head, String name, int armor) {
         super(hand, foot, head, name);
         this.armor = armor;
     }
 
-    public String getArmor() {
+    public int getArmor() {
         return armor;
     }
 
-    public void setArmor(String armor) {
+    public void setArmor(int armor) {
         this.armor = armor;
     }
 
@@ -42,5 +44,24 @@ public class Defender extends Robot {
             System.out.println("Требуется доработка: не могу говорить.");
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Defender defender = (Defender) o;
+        return Objects.equals(armor, defender.armor);
+    }
 
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(armor);
+    }
+
+    @Override
+    public String toString() {
+        return "Defender{" +
+                "armor='" + armor + '\'' +
+                '}';
+    }
 }

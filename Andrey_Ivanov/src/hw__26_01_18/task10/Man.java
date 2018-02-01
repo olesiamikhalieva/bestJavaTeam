@@ -18,7 +18,15 @@ public class Man {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (getSex() == "man") {
+            setName("Andrey");
+            setAge(22);
+            setWeight(70);
+        } else {
+            setName("Natasha");
+            setAge(21);
+            setWeight(60);
+        }
     }
 
     public int getAge() {
@@ -45,16 +53,16 @@ public class Man {
         this.weight = weight;
     }
 
-    public void changesNameAgeWeight() {
-        if (getSex() == "man") {
-            setName("Andrey");
-            setAge(22);
-            setWeight(70);
-        } else {
-            setName("Natasha");
-            setAge(21);
-            setWeight(60);
-        }
-    }
+//    public void changesNameAgeWeight() {
+//        if (getSex() == "man") {
+//            setName("Andrey");
+//            setAge(22);
+//            setWeight(70);
+//        } else {
+//            setName("Natasha");
+//            setAge(21);
+//            setWeight(60);
+//        }
+//    }
 }
 

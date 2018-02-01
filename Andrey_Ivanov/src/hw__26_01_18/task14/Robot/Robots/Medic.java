@@ -4,23 +4,25 @@ import hw__26_01_18.task14.Robot.PartsOfRobots.Foot;
 import hw__26_01_18.task14.Robot.PartsOfRobots.Hand;
 import hw__26_01_18.task14.Robot.PartsOfRobots.Head;
 
+import java.util.Objects;
+
 public class Medic extends Robot {
 
-    private String medicine;
+    private int medicine;
 
     public Medic() {
     }
 
-    public Medic(Hand hand, Foot foot, Head head, String name, String medicine) {
+    public Medic(Hand hand, Foot foot, Head head, String name, int medicine) {
         super(hand, foot, head, name);
         this.medicine = medicine;
     }
 
-    public String getMedicine() {
+    public int getMedicine() {
         return medicine;
     }
 
-    public void setMedicine(String medicine) {
+    public void setMedicine(int medicine) {
         this.medicine = medicine;
     }
 
@@ -40,6 +42,27 @@ public class Medic extends Robot {
             System.out.println("Требуется доработка: могу только прыгать на одной ноге.");
         if (getHead().isHead() != true)
             System.out.println("Требуется доработка: не могу говорить.");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Medic medic = (Medic) o;
+        return Objects.equals(medicine, medic.medicine);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(medicine);
+    }
+
+    @Override
+    public String toString() {
+        return "Medic{" +
+                "medicine='" + medicine + '\'' +
+                '}';
     }
 }
 
