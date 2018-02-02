@@ -35,6 +35,10 @@ public class RobotMaker {
     private static MedicalDroid robotMedic1;
     private static MedicalDroid robotMedic2;
 
+    private static Robot[] robots = {robot1,robot2,robot3,robotAstro1,robotAstro2,robotAstro3,robotBattler1,robotBattler2,robotMedic1,robotMedic2};
+
+
+
     private static int hashCodArray[];
     private static String hashStringArray[];
 
@@ -166,6 +170,8 @@ public class RobotMaker {
         robotMedic1 = new MedicalDroid("Med droid", " C-3PO", legs1, hands3, heads2, "panacea");
         robotMedic2 = new MedicalDroid("Med droid", " C-3PO", legs1, hands3, heads2, "panacea");
 
+//        robots = {robot1,robot2,robot3,robotAstro1,robotAstro2,robotAstro3,robotBattler1,robotBattler2,robotMedic1,robotMedic2};
+
     }
 
     public static void getInfoAboutRobots() {
@@ -177,5 +183,5 @@ public class RobotMaker {
         System.out.println(robotAstro2.equals(robotAstro1));
         System.out.println(robotAstro2.equals(robotAstro2));
     }
-    
+
 }
