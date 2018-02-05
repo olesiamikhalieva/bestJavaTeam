@@ -1,0 +1,62 @@
+****
+****
+****
+02.02.18
+
+public class Laincher {
+    public static void main(String[] args) {
+        Instrument i = new Instrument();
+        Flute flute = new Flute();
+
+        Musician m = new Musician();
+
+        m.play(flute);
+        m.play(new Guitar);
+
+
+    }
+
+}
+
+
+public class Musician{
+
+    public void play(Instrument i){
+        i.sound();
+    }
+}
+
+
+
+
+public class Flute extends Instrument {
+
+
+}
+
+
+
+public class Instrument {
+
+    public  void sound(){
+        System.out.println("Did you hear any think?");
+    }
+}
+
+
+Доработать таким образом, чтобы после отработки программы выводило в консоль
+Flute Plaing
+Guitar plaing
+class Laincher изменениям не подлежит
+
+
+****
+****
+****
+02.02.18
+создать класс фигура, которая содержит метод рисовать, и метод подсчета площади.
+Основываясь на полученных знаниях, создать классы треугольник, квадрат, прямоугольник, круг.
+В классе Main создать экземпляр каждого класса, и вывести для каждого, что он рисует, и его площадь.
+
+
+Создать   объект, состояние которого после создания невозможно изменить.(любой тематики).
