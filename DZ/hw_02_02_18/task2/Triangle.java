@@ -1,6 +1,8 @@
 package task2;
 
-public class Triangle {
+import java.util.Objects;
+
+public class Triangle extends Figure {
     private double sideA;
     private double sideB;
     private double sideC;
@@ -36,5 +38,34 @@ public class Triangle {
 
     public void setSideC(double sideC) {
         this.sideC = sideC;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Triangle triangle = (Triangle) o;
+        return Double.compare(triangle.sideA, sideA) == 0 &&
+                Double.compare(triangle.sideB, sideB) == 0 &&
+                Double.compare(triangle.sideC, sideC) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(sideA, sideB, sideC);
+    }
+
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "sideA=" + sideA +
+                ", sideB=" + sideB +
+                ", sideC=" + sideC +
+                '}';
+    }
+
+    public double areaTriangle() {
+        return super.areaTriangle(this.sideA,this.sideB,this.sideC);
     }
 }

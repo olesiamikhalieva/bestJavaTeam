@@ -2,7 +2,7 @@ package task2;
 
 public class Figure {
 
-    final double pi = 3.14;
+    private final double pi = 3.14;
 
     public void paint() {
         System.out.println("Рисую");
