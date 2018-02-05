@@ -1,9 +1,9 @@
-package hw_02_02_18.RobotAbstract;
+package hw_26_01_18.RobotAbstract;
 
-import hw_02_02_18.RobotAbstract.PartsOfRobot.Body;
-import hw_02_02_18.RobotAbstract.PartsOfRobot.Hand;
-import hw_02_02_18.RobotAbstract.PartsOfRobot.Head;
-import hw_02_02_18.RobotAbstract.PartsOfRobot.Leg;
+import hw_26_01_18.RobotAbstract.PartsOfRobot.Body;
+import hw_26_01_18.RobotAbstract.PartsOfRobot.Hand;
+import hw_26_01_18.RobotAbstract.PartsOfRobot.Head;
+import hw_26_01_18.RobotAbstract.PartsOfRobot.Leg;
 
 import java.util.Arrays;
 

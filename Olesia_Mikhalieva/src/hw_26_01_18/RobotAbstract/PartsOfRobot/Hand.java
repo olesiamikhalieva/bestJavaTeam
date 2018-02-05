@@ -1,4 +1,4 @@
-package hw_02_02_18.RobotAbstract.PartsOfRobot;
+package hw_26_01_18.RobotAbstract.PartsOfRobot;
 
 public class Hand {
     int numberHand;
