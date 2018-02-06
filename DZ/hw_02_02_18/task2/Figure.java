@@ -1,6 +1,6 @@
 package task2;
 
-public class Figure {
+abstract public class Figure {
 
     private final double pi = 3.14;
 
