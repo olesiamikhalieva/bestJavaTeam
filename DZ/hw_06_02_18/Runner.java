@@ -23,12 +23,12 @@ public class Runner {
 
         Bird[] birdMass = {eagle1, eagle2, duck1, duck2, rubberDuck1, rubberDuck2, ostrich1,
                 ostrich2, parrot1, parrot2, penguin1, penguin2};
-        //вывод всех птиц и их способностей
+        //вывод всех птиц и их способностей (задание 2)
         for (Bird bird : birdMass) {
             System.out.println(bird.toString());
         }
         System.out.println("----------------А кто у наст тут бегает?----------------------");
-        //Вывод птичека по их особым характеристикам
+        //Вывод птичека по их особым характеристикам(задание 1)
         for (Bird bird : birdMass) {
             if (bird instanceof RunLikeAntelope) {
                 System.out.println(bird.getBirdName() + " Умеет бегать как Антилопа ");
