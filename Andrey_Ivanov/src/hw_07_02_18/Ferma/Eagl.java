@@ -1,17 +1,29 @@
-package classwork;
+package hw_07_02_18.Ferma;
 
-/**
- * Created by java on 06.02.2018.
- */
-public class Eagl extends Bird implements Fly{
 
-    @Override
-    public void fly() {
-        System.out.println("I fly in the sky");
+public class Eagl extends Bird implements Fly,CreateEggs{
+
+    public Eagl(String name) {
+        super(name);
     }
 
     @Override
-    public void sound() {
-        System.out.println("EEEEEEEEE");
+    public String createEggs() {
+        return "I'm an eagle and I can carry eggs";
+    }
+
+    @Override
+    public String fly() {
+        return "I fly in the sky";
+    }
+
+    @Override
+    public String sound() {
+        return "EEEEEEEEE";
+    }
+
+    @Override
+    public String toString() {
+        return getName()+" боевой клич="+sound()+","+createEggs()+","+fly();
     }
 }

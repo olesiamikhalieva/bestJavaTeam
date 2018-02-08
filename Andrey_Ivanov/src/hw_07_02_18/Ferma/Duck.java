@@ -1,23 +1,29 @@
-package classwork;
+package hw_07_02_18.Ferma;
 
-/**
- * Created by java on 06.02.2018.
- */
 public class Duck extends Bird implements Fly,CreateEggs {
 
+    public Duck(String name) {
+        super(name);
+    }
+
     @Override
-    public void fly() {
-        System.out.println("I am duck,I can fly");
+    public String fly() {
+        return "I am duck,I can fly";
 
     }
 
     @Override
-    public void sound() {
-        System.out.println("kryaaa");
+    public String sound() {
+        return "kryaaa";
     }
 
     @Override
-    public void createEggs() {
-        System.out.println("I am dug, I like eggs");
+    public String createEggs() {
+        return "I am dug, I like eggs";
+    }
+
+    @Override
+    public String toString() {
+        return getName()+" боевой клич="+sound()+","+createEggs()+","+fly();
     }
 }

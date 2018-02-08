@@ -1,18 +1,25 @@
-package classwork;
+package hw_07_02_18.Ferma;
 
-/**
- * Created by java on 06.02.2018.
- */
+
 public class Penguin extends Bird implements CreateEggs {
 
-    @Override
-    public void createEggs() {
-        System.out.println("Pingvin has a big eggs");
+    public Penguin(String name) {
+        super(name);
     }
 
     @Override
-    public void sound() {
-        System.out.println("Penguin has a big as");
+    public String createEggs() {
+        return "I'm an penguin and I can carry eggs";
+    }
 
+    @Override
+    public String sound() {
+        return "Penguin has a big as";
+
+    }
+
+    @Override
+    public String toString() {
+        return getName() + " боевой клич=" + sound() + "," + createEggs();
     }
 }
