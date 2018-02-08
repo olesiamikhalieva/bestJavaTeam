@@ -37,6 +37,6 @@ public class Ostrich extends Birds implements Run, CreateEggs, showAll,Fly {
 
     @Override
     public void fly() {
-        System.out.println("I am ostrich. I can fly.");
+        System.out.print("I am ostrich. I can fly.");
     }
 }

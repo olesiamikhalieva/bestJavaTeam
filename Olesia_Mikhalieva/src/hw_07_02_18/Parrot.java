@@ -37,6 +37,6 @@ public class Parrot extends Birds implements Speak,CreateEggs, showAll, Fly {
 
     @Override
     public void fly() {
-        System.out.println("I am parrot. I can fly.");
+        System.out.print("I am parrot. I can fly.");
     }
 }
