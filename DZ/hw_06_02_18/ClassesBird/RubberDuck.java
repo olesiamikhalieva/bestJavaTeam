@@ -10,8 +10,14 @@ public class RubberDuck extends Bird {
     }
 
     @Override
-    public void sound() {
-        System.out.println("quack");
+    public String sound() {
+        return " quack ";
     }
 
+    @Override
+    public String toString() {
+        return "Bird{ " +
+                " Имя птички= ' " + super.getBirdName() + '\'' +
+                " Боевой клич= ' " + sound() + '\'';
+    }
 }

@@ -1,5 +1,5 @@
 package Interface;
 
 public interface SpeakLikeMan {
-    public void speakLikeMan();
+    public String speakLikeMan();
 }

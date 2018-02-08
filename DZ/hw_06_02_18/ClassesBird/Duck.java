@@ -12,25 +12,27 @@ public class Duck extends Bird implements Fly, CreateEggs {
     }
 
     @Override
-    public void sound() {
-        System.out.println("krya");
+    public String sound() {
+        return " krya ";
     }
 
     @Override
-    public void createEggs() {
-        System.out.println("I am Dug, and i love do eggs");
+    public String createEggs() {
+        return " I am Dug, and i love do eggs ";
     }
 
     @Override
-    public void fly() {
-        System.out.println("i am Duck, i am fly");
+    public String fly() {
+        return " i am Duck, i am fly ";
     }
 
     @Override
     public String toString() {
-        return "Bird{" +
-                "Имя птички='" + super.getBirdName() + '\'' +
-                "Боевой клич='" + super.getBirdName() + '\''+
+        return "Bird{ " +
+                " Имя птички= ' " + super.getBirdName() + '\'' +
+                " Боевой клич= ' " + sound() + '\''+
+                createEggs() + '\''+
+                fly() + '\''+
                 '}';
     }
 }

@@ -12,19 +12,26 @@ public class Eagle extends Bird implements Fly, CreateEggs {
     }
 
     @Override
-    public void sound() {
-        System.out.println("EEEEEEEEEEEEE");
+    public String sound() {
+        return " EEEEEEEEEEEEE ";
     }
 
     @Override
-    public void createEggs() {
-        System.out.println("i can create eggs, i am Eagle");
+    public String createEggs() {
+        return " i can create eggs, i am Eagle ";
     }
     @Override
-    public void fly() {
-        System.out.println("I am Eagle, i am fly");
+    public String fly() {
+        return " I am Eagle, i am fly ";
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Bird{ " +
+                " Имя птички= ' " + super.getBirdName() + '\'' +
+                " Боевой клич= ' " + sound() + '\''+
+                createEggs() + '\''+
+                fly() + '\''+
+                '}';
+    }
 }

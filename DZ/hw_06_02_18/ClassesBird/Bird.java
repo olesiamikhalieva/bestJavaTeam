@@ -18,13 +18,13 @@ public abstract class Bird {
         this.birdName = birdName;
     }
 
-    public abstract void sound();
+    public abstract String sound();
 
 
     @Override
     public String toString() {
-        return "Bird{" +
-                "birdName='" + birdName + '\'' +
+        return "Bird{ " +
+                "birdName= ' " + birdName + '\'' +
                 '}';
     }
 }

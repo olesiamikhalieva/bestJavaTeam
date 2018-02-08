@@ -10,22 +10,32 @@ public class Parrot extends Bird implements SpeakLikeMan, Fly, CreateEggs {
     }
 
     @Override
-    public void sound() {
-        System.out.println("cvir-cvir");
-    }
-    @Override
-    public void createEggs() {
-        System.out.println("I am a Parrot, i can create eggs");
-    }
-    @Override
-    public void speakLikeMan() {
-        System.out.println("I can speak like people");
+    public String sound() {
+        return " cvir-cvir ";
     }
 
-
+    @Override
+    public String createEggs() {
+        return " I am a Parrot, i can create eggs ";
+    }
 
     @Override
-    public void fly() {
-        System.out.println("I am a Parrot, i can fly");
+    public String speakLikeMan() {
+        return " I can speak like people ";
+    }
+
+    @Override
+    public String fly() {
+        return " I am a Parrot, i can fly ";
+    }
+
+    @Override
+    public String toString() {
+        return "Bird{ " +
+                " Имя птички= ' " + super.getBirdName() + '\'' +
+                " Боевой клич= ' " + sound() + '\''+
+                createEggs() + '\''+
+                "Вась Вась Я ПОПУГАЙ ' " + speakLikeMan() + '\''+
+                '}';
     }
 }

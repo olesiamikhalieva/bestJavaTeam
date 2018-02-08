@@ -9,18 +9,27 @@ public class Ostrich extends Bird implements RunLikeAntelope, CreateEggs {
     }
 
     @Override
-    public void sound() {
-        System.out.println("kurlu, kurlu");
+    public String sound() {
+        return " kurlu, kurlu ";
     }
 
     @Override
-    public void createEggs() {
-        System.out.println("I am Ostrich, and i can create eggs");
+    public String createEggs() {
+        return " I am Ostrich, and i can create eggs ";
     }
 
     @Override
-    public void runLikeAntelope() {
-        System.out.println("i am Ostrich, and i run like antelope");
+    public String runLikeAntelope() {
+        return " i am Ostrich, and i run like antelope ";
     }
 
+    @Override
+    public String toString() {
+        return "Bird{ " +
+                " Имя птички= ' " + super.getBirdName() + '\'' +
+                " Боевой клич= ' " + sound() + '\''+
+                 createEggs() + '\''+
+                "Я СТРАУС ' " + runLikeAntelope() + '\''+
+                '}';
+    }
 }

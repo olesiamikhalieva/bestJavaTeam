@@ -11,12 +11,20 @@ public class Penguin extends Bird implements CreateEggs {
     }
 
     @Override
-    public void sound() {
-        System.out.println("gui-gui");
+    public String sound() {
+        return " gui-gui ";
     }
 
     @Override
-    public void createEggs() {
-        System.out.println("Penguin has big eggs");
+    public String createEggs() {
+        return " Penguin has big eggs ";
+    }
+
+    @Override
+    public String toString() {
+        return "Bird{ " +
+                " Имя птички= ' " + super.getBirdName() + '\'' +
+                " Боевой клич= ' " + sound() + '\''+
+                createEggs() + '\'';
     }
 }
