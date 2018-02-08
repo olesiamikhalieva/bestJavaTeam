@@ -1,4 +1,7 @@
 import ClassesBird.*;
+import Interface.CreateEggs;
+import Interface.RunLikeAntelope;
+import Interface.SpeakLikeMan;
 
 /**
  * Created by java on 06.02.2018.
@@ -18,26 +21,36 @@ public class Runner {
         Bird penguin1 = new Penguin("Пенгвин Ло-ло");
         Bird penguin2 = new Penguin("Пенгвин Пе-пе");
 
-        Bird[] birdMass = {eagle1,eagle2,duck1,duck2,rubberDuck1,rubberDuck2,ostrich1,
-                ostrich2,parrot1,parrot2,penguin1,penguin2};
+        Bird[] birdMass = {eagle1, eagle2, duck1, duck2, rubberDuck1, rubberDuck2, ostrich1,
+                ostrich2, parrot1, parrot2, penguin1, penguin2};
+        //вывод всех птиц и их способностей
         for (Bird bird : birdMass) {
             System.out.println(bird.toString());
         }
-//        Bird[] birdMass = {eagle,duck,rubberDuck};
-//        for (Bird b:birdMass) {
-//            b.sound();
-//        }
+        System.out.println("----------------А кто у наст тут бегает?----------------------");
+        //Вывод птичека по их особым характеристикам
+        for (Bird bird : birdMass) {
+            if (bird instanceof RunLikeAntelope) {
+                System.out.println(bird.getBirdName() + " Умеет бегать как Антилопа ");
+            }
+        }
+        System.out.println("------------------А кто у нас тут говорит?--------------------");
+        for (Bird bird : birdMass) {
+            if (bird instanceof SpeakLikeMan) {
+                System.out.println(bird.getBirdName() + " Умеет говорить как Антилопа ");
+            }
+        }
+        System.out.println("------------------А кто у нас тут яйцеклад?--------------------");
+        for (Bird bird : birdMass) {
+            if (bird instanceof CreateEggs) {
+                System.out.println(bird.getBirdName() + " Умеет нести яички ");
+            }
+        }
+        System.out.println("------------------А кто как орёт?--------------------");
+        for (Bird bird : birdMass) {
+            System.out.println(bird.getBirdName() + " орет так: " + bird.sound());
+        }
 
-//        CreateEggs penguin = new Penguin();
-//        CreateEggs ducks = new Duck();
-//
-//        CreateEggs [] mass = new CreateEggs[2];
-//        mass[0] = penguin;
-//        mass[1] = ducks;
-//
-//        for (CreateEggs mas: mass) {
-//            mas.createEggs();
-//        }
-//
     }
 }
+
