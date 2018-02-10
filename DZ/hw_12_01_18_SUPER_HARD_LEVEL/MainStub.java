@@ -1,3 +1,4 @@
+package hw_12_01_18_SUPER_HARD_LEVEL;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class MainStub {

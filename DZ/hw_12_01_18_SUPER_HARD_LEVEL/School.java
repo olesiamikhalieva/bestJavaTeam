@@ -1,10 +1,10 @@
+package hw_12_01_18_SUPER_HARD_LEVEL;
 public class School {
 
     private int numberOfSchool;
     private String address;
     private String numberPhoneOfSchoolReception;
     private String classLetter = "";
-    private String languageOfStudent;
 
     public void showAllClassesLetter(ClassRoom[] classRoomMass) {
         System.out.println("В этой школе есть классы: ");
