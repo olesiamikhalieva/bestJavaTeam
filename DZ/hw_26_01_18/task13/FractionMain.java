@@ -1,4 +1,4 @@
-package task13;
+package hw_26_01_18.task13;
 
 public class FractionMain {
     public static void main(String[] args) {

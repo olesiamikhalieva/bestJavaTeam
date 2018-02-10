@@ -1,3 +1,4 @@
+package hw_27_12_17;
 //6. Заполнить массив short типа числами от 100 до 0.
 public class arr {
     public static void main(String[] args)

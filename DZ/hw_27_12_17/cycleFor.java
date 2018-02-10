@@ -1,3 +1,4 @@
+package hw_27_12_17;
 //5. Вывести на экран все числа от 1 до 100, которые делятся на 5 без остатка.
 public class cycleFor {
     public static void main(String[] args)

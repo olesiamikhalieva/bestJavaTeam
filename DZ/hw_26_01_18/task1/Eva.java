@@ -1,4 +1,4 @@
-package task1;
+package hw_26_01_18.task1;
 
 public class Eva extends Adam {
 

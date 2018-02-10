@@ -1,4 +1,4 @@
-package task10;
+package hw_26_01_18.task10;
 
 public class Man {
     private String name;

@@ -1,4 +1,4 @@
-package Computer.ComputerElement;
+package hw_23_01_18.Computer.ComputerElement;
 
 public class Monitor {
     public void look(){

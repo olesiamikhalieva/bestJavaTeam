@@ -1,4 +1,4 @@
-package task14;
+package hw_26_01_18.task14;
 
 import Robot.ComponentsRobot.Arm;
 import Robot.ComponentsRobot.Head;

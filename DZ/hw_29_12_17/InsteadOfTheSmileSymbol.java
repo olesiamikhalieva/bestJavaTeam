@@ -1,3 +1,4 @@
+package hw_29_12_17;
 public class InsteadOfTheSmileSymbol {
     public static void main(String[] args) {
         String Str = new String("Был и я среди донцов...\n" +

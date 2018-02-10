@@ -1,3 +1,4 @@
+package hw_27_12_17;
 //4.Вывести на экран числа от -10 до 25 с помощью всех известных циклов.
 public class Allcycle {
     public static void main(String[] args)

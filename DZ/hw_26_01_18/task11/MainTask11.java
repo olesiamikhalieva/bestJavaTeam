@@ -1,4 +1,4 @@
-package task11;
+package hw_26_01_18.task11;
 
 public class MainTask11 {
     public static void main(String[] args) {

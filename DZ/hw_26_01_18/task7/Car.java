@@ -1,4 +1,4 @@
-package task7;
+package hw_26_01_18.task7;
 
 public class Car {
 }

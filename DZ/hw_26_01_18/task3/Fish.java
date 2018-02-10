@@ -1,4 +1,4 @@
-package task3;
+package hw_26_01_18.task3;
 
 public class Fish {
 }

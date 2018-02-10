@@ -1,9 +1,6 @@
-package Computer;
+package hw_23_01_18.Computer;
 
-import Computer.ComputerElement.Keyboard;
-import Computer.ComputerElement.Mouse;
-import Computer.ComputerElement.Monitor;
-import Computer.ComputerElement.SystemUnit;
+import hw_23_01_18.Computer.ComputerElement.*;
 
 // Todo - good
 public class Computer {
