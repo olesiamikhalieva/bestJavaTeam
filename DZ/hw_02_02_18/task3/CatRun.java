@@ -1,4 +1,4 @@
-package task3;
+package hw_02_02_18.task3;
 
 public class CatRun {
     public static void main(String[] args) {

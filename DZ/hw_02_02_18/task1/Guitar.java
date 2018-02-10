@@ -1,4 +1,5 @@
-package task1;
+package hw_02_02_18.task1;
+
 
 public class Guitar extends Instrument {
     @Override

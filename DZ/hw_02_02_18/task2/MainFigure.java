@@ -1,4 +1,4 @@
-package task2;
+package hw_02_02_18.task2;
 
 public class MainFigure {
     public static void main(String[] args) {
