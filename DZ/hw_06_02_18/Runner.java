@@ -1,11 +1,7 @@
-import ClassesBird.*;
-import Interface.CreateEggs;
-import Interface.RunLikeAntelope;
-import Interface.SpeakLikeMan;
+package hw_06_02_18;
+import hw_06_02_18.ClassesBird.*;
+import hw_06_02_18.Interface.*;
 
-/**
- * Created by java on 06.02.2018.
- */
 public class Runner {
 
     public static void main(String[] args) {

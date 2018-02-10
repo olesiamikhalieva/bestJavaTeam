@@ -1,7 +1,7 @@
-package ClassesBird;
+package hw_06_02_18.ClassesBird;
 
-import Interface.CreateEggs;
-import Interface.RunLikeAntelope;
+import hw_06_02_18.Interface.CreateEggs;
+import hw_06_02_18.Interface.RunLikeAntelope;
 
 public class Ostrich extends Bird implements RunLikeAntelope, CreateEggs {
     public Ostrich(String birdName) {

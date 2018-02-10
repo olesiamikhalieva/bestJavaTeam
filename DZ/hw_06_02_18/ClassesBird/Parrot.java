@@ -1,8 +1,8 @@
-package ClassesBird;
+package hw_06_02_18.ClassesBird;
 
-import Interface.CreateEggs;
-import Interface.Fly;
-import Interface.SpeakLikeMan;
+import hw_06_02_18.Interface.CreateEggs;
+import hw_06_02_18.Interface.Fly;
+import hw_06_02_18.Interface.SpeakLikeMan;
 
 public class Parrot extends Bird implements SpeakLikeMan, Fly, CreateEggs {
     public Parrot(String birdName) {

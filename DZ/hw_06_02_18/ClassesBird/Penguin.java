@@ -1,6 +1,6 @@
-package ClassesBird;
+package hw_06_02_18.ClassesBird;
 
-import Interface.CreateEggs;
+import hw_06_02_18.Interface.CreateEggs;
 
 /**
  * Created by java on 06.02.2018.
