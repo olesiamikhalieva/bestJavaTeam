@@ -1,8 +1,8 @@
 package hw_09_02_18.Classes.Coffee;
 
 
-import hw_09_02_18.CoffeeAndWater;
-import hw_09_02_18.Water;
+import hw_09_02_18.Classes.Ingredients.CoffeeAndWater;
+import hw_09_02_18.Classes.Ingredients.Water;
 
 public class Americano {
     private CoffeeAndWater coffeeAndWater;
