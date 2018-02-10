@@ -1,4 +1,4 @@
-package Tank;
+package hw_09_01_18.Tank;
 
 public class Main {
     public static void main(String[] args) {

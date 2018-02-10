@@ -1,4 +1,4 @@
-package Tank;
+package hw_09_01_18.Tank;
 
 public class Tank {
     private double weight;

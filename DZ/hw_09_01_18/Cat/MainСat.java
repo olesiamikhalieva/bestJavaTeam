@@ -1,4 +1,4 @@
-package Cat;
+package hw_09_01_18.Cat;
 
 public class MainСat {
     public static void main(String[] args) {

@@ -1,3 +1,4 @@
+package hw_09_01_18;
 public class TablMulty {
     public static void main(String[] args) {
         System.out.println("Обычная таблица умножения: ");

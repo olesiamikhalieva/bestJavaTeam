@@ -1,3 +1,4 @@
+package hw_09_01_18;
 import java.util.Scanner;
 
 public class TenPercent {

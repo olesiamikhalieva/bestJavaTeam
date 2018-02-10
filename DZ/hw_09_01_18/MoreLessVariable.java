@@ -1,4 +1,6 @@
 //Увеличить число на 10%
+package hw_09_01_18;
+
 import java.util.Scanner;
 
 public class MoreLessVariable {
