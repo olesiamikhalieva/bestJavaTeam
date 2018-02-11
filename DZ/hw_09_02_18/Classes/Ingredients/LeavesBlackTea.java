@@ -1,9 +1,19 @@
 package hw_09_02_18.Classes.Ingredients;
 
-public class LeavesBlackTea {
-    private final int price = 2;
+import hw_09_02_18.Classes.Beverage;
+
+public class LeavesBlackTea extends Beverage {
+    public LeavesBlackTea() {
+        super("Черный чай");
+        super.setPrice(2);
+    }
 
     public int getPrice() {
-        return price;
+        return super.getPrice();
+    }
+
+    @Override
+    public String getName() {
+        return super.getName();
     }
 }

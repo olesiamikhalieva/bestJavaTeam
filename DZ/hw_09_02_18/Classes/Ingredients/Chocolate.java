@@ -1,9 +1,20 @@
 package hw_09_02_18.Classes.Ingredients;
 
-public class Chocolate {
-    private final int price = 5;
+import hw_09_02_18.Classes.Beverage;
+
+public class Chocolate extends Beverage {
+
+    public Chocolate() {
+        super("Шоколад");
+        super.setPrice(5);
+    }
 
     public int getPrice() {
-        return price;
+        return getPrice();
+    }
+
+    @Override
+    public String getName() {
+        return super.getName();
     }
 }

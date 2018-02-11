@@ -1,9 +1,19 @@
 package hw_09_02_18.Classes.Ingredients;
 
-public class Water {
-    private final int price = 2;
+
+import hw_09_02_18.Classes.Beverage;
+
+public class Water extends Beverage{
+    public Water() {
+        super("Вода");
+        super.setPrice(1);
+    }
 
     public int getPrice() {
-        return price;
+        return super.getPrice();
+    }
+    @Override
+    public String getName() {
+        return super.getName();
     }
 }
