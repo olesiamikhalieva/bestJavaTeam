@@ -25,11 +25,13 @@ public class Runner {
         // Составление своего напитка.
         NewBeverage newBeverage = new NewBeverage();
 
-        newBeverage.setBergamot(new Bergamot());//добавляем порцию бергамота
-        newBeverage.setChocolate(new Chocolate());//добавляем порцию шоколада
-        newBeverage.setWater(new Water());//добавляем порцию воды
-        newBeverage.setWater(new Water());//добавляем порцию воды
-        newBeverage.setCoffeeAndWater(new CoffeeAndWater());// добавляем порцию воды с порцией кофе
+        newBeverage.setNewComponents(new Bergamot());//добавляем порцию бергамота
+        newBeverage.setNewComponents(new Chocolate());//добавляем порцию шоколада
+        newBeverage.setNewComponents(new Water());//добавляем порцию воды
+        newBeverage.setNewComponents(new Water());//добавляем порцию воды
+        newBeverage.setNewComponents(new CoffeeAndWater());// добавляем порцию воды с порцией кофе
+
+        newBeverage.showPriceForNewBeverage();// Вывод цены нового напитка
     }
 
     public static void menu() {

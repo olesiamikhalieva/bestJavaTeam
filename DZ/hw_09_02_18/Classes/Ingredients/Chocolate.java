@@ -10,7 +10,7 @@ public class Chocolate extends Beverage {
     }
 
     public int getPrice() {
-        return getPrice();
+        return super.getPrice();
     }
 
     @Override
