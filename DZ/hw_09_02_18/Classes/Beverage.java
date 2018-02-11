@@ -1,6 +1,6 @@
 package hw_09_02_18.Classes;
 
-public class Beverage {
+public abstract class Beverage {
     private String name;
     private int price;
 

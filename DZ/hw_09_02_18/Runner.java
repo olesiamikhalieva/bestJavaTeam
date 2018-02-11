@@ -21,9 +21,12 @@ public class Runner {
     public static GreenTeaBergamot greenTeaBergamot = new GreenTeaBergamot("Зеленый чай с бергамотом", new LeavesGreenTea(), new Water(), new Water(), new Water(), new Bergamot());
 
     public static void main(String[] args) {
-        menu();
-        // Составление своего напитка.
-        NewBeverage newBeverage = new NewBeverage();
+
+        Beverage[] beverageMass = {americano, cappuccino, coffeeMilk, espresso, mocaccino, blackTea, blackTeaBergamot, greenTea, greenTeaBergamot};
+
+        menu(beverageMass);
+
+        NewBeverage newBeverage = new NewBeverage(); // Составление своего напитка.
 
         newBeverage.setNewComponents(new Bergamot());//добавляем порцию бергамота
         newBeverage.setNewComponents(new Chocolate());//добавляем порцию шоколада
@@ -31,11 +34,20 @@ public class Runner {
         newBeverage.setNewComponents(new Water());//добавляем порцию воды
         newBeverage.setNewComponents(new CoffeeAndWater());// добавляем порцию воды с порцией кофе
 
-        newBeverage.showPriceForNewBeverage();// Вывод цены нового напитка
+        newBeverage.showPriceAndNameForNewBeverage();// Вывод цены нового напитка
+
+        //Можем сделать напиток на основе существующих:
+
+        NewBeverage newBeverage1 = new NewBeverage();
+
+        newBeverage1.setNewComponents(mocaccino);
+        newBeverage1.setNewComponents(new Milk());
+
+        newBeverage1.showPriceAndNameForNewBeverage();
+
     }
 
-    public static void menu() {
-        Beverage[] beverageMass = {americano, cappuccino, coffeeMilk, espresso, mocaccino, blackTea, blackTeaBergamot, greenTea, greenTeaBergamot};
+    public static void menu(Beverage[] beverageMass) {
         System.out.printf("%10s%44s%n", "Меню:", "стоимость");
         for (int i = 0; i < beverageMass.length; i++) {
             System.out.printf("%-40s%13s%n", i + 1 + ". " + beverageMass[i].getName(), beverageMass[i].getPrice() + " грн.");
