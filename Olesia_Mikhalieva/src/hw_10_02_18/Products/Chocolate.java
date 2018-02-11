@@ -1,7 +1,7 @@
 package hw_10_02_18.Products;
 
-public class Chocolate extends Products{
-
+public class Chocolate implements  Products{
+    private String name = "Chocolate";
     private double priceOf100Gr;
 
     public Chocolate(double price) {
@@ -17,4 +17,8 @@ public class Chocolate extends Products{
         this.priceOf100Gr = price;
     }
 
+    @Override
+    public String getName() {
+        return this.name;
+    }
 }

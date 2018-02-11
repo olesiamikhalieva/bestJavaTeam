@@ -1,6 +1,8 @@
 package hw_10_02_18.Products;
 
-public class Milk extends Products{
+public class Milk implements Products{
+
+    public String name = "Milk";
 
     private double priceOf1Litr;
 
@@ -9,6 +11,7 @@ public class Milk extends Products{
     }
 
     public double getPrice() {
+
         double priceOf100Ml = this.priceOf1Litr/10;
         return priceOf100Ml;
     }
@@ -17,4 +20,8 @@ public class Milk extends Products{
         this.priceOf1Litr = price;
     }
 
+    @Override
+    public String getName() {
+        return this.name;
+    }
 }

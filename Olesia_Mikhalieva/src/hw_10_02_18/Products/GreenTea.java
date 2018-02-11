@@ -1,11 +1,17 @@
 package hw_10_02_18.Products;
 
-public class GreenTea extends Products{
+public class GreenTea implements Products{
 
+    private String name = "Green tea";
     private double priceOf100Gr;
 
     public GreenTea(double price) {
         this.priceOf100Gr = price;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 
     public double getPrice() {
@@ -16,5 +22,6 @@ public class GreenTea extends Products{
     public void setPrice(double price) {
         this.priceOf100Gr = price;
     }
+
 
 }

@@ -1,7 +1,7 @@
 package hw_10_02_18.Products;
 
 
-public class SetProductPrice extends Products{
+public final class SetProductPrice{
 
     BlackTea blackTea = new BlackTea(50);
     GreenTea greenTea = new GreenTea(50);

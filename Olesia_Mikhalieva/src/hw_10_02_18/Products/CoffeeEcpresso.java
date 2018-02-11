@@ -1,6 +1,7 @@
 package hw_10_02_18.Products;
 
-public class CoffeeEcpresso extends Products{
+public class CoffeeEcpresso implements Products{
+    private String name = "Espresso";
     private final int volueGr = 10;
     private double priceOf100Gr;
 
@@ -21,4 +22,8 @@ public class CoffeeEcpresso extends Products{
         this.priceOf100Gr = price;
     }
 
+    @Override
+    public String getName() {
+        return this.name;
+    }
 }
