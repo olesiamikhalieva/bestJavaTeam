@@ -25,7 +25,7 @@ public class Latte extends DefaultDrink{
 
     public void setHotMilk(int water) {
         this.hotMilk.setCount(water);
-        setPrice();
+
     }
 
     public int getSugar() {
@@ -34,7 +34,7 @@ public class Latte extends DefaultDrink{
 
     public void setSugar(int sugar) {
         this.sugar.setCount(sugar);
-        setPrice();
+
     }
 
     public int getCoffee() {
@@ -43,7 +43,7 @@ public class Latte extends DefaultDrink{
 
     public void setCoffee(int coffee) {
         this.coffee.setCount(coffee);
-        setPrice();
+
     }
     public void setPrice(){
         super.setPrice(hotMilk.getPrice() + coffee.getPrice() + sugar.getPrice());

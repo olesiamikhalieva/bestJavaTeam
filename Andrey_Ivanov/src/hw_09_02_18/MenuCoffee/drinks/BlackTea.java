@@ -23,7 +23,7 @@ public class BlackTea extends DefaultDrink{
 
     public void setWater(int water) {
         this.water.setCount(water);
-        setPrice();
+
     }
 
     public int getSugar() {
@@ -32,7 +32,7 @@ public class BlackTea extends DefaultDrink{
 
     public void setSugar(int sugar) {
         this.sugar.setCount(sugar);
-        setPrice();
+
     }
 
     public int getBlackTea() {
@@ -41,7 +41,7 @@ public class BlackTea extends DefaultDrink{
 
     public void setBlackTea(int coffee) {
         this.blackTea.setCount(coffee);
-        setPrice();
+
     }
     public void setPrice(){
         super.setPrice(water.getPrice() + blackTea.getPrice() + sugar.getPrice());
