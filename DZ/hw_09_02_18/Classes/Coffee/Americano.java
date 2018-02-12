@@ -21,4 +21,9 @@ public class Americano extends Beverage {
     public int getPriceAmericano() {
         return super.getPrice();
     }
+
+    @Override
+    public String showComponents(){
+        return coffeeAndWater.getName() + ", " + water1.getName() + ", " + water2.getName();
+    }
 }

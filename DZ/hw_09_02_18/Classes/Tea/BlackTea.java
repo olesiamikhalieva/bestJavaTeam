@@ -24,4 +24,9 @@ public class BlackTea extends Beverage{
     public int getPriceBlackTea() {
         return super.getPrice();
     }
+
+    @Override
+    public String showComponents() {
+        return leavesBlackTea.getName() + ", " + water1.getName() + ", " + water2.getName() + ", " + water3.getName();
+    }
 }

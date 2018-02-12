@@ -25,4 +25,9 @@ public class GreenTeaBergamot extends Beverage{
 
         return super.getPrice();
     }
+
+    @Override
+    public String  showComponents() {
+        return leavesGreenTea.getName() + ", " + water1.getName() + ", " + water2.getName() + ", " + water3.getName() + ", " + bergamot.getName();
+    }
 }

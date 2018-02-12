@@ -4,7 +4,7 @@ import hw_09_02_18.Classes.Beverage;
 import hw_09_02_18.Classes.Ingredients.CoffeeAndWater;
 import hw_09_02_18.Classes.Ingredients.Milk;
 
-public class Cappuccino extends Beverage{
+public class Cappuccino extends Beverage {
     private CoffeeAndWater coffeeAndWater;
     private Milk milk1;
     private Milk milk2;
@@ -25,5 +25,10 @@ public class Cappuccino extends Beverage{
 
     public int getPriceCappuccino() {
         return super.getPrice();
+    }
+
+    @Override
+    public String  showComponents() {
+       return coffeeAndWater.getName() + ", " + milk1.getName() + ", " + milk2.getName() + ", " + milk3.getName() + ", " + milk4.getName() + ", " + milk5.getName();
     }
 }

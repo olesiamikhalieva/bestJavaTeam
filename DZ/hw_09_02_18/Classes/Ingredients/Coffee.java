@@ -17,4 +17,9 @@ public class Coffee extends Beverage {
     public String getName() {
         return super.getName();
     }
+
+    @Override
+    public String showComponents() {
+        return "";
+    }
 }

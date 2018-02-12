@@ -43,11 +43,11 @@ public class RunnerWithScanner {
         Beverage[] beverageMass = {americano, cappuccino, coffeeMilk, espresso, mocaccino, blackTea, blackTeaBergamot, greenTea, greenTeaBergamot};
 
         System.out.println("Для аказа введите соответствующее число: ");
-        System.out.printf("%10s%44s%n", "Меню:", "стоимость");
+        System.out.printf("%-15s%35s%44s%n", "Меню:", "Состав", "стоимость");
         for (int i = 0; i < beverageMass.length; i++) {
-            System.out.printf("%-40s%13s%n", i + 1 + ". " + beverageMass[i].getName(), beverageMass[i].getPrice() + " грн.");
+            System.out.printf("%-30s%-55s%-10s%n", i + 1 + ". " + beverageMass[i].getName(),beverageMass[i].showComponents() ,beverageMass[i].getPrice() + " грн.");
         }
-        System.out.println("10. перейти к ингридиентам для составление своего напитка");
+        System.out.println("\n10. перейти к ингридиентам для составление своего напитка");
         return beverageMass;
     }
 
@@ -141,7 +141,7 @@ public class RunnerWithScanner {
                 newBeverage.setNewComponents(componentMass[choice2 - 1]);//добавляем в наш новый напиток ингридиент из componentMass
             }
             if (choice2 == 10) {
-                newBeverage.showPriceAndNameForNewBeverage(); //выводим заказ и его стоимость
+                newBeverage.showComponents(); //выводим заказ и его стоимость
             }
             if (choice2 < 1 || choice2 > 10) {
                 System.out.println("Вы ввели неверный симаол, повторите ");

@@ -8,6 +8,7 @@ public class Chocolate extends Beverage {
         super("Шоколад");
         super.setPrice(5);
     }
+
     @Override
     public int getPrice() {
         return super.getPrice();
@@ -16,5 +17,10 @@ public class Chocolate extends Beverage {
     @Override
     public String getName() {
         return super.getName();
+    }
+
+    @Override
+    public String showComponents() {
+        return "";
     }
 }

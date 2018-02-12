@@ -15,4 +15,9 @@ public class Espresso extends Beverage{
     public int getPriceEspresso() {
         return super.getPrice();
     }
+
+    @Override
+    public String  showComponents() {
+        return coffeeAndWater.getName();
+    }
 }

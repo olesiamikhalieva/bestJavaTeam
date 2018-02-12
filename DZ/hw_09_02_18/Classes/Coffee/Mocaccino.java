@@ -24,4 +24,9 @@ public class Mocaccino extends Beverage{
 
         return super.getPrice();
     }
+
+    @Override
+    public String  showComponents() {
+       return coffeeAndWater.getName() + ", " + chocolate.getName() + ", " + milk1.getName() + ", " + milk2.getName();
+    }
 }

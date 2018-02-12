@@ -13,6 +13,20 @@ public class NewBeverage extends Beverage {
         super("Ваш напиток");
     }
 
+    @Override
+    public String showComponents() {
+        int priceNewBeverage = 0;
+        String nameNewBeverage = "";
+        for (int i = 0; i < componentsMass.length; i++) {
+            if (componentsMass[i] != null) {
+                priceNewBeverage += componentsMass[i].getPrice();
+                nameNewBeverage += componentsMass[i].getName() + " \n ";
+            }
+        }
+        System.out.println("Вы заказали: " + nameNewBeverage + "Стоимостью " + priceNewBeverage + "грн");
+        return null;
+    }
+
 
     public void setNewComponents(Beverage components) {
         componentsMass = addNewComponents(components);
@@ -32,14 +46,6 @@ public class NewBeverage extends Beverage {
     }
 
     public void showPriceAndNameForNewBeverage() {
-        int priceNewBeverage = 0;
-        String nameNewBeverage = "";
-        for (int i = 0; i < componentsMass.length; i++) {
-            if (componentsMass[i] != null) {
-                priceNewBeverage += componentsMass[i].getPrice();
-                nameNewBeverage += componentsMass[i].getName() + " \n ";
-            }
-        }
-        System.out.println("Вы заказали: " + nameNewBeverage + "Стоимостью " + priceNewBeverage + "грн");
+
     }
 }

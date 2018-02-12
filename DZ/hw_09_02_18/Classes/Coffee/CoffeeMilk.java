@@ -19,4 +19,9 @@ public class CoffeeMilk extends Beverage{
     public int getPriceCoffeeMilk() {
         return super.getPrice();
     }
+
+    @Override
+    public String  showComponents() {
+        return coffeeAndWater.getName() + ", " + milk.getName();
+    }
 }

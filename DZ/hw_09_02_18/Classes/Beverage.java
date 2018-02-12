@@ -26,4 +26,5 @@ public abstract class Beverage {
     public void setName(String name) {
         this.name = name;
     }
+    public abstract String showComponents();
 }
