@@ -37,9 +37,9 @@ public class NewBeverage extends Beverage {
         for (int i = 0; i < componentsMass.length; i++) {
             if (componentsMass[i] != null) {
                 priceNewBeverage += componentsMass[i].getPrice();
-                nameNewBeverage += componentsMass[i].getName() + ", ";
+                nameNewBeverage += componentsMass[i].getName() + " \n ";
             }
         }
-        System.out.println("Вы заказали: " + nameNewBeverage + " Стоимостью " + priceNewBeverage + "грн");
+        System.out.println("Вы заказали: " + nameNewBeverage + "Стоимостью " + priceNewBeverage + "грн");
     }
 }

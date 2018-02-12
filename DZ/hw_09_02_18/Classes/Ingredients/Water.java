@@ -8,7 +8,7 @@ public class Water extends Beverage{
         super("Вода");
         super.setPrice(1);
     }
-
+    @Override
     public int getPrice() {
         return super.getPrice();
     }

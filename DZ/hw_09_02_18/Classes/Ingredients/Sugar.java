@@ -7,7 +7,7 @@ public class Sugar extends Beverage{
         super("Cахар");
         super.setPrice(2);
     }
-
+    @Override
     public int getPrice() {
         return super.getPrice();
     }

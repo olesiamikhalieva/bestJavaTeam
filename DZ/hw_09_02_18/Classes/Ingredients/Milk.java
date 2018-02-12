@@ -7,7 +7,7 @@ public class Milk extends Beverage{
         super("Молоко");
         super.setPrice(5);
     }
-
+    @Override
     public int getPrice() {
         return super.getPrice();
     }

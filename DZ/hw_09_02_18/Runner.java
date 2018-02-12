@@ -19,7 +19,6 @@ public class Runner {
     public static BlackTeaBergamot blackTeaBergamot = new BlackTeaBergamot("Черный чай с бергамотом", new LeavesBlackTea(), new Water(), new Water(), new Water(), new Bergamot());
     public static GreenTea greenTea = new GreenTea("Зеленый чай", new LeavesGreenTea(), new Water(), new Water(), new Water());
     public static GreenTeaBergamot greenTeaBergamot = new GreenTeaBergamot("Зеленый чай с бергамотом", new LeavesGreenTea(), new Water(), new Water(), new Water(), new Bergamot());
-
     public static void main(String[] args) {
 
         Beverage[] beverageMass = {americano, cappuccino, coffeeMilk, espresso, mocaccino, blackTea, blackTeaBergamot, greenTea, greenTeaBergamot};

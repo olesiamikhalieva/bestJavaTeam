@@ -10,38 +10,23 @@ import java.util.Scanner;
 
 public class RunnerWithScanner {
 
+    static NewBeverage newBeverage = new NewBeverage();//создаем пустой объект, в который мы будем ложить напиток либо ингридиенты.
+    static Beverage[] beverageMass;
+    static Beverage[] componentMass;
 
     public static void main(String[] args) {
-        Beverage[] beverageMass = menu();//выводим меню и создание массива гарячих напитков
-  //      Beverage[] componentMass = menuComponents();//Вывод меню компонентов и создание массива компонентов
-        NewBeverage newBeverage = new NewBeverage();
 
+        beverageMass = menu();//выводим меню и создание массива гарячих напитков
 
-        System.out.println("Что желаете? ");
-        Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
-        switch (choice) {
-            case 1:
-                newBeverage.setNewComponents(beverageMass[0]);
-                System.out.println("Желаете что-нибудь еще?");
-            case 2:
-                newBeverage.setNewComponents(beverageMass[1]);
-            case 3:
-                newBeverage.setNewComponents(beverageMass[2]);
-            case 4:
-                newBeverage.setNewComponents(beverageMass[3]);
-            case 5:
-                newBeverage.setNewComponents(beverageMass[4]);
-            case 6:
-                newBeverage.setNewComponents(beverageMass[5]);
-            case 7:
-                newBeverage.setNewComponents(beverageMass[6]);
-            case 8:
-                newBeverage.setNewComponents(beverageMass[7]);
-            case 9:
-                newBeverage.setNewComponents(beverageMass[8]);
-        }
+        //проверяем на коректность ввода и добавляем в объект готовый напиток из списка, либо пропускаем этот этап
+        // и переходим к созданию своего варианта
+        addBeverageForNewBeverage(checkCorrectnessInput());
+
+        componentMass = menuComponents();//Вывод меню компонентов и создание массива компонентов
+
+        showYourOrder();
     }
+
 
     public static Beverage[] menu() {
 
@@ -56,10 +41,13 @@ public class RunnerWithScanner {
         Beverage greenTeaBergamot = new GreenTeaBergamot("Зеленый чай с бергамотом", new LeavesGreenTea(), new Water(), new Water(), new Water(), new Bergamot());
 
         Beverage[] beverageMass = {americano, cappuccino, coffeeMilk, espresso, mocaccino, blackTea, blackTeaBergamot, greenTea, greenTeaBergamot};
+
+        System.out.println("Для аказа введите соответствующее число: ");
         System.out.printf("%10s%44s%n", "Меню:", "стоимость");
         for (int i = 0; i < beverageMass.length; i++) {
             System.out.printf("%-40s%13s%n", i + 1 + ". " + beverageMass[i].getName(), beverageMass[i].getPrice() + " грн.");
         }
+        System.out.println("10. перейти к ингридиентам для составление своего напитка");
         return beverageMass;
     }
 
@@ -73,12 +61,92 @@ public class RunnerWithScanner {
         Beverage milk = new Milk();
         Beverage sugar = new Sugar();
         Beverage water = new Water();
-        Beverage[] componentsMass = {bergamot, chocolate, coffeeAndWater, leavesBlackTea, leavesGreenTea, milk, sugar, water};
+        Beverage coffee = new Coffee();
+        Beverage[] componentsMass = {bergamot, chocolate, coffeeAndWater, leavesBlackTea, leavesGreenTea, milk, sugar, water, coffee};
         System.out.printf("%20s%34s%n", "Меню ингридиентов:", "стоимость");
         for (int i = 0; i < componentsMass.length; i++) {
             System.out.printf("%-40s%13s%n", i + 1 + ". " + componentsMass[i].getName(), componentsMass[i].getPrice() + " грн.");
         }
+        System.out.println("10. Завершить");
         return componentsMass;
+    }
+
+    public static int checkCorrectnessInput() {
+        int choice1 = 0;
+        for (; ; ) {
+            Scanner scanner = new Scanner(System.in);
+            int i = scanner.nextInt();
+            if (i < 1 || i > 10) {
+                System.out.println("Вы ввели неверный неверный символ, повторите");
+            }
+            if (i >= 1 && i <= 10) {
+                choice1 = i;
+                break;
+            }
+        }
+        return choice1;
+    }
+
+    public static void addBeverageForNewBeverage(int choice1) {
+        flag:
+        switch (choice1) {
+            case 1:
+                newBeverage.setNewComponents(beverageMass[0]);
+                System.out.println("Желаете что-нибудь добавить?");
+                break flag;
+            case 2:
+                newBeverage.setNewComponents(beverageMass[1]);
+                System.out.println("Желаете что-нибудь добавить?");
+                break flag;
+            case 3:
+                newBeverage.setNewComponents(beverageMass[2]);
+                System.out.println("Желаете что-нибудь добавить?");
+                break flag;
+            case 4:
+                newBeverage.setNewComponents(beverageMass[3]);
+                System.out.println("Желаете что-нибудь добавить?");
+                break flag;
+            case 5:
+                newBeverage.setNewComponents(beverageMass[4]);
+                System.out.println("Желаете что-нибудь добавить?");
+                break flag;
+            case 6:
+                newBeverage.setNewComponents(beverageMass[5]);
+                System.out.println("Желаете что-нибудь добавить?");
+                break flag;
+            case 7:
+                newBeverage.setNewComponents(beverageMass[6]);
+                System.out.println("Желаете что-нибудь добавить?");
+                break flag;
+            case 8:
+                newBeverage.setNewComponents(beverageMass[7]);
+                System.out.println("Желаете что-нибудь добавить?");
+                break flag;
+            case 9:
+                newBeverage.setNewComponents(beverageMass[8]);
+                System.out.println("Желаете что-нибудь добавить?");
+                break flag;
+            case 10:
+                break flag;
+        }
+    }
+
+    public static void showYourOrder() {
+        int choice2 = 0;
+        System.out.println("для завершение заказа введите число 10 либо продолжите составление заказа");
+        while (choice2 != 10) {
+            Scanner scanner1 = new Scanner(System.in);
+            choice2 = scanner1.nextInt();
+            if (choice2 >= 1 && choice2 <= 9) {
+                newBeverage.setNewComponents(componentMass[choice2 - 1]);//добавляем в наш новый напиток ингридиент из componentMass
+            }
+            if (choice2 == 10) {
+                newBeverage.showPriceAndNameForNewBeverage(); //выводим заказ и его стоимость
+            }
+            if (choice2 < 1 || choice2 > 10) {
+                System.out.println("Вы ввели неверный симаол, повторите ");
+            }
+        }
     }
 }
 

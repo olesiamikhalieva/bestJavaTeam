@@ -7,7 +7,7 @@ public class LeavesBlackTea extends Beverage {
         super("Черный чай");
         super.setPrice(2);
     }
-
+    @Override
     public int getPrice() {
         return super.getPrice();
     }

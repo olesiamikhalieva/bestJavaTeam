@@ -8,7 +8,7 @@ public class Chocolate extends Beverage {
         super("Шоколад");
         super.setPrice(5);
     }
-
+    @Override
     public int getPrice() {
         return super.getPrice();
     }
