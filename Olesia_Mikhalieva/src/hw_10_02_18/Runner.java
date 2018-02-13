@@ -30,6 +30,16 @@ public class Runner {
         System.out.println(drinks.getName() + " + " + xxx.getName() +"\t"+ price);
     }
 
+    private static void addProductsToDrinks(InterfaceDrinks drinks, Products x1,Products x2) {
+        int price = (int) x1.getPrice() + (int) drinks.getPrice()+(int)x2.getPrice();
+        System.out.println(drinks.getName() + " + " + x1.getName()+" + " +x2.getName()+"\t"+ price);
+    }
+
+    private static void addProductsToDrinks(InterfaceDrinks drinks, Products x1,Products x2,Products x3) {
+        int price = (int) x1.getPrice() + (int) drinks.getPrice()+(int)x2.getPrice()+(int)x3.getPrice();
+        System.out.println(drinks.getName() + " + " + x1.getName() +" + "+x2.getName()+" + "+x3.getName()+"\t"+ price);
+    }
+
 
 }
 
