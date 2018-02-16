@@ -1,9 +1,9 @@
 package hw_23_01_18.Robot.NewRobot;
 
-import Robot.ComponentsRobot.*;
 import hw_23_01_18.Robot.Robot;
 
 import java.util.Objects;
+import hw_23_01_18.Robot.ComponentsRobot.*;
 
 public class RWar extends Robot {
     private ArmWeapon armWeapon1;
