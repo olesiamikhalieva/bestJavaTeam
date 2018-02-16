@@ -1,9 +1,9 @@
-package Robot;
+package hw_23_01_18.Robot;
 
-import Robot.ComponentsRobot.Arm;
-import Robot.ComponentsRobot.Head;
-import Robot.ComponentsRobot.Leg;
-import Robot.ComponentsRobot.Torso;
+import hw_23_01_18.Robot.ComponentsRobot.Arm;
+import hw_23_01_18.Robot.ComponentsRobot.Head;
+import hw_23_01_18.Robot.ComponentsRobot.Leg;
+import hw_23_01_18.Robot.ComponentsRobot.Torso;
 
 import java.util.Objects;
 

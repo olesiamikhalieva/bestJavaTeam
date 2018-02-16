@@ -1,7 +1,7 @@
-package Robot.NewRobot;
+package hw_23_01_18.Robot.NewRobot;
 
 import Robot.ComponentsRobot.*;
-import Robot.Robot;
+import hw_23_01_18.Robot.Robot;
 
 import java.util.Objects;
 
