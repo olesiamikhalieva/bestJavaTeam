@@ -1,9 +1,9 @@
-package hw_16_02_18.Coffee;
+package hw_16_02_18.PaternDecorator;
 
 public class HouseBlend extends Beverage{
 
     public HouseBlend(){
-        description = "House Blend Coffee";
+        description = "House Blend PaternDecorator";
     }
     @Override
     public double cost() {

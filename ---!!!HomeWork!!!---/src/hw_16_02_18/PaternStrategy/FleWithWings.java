@@ -1,4 +1,4 @@
-package hw_16_02_18.Ducks;
+package hw_16_02_18.PaternStrategy;
 
 public class FleWithWings implements FlyBehavior {
 
