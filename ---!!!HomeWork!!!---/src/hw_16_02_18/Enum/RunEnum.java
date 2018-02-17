@@ -1,4 +1,4 @@
-package hw_16_02_18;
+package hw_16_02_18.Enum;
 
 import java.util.Arrays;
 
