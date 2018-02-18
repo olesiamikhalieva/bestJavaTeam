@@ -1,5 +1,8 @@
 package hw_16_02_18.PatternFactory;
 
+import hw_16_02_18.PatternFactory.Chicago.ChicagoPizzaStore;
+import hw_16_02_18.PatternFactory.NewYourk.NYPizzaStore;
+
 public class PizzaTestDrive {
     public static void main(String[] args) {
         PizzaStore nyStore = new NYPizzaStore();

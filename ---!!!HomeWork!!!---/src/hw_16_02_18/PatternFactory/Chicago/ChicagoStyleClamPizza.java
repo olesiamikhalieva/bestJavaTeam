@@ -1,4 +1,6 @@
-package hw_16_02_18.PatternFactory;
+package hw_16_02_18.PatternFactory.Chicago;
+
+import hw_16_02_18.PatternFactory.Pizza;
 
 public class ChicagoStyleClamPizza extends Pizza {
     public ChicagoStyleClamPizza() {

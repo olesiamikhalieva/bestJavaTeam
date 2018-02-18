@@ -1,4 +1,7 @@
-package hw_16_02_18.PatternFactory;
+package hw_16_02_18.PatternFactory.NewYourk;
+
+import hw_16_02_18.PatternFactory.Pizza;
+import hw_16_02_18.PatternFactory.PizzaStore;
 
 public class NYPizzaStore extends PizzaStore {
     @Override
@@ -13,7 +16,7 @@ public class NYPizzaStore extends PizzaStore {
             return new NYStyleClamPizza();
         }
         else if(item.equals("cheese")){
-            return new NYStylePapperoniPizza();
+            return new NYStylePepperoniPizza();
         }
         else return null;
     }

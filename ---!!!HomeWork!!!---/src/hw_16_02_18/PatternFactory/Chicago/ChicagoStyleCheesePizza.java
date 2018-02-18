@@ -1,4 +1,6 @@
-package hw_16_02_18.PatternFactory;
+package hw_16_02_18.PatternFactory.Chicago;
+
+import hw_16_02_18.PatternFactory.Pizza;
 
 public class ChicagoStyleCheesePizza extends Pizza {
     public ChicagoStyleCheesePizza() {
@@ -9,7 +11,6 @@ public class ChicagoStyleCheesePizza extends Pizza {
         toppings.add("Shredded mozzarella Cheese");
     }
 
-    @Override
     void cut() {
         System.out.println("cutting the pizza into square slice");
     }

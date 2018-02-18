@@ -1,6 +1,9 @@
-package hw_16_02_18.PatternFactory;
+package hw_16_02_18.PatternFactory.Chicago;
 
-public class ChicagoPizzaStore extends PizzaStore{
+import hw_16_02_18.PatternFactory.Pizza;
+import hw_16_02_18.PatternFactory.PizzaStore;
+
+public class ChicagoPizzaStore extends PizzaStore {
     @Override
     public Pizza createPizza(String item) {
         if(item.equals("cheese")){
@@ -13,7 +16,7 @@ public class ChicagoPizzaStore extends PizzaStore{
             return new ChicagoStyleClamPizza();
         }
         else if(item.equals("cheese")){
-            return new ChicagoStylePapperoniPizza();
+            return new ChicagoStylePepperoniPizza();
         }
         else return null;
     }
