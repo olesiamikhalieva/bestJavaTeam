@@ -2,41 +2,75 @@ package les_06_03_18;
 
 import hw_06_02_18.ClassesBird.Eagle;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by java on 06.03.2018.
  */
 public class MainZavod {
     public static void main(String[] args) {
-        List<Employer> employerList = new LinkedList<>();
-        LinkedList<Employer> employerList2 = new LinkedList<>();
-        Employer emp = new Worker("Eric",6);
 
-        employerList.add(new Manager("Vasia", 9));
-        employerList.add(new Manager("Petya", 8));
-        employerList.add(new Manager("Kaka", 3));
-        employerList.add(new Worker("Inocentiy", 5));
-        employerList.add(new Worker("Katya", 7));
-        employerList.add(new Worker("Dima", 2));
-//        emp.setName("Edic");
-//        employerList.add(emp);
+        Employer employer = new Employer("Ivan", 23);
+        Employer employer2 = new Employer("Locky", 24);
+        Employer employer3 = new Employer("Lock", 25);
 
-        Iterator<Employer> iterator = employerList.iterator();
+        HashSet<Employer> employers = new HashSet<>();
+
+        employers.add(employer);
+        employers.add(employer2);
+        employers.add(employer3);
+
+        HashMap<String, Employer> stringStringHashMap = new HashMap<>();
+
+        stringStringHashMap.put("001", employer);
+        stringStringHashMap.put("002", employer2);
+        stringStringHashMap.put("003", employer3);
+
+        Employer emm = stringStringHashMap.get("001");
+
+        System.out.println(emm.getYear());
+
+        for (Map.Entry<String, Employer> entry : stringStringHashMap.entrySet()) {
+
+            String key = entry.getKey();
+            Employer em = entry.getValue();
+            System.out.println(key + ", year - " + em.getYear());
+
+        }
+//        HashSet<Employer> stringHashSet = new HashSet<>();
+//        stringHashSet.add(new Employer("Ivan", 25));
+//        stringHashSet.add(new Employer("Doli",14));
+//        stringHashSet.add(new Employer("Fun",24));
+//        stringHashSet.add(new Employer("Sos",54));
 //
-//        while (iterator.hasNext()){
-//            System.out.println(iterator.next().getName());
-//            iterator.remove();
-//            System.out.println(employerList.size());
+//        stringHashSet.forEach(employer -> System.out.println(employer.getName()+ " its name"));
+//
+//
+
+//        Set<String> employerSet = new TreeSet<>();
+//
+//        employerSet.add("d");
+//        employerSet.add("f");
+//        employerSet.add("g");
+//        employerSet.add("h");
+//        employerSet.add("a");
+////        employerSet.add(new Employer("Ivan", 25));
+////        employerSet.add(new Employer("Doli",14));
+////        employerSet.add(new Employer("Fun",24));
+////        employerSet.add(new Employer("Sos",54));
+//
+//        for (String s: employerSet) {
+//            System.out.println(s);
 //        }
 //
-        for (Employer employer : employerList) {
-            System.out.println(employer.getName());
-            employerList.remove(employer);
-        }
-
+//        Set<Integer> integerSet = new LinkedHashSet<>();
+//
+//        integerSet.add(1);
+//        integerSet.add(17);
+//        integerSet.add(20);
+//        integerSet.add(3);
+//        integerSet.add(55);
+//
+//        integerSet.forEach(a-> System.out.println(a));
     }
 }
