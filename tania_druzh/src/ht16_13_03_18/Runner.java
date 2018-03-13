@@ -14,6 +14,9 @@ public class Runner {
 
     }
 
+    /*Создать структуру данных которая содержит в себе имена : Аня. Виктор, Игнат, Валентин,Игорь, Оля, Света, Таня.
+   Создать еще одну структуру данных, но которая будет содержать только уникальные значения, заполнить ее полями предыдущей структуры.
+   -Добавить в обе структуры данных имена:  Виктор, Игнат, Иннакентий, Тит, Ждери, Освальд, Фернандо, после вывести их содержание.*/
     private static void t1(){
         ArrayList<String> names = new ArrayList<>();
         names.add("Аня");
@@ -25,10 +28,10 @@ public class Runner {
         names.add("Света");
         names.add("Таня");
 
-        HashSet<String> namesSet = new HashSet<>();
-        for (String name : names) {
-            namesSet.add(name);
-        }
+        HashSet<String> namesSet = new HashSet<>(names);
+//        for (String name : names) {
+//            namesSet.add(name);
+//        }
 
         names.add("Виктор");
         names.add("Игнат");
@@ -54,6 +57,9 @@ public class Runner {
 
     }
 
+    /*Cоздать коллекцию, которая заполнена случайными числами от -25 до 50, вывести минимальное и максимальное значение.
+  - есть числа 8, -12, 0, 22,5. Проверить содержит ли наша коллекция данные числа после заполнения.
+  Если да -выводим правду, в противном случае лож.*/
     private static void t2(){
         ArrayList<Integer> numb = new ArrayList<>();
         for (int i = 0; i < 50; i++){
@@ -77,16 +83,19 @@ public class Runner {
 
     }
 
+    /*Создать список, который заполнить числами от 8 до 24.
+Далее создать второй список, который заполнить числами из первой коллекции, которые находятся с 5 по 12 позиции.
+Вывести обе коллекции на экран.*/
     private static void t3(){
         ArrayList<Integer> list1 = new ArrayList<>();
         for (int i = 0; i < 20; i++){
             list1.add((int) (8 + Math.random()*16));
         }
 
-        ArrayList<Integer> list2 = new ArrayList<>();
-        for( int i = 8; i < 13; i++){
-            list2.add(list1.get(i));
-        }
+        ArrayList<Integer> list2 = new ArrayList<>(list1.subList(8,13));
+//        for( int i = 8; i < 13; i++){
+//            list2.add(list1.get(i));
+//        }
 
         for (Integer integer : list1) {
             System.out.println(integer);
@@ -97,6 +106,7 @@ public class Runner {
         }
     }
 
+    /*Создать список, который заполнен числами от 25 до 99. Удалить часть данных из середины списка. С (15 по 43 элемент)*/
     private static void t4(){
         ArrayList<Integer> list1 = new ArrayList<>();
         for (int i = 0; i < 50; i++){
@@ -107,6 +117,7 @@ public class Runner {
             System.out.print(integer + " ");
         }
 
+        
         for( int i = 43; i >= 15; i--){
             list1.remove(i);
         }
