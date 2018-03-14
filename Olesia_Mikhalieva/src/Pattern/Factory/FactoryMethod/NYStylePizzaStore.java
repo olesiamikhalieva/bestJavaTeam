@@ -1,10 +1,10 @@
-package Pattern.Factory;
+package Pattern.Factory.FactoryMethod;
 
 public class NYStylePizzaStore extends PizzaStore {
     Pizza pizza;
 
     @Override
-    protected Pizza createPizza(String type) {
+    protected Pattern.Factory.FactoryMethod.Pizza createPizza(String type) {
         if (type.equals("cheese")){
             pizza = new NYStyleCheesePizza();
         }

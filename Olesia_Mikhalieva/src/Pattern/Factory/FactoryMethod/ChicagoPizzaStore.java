@@ -1,6 +1,6 @@
-package Pattern.Factory;
+package Pattern.Factory.FactoryMethod;
 
-public class ChicagoPizzaStore extends Pizza{
+public class ChicagoPizzaStore extends Pizza {
     public ChicagoPizzaStore() {
         name = "Chicago Style Deep Dish Cheese Pizza";
         dough = "Extra Thick Crust Dough";

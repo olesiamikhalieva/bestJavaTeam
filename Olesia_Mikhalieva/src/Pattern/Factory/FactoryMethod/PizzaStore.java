@@ -1,6 +1,7 @@
-package Pattern.Factory;
+package Pattern.Factory.FactoryMethod;
 
 public abstract class PizzaStore {
+
     public Pizza orderPizza(String type) {
         Pizza pizza;
         pizza = createPizza(type);
@@ -11,5 +12,5 @@ public abstract class PizzaStore {
         return pizza;
     }
 
-    protected abstract Pizza createPizza(String type);
+    protected abstract Pattern.Factory.FactoryMethod.Pizza createPizza(String type);
 }
