@@ -55,5 +55,29 @@ public class Runner {
         System.out.println("По возрасту->"+persons3);
 
         System.out.println("-------------------------------------");
+
+        //Сортировка по имени HashSet
+
+        Set<Person> persons4=new HashSet<>();
+        persons4.add(new Person("Vova",56));
+        persons4.add(new Person("Wima",34));
+        persons4.add(new Person("Kolya",25));
+        persons4.add(new Person("Anton",70));
+        List<Person>persons5=new ArrayList<>(persons4);
+        Collections.sort(persons5,new NameComparator());
+        System.out.println("Сортировка HashSet:\n"+"По имени->"+persons5);
+
+        //сортировка по возрасту HashSet
+
+        Set<Person> persons6=new HashSet<>();
+        persons6.add(new Person("Vova",56));
+        persons6.add(new Person("Wima",34));
+        persons6.add(new Person("Kolya",25));
+        persons6.add(new Person("Anton",70));
+        List<Person>persons7=new ArrayList<>(persons6);
+        Collections.sort(persons7,new AgeComparator());
+        System.out.println("По возрасту->"+persons7);
+
+        System.out.println("-------------------------------------");
     }
 }
