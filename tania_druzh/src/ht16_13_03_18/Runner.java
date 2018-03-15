@@ -1,9 +1,7 @@
 package ht16_13_03_18;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
+import javax.swing.text.html.HTMLDocument;
+import java.util.*;
 
 public class Runner {
     public static void main(String[] args) {
@@ -117,10 +115,12 @@ public class Runner {
             System.out.print(integer + " ");
         }
 
+//        list1.removeAll(list1.subList(15,43));
+        list1.subList(15,43).clear();
         
-        for( int i = 43; i >= 15; i--){
-            list1.remove(i);
-        }
+//        for( int i = 43; i >= 15; i--){
+//            list1.remove(i);
+//        }
 
         System.out.println();
         for (Integer integer : list1) {
