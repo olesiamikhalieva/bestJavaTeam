@@ -22,12 +22,17 @@ public class Task2 {
             }
         }
 
+        ArrayList<Integer> integers1 = new ArrayList<>();
+        integers.add(8);
+        integers.add(-12);
+        integers.add(0);
+        integers.add(22);
+        integers.add(5);
+
         System.out.println("max: " + max);
         System.out.println("min: " + min);
 
-        for (Integer i:integers) {
-            boolean eight = false;
-        }
+        System.out.println(integers.containsAll(integers1));
 
     }
 }
