@@ -25,17 +25,21 @@ public class MainZavod {
         stringStringHashMap.put("002", employer2);
         stringStringHashMap.put("003", employer3);
 
-        Employer emm = stringStringHashMap.get("001");
-
-        System.out.println(emm.getYear());
+        HashSet<String> stringHashSet = new HashSet<>();
+        HashSet<Employer> employerHashSet = new HashSet<>();
 
         for (Map.Entry<String, Employer> entry : stringStringHashMap.entrySet()) {
-
             String key = entry.getKey();
             Employer em = entry.getValue();
-            System.out.println(key + ", year - " + em.getYear());
-
         }
+
+        Set<String> keys = stringStringHashMap.keySet();
+        keys.forEach(s -> System.out.println(s));
+
+        Collection<Employer> empV = stringStringHashMap.values();
+        empV.forEach(s-> System.out.println(s));
+
+
 //        HashSet<Employer> stringHashSet = new HashSet<>();
 //        stringHashSet.add(new Employer("Ivan", 25));
 //        stringHashSet.add(new Employer("Doli",14));
