@@ -15,7 +15,6 @@ public class MainZavod {
         Employer employer3 = new Employer("Lock", 25);
 
         HashSet<Employer> employers = new HashSet<>();
-
         employers.add(employer);
         employers.add(employer2);
         employers.add(employer3);
