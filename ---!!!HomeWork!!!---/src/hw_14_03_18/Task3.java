@@ -12,11 +12,9 @@ public class Task3 {
             int num = 8 + random.nextInt(17);
             integers.add(num);
         }
-
-        integers.forEach(s-> System.out.print(" " + s));
-        System.out.println("");
-        ArrayList<Integer> integers1 = new ArrayList<>(integers.subList(5,12));
-        integers1.forEach(s-> System.out.print(" " + s));
+        System.out.println(integers);
+        ArrayList<Integer> integers1 = new ArrayList<>(integers.subList(4,11));
+        System.out.println(integers1);
 
     }
 }
