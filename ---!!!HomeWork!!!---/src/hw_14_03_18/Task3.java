@@ -13,6 +13,10 @@ public class Task3 {
             integers.add(num);
         }
 
+        integers.forEach(s-> System.out.print(" " + s));
+        System.out.println("");
+        ArrayList<Integer> integers1 = new ArrayList<>(integers.subList(5,12));
+        integers1.forEach(s-> System.out.print(" " + s));
 
     }
 }
