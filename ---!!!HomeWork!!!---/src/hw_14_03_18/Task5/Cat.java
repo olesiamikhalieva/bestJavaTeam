@@ -52,7 +52,6 @@ public class Cat implements Comparable{
 
     @Override
     public int hashCode() {
-
         return Objects.hash(name, age);
     }
 
