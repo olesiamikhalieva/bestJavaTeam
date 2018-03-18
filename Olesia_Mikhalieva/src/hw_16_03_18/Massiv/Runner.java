@@ -1,6 +1,5 @@
 package hw_16_03_18.Massiv;
 
-import hw_16_03_18.Massiv.Massiv;
 
 public class Runner {
     public static void main(String[] args) {

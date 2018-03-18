@@ -1,8 +1,5 @@
 package hw_16_03_18.Massiv;
 
-import java.util.Arrays;
-
-import static javafx.scene.input.KeyCode.T;
 
 public class Massiv<T> {
  T [] mass;
