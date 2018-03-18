@@ -8,7 +8,7 @@ public class Words {
     private static Set<String> wordsList = new HashSet<>(40);
 
 
-    public Set<String> getWords() {
+    public HashSet<String> getWords() {
         wordsList.add("animal");
         wordsList.add("wood");
         wordsList.add("mouse");
@@ -49,6 +49,6 @@ public class Words {
         wordsList.add("mobile");
         wordsList.add("pen");
         wordsList.add("window");
-        return wordsList;
+        return (HashSet<String>) wordsList;
     }
 }
