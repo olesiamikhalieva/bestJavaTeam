@@ -2,7 +2,7 @@ package hw_14_03_18.Task5;
 
 import java.util.Objects;
 
-public class Cat implements Comparable{
+public class Cat implements Comparable<Cat>{
 
     private String name;
     private int age;
@@ -55,8 +55,9 @@ public class Cat implements Comparable{
         return Objects.hash(name, age);
     }
 
+
     @Override
-    public int compareTo(Object o) {
-        return 0;
+    public int compareTo(Cat o) {
+        return this.age - o.getAge();
     }
 }
