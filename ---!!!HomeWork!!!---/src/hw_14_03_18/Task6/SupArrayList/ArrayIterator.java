@@ -1,4 +1,4 @@
-package hw_14_03_18.Task6;
+package hw_14_03_18.Task6.SupArrayList;
 
 import java.util.Iterator;
 

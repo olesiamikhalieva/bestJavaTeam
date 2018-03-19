@@ -1,8 +1,9 @@
-package hw_14_03_18.Task6;
+package hw_14_03_18.Task6.SupArrayList;
 
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 
 public class SuperArrayList<E> implements Simple<E> {
 
@@ -12,20 +13,20 @@ public class SuperArrayList<E> implements Simple<E> {
         strings.add("second");
         strings.add("third");
 
-        System.out.println(strings.get(1));
-        System.out.println(strings.size());
+        System.out.println("получаем первый элемент -- " + strings.get(1));
+        System.out.println("размер коллекции " + strings.size());
         strings.update(1, "update");//заменим 2 элемент на "update"
-        System.out.println(strings.get(1));
+        System.out.println("заменили -- " + strings.get(1));
 
-        strings.delete(1);//удаляем 2 эллемант
-        System.out.println(strings.get(1));
-        System.out.println(strings.size());
+        System.out.println("удалили этот элемент -- " + strings.remove(1));//удаляем 2 эллемант
+        System.out.println("вот что тепер место перввого(update) эллемента -- " + strings.get(1));
+        System.out.println("Новый размер коллекции" + strings.size());
         System.out.println("распечатаем все что осталось в коллекции");
         for (String s : strings){
             System.out.println(s);
         }
-        System.out.println(strings.contains("first"));//такой эллемент есть
-        System.out.println(strings.contains("firstrtrtr"));// такого нету
+        System.out.println("Есть ли эллемент first в коллекции? -- " + strings.contains("first"));//такой эллемент есть
+        System.out.println("Есть ли эллемент firstrtrtr в коллекции? -- " + strings.contains("firstrtrtr"));// такого нету
 
     }
 
@@ -50,16 +51,19 @@ public class SuperArrayList<E> implements Simple<E> {
     }
 
     @Override
-    public void delete(int index) {
+    public E remove(int index) {
         try{
+            E value = this.values[index];
             E[] temp = this.values;
             this.values = (E[]) new Object[temp.length - 1];
             System.arraycopy(temp, 0, this.values, 0, index);
             int countElementAfterIndex = temp.length - index - 1;
             System.arraycopy(temp, index + 1, this.values, index, countElementAfterIndex);
+            return value;
         }catch (ClassCastException ex){
             ex.printStackTrace();
         }
+        return null;
     }
 
     @Override
