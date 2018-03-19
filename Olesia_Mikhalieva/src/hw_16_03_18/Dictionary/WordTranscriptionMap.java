@@ -1,4 +1,4 @@
-package hw_16_03_18;
+package hw_16_03_18.Dictionary;
 
 import java.util.HashMap;
 import java.util.Map;

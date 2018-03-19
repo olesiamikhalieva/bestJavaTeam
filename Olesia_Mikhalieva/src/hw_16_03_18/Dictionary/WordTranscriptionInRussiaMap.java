@@ -1,4 +1,4 @@
-package hw_16_03_18;
+package hw_16_03_18.Dictionary;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -33,6 +33,7 @@ public class WordTranscriptionInRussiaMap {
         wordTranscriptionInRussiaMap.put("nine", "найн");
         wordTranscriptionInRussiaMap.put("ten", "тэн");
         wordTranscriptionInRussiaMap.put("hundred", "хандрид");
+        wordTranscriptionInRussiaMap.put("thousand", "саузэнд");
         wordTranscriptionInRussiaMap.put("tree", "три");
         wordTranscriptionInRussiaMap.put("door", "до");
         wordTranscriptionInRussiaMap.put("sun", "сан");

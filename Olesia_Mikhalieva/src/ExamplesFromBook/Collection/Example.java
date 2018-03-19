@@ -83,6 +83,13 @@ public class Example {
             }
         });
         linkedList.forEach(n -> System.out.print(n+", "));
+        System.out.println();
+        HashSet<String> set = new HashSet<>();
+        set.add("leto");
+        set.add("spring");
+        set.add("winter");
+        set.add("summer");
+        set.forEach(s -> System.out.println(s));
 
     }
 }

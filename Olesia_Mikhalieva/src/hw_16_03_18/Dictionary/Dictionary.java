@@ -1,6 +1,6 @@
-package hw_16_03_18;
+package hw_16_03_18.Dictionary;
 
-import java.util.*;
+import java.util.Iterator;
 
 public class Dictionary {
     String word;
@@ -28,48 +28,31 @@ public class Dictionary {
 
 
     public Dictionary() {
+        Iterator<String>iterator = words.getWords().iterator();
+        String a = iterator.next();
+        System.out.print(a+"\t");
+        String b = iterator.next();
+        System.out.print(b+"\t");
+        String c = iterator.next();
+        System.out.print(c+"\t");
+        String d = iterator.next();
+        System.out.print(d+"\t");
+        System.out.println();
+        System.out.print(wordTranscriptionInRussia.getWordTranscriptionInRussia(a)+"\t"+
+                wordTranscriptionInRussia.getWordTranscriptionInRussia(b)+"\t"+
+                wordTranscriptionInRussia.getWordTranscriptionInRussia(c)+"\t"+
+                wordTranscriptionInRussia.getWordTranscriptionInRussia(d));
+        System.out.println();
+        System.out.print(wordTranslation.getWordTranslation(a)+"\t"+
+                wordTranslation.getWordTranslation(b)+"\t"+
+                wordTranslation.getWordTranslation(c)+"\t"+
+                wordTranslation.getWordTranslation(d));
+            System.out.println();
+        System.out.println();
         }
-//        через массив
-// HashSet<String>hashSet = new HashSet<>(words.getWords());
-//        Iterator<String> iterator = hashSet.iterator();
-//        String[][] mass = new String[3][4];
-//        while (iterator.hasNext()){
-//        mass[0][0] = iterator.next();
-//        mass[0][1] = iterator.next();
-//        mass[0][2] = iterator.next();
-//        mass[0][3] = iterator.next();
-//        mass[1][0] = wordTranslation.getWordTranslation(mass[0][0]);
-//        mass[1][1] = wordTranslation.getWordTranslation(mass[0][1]);
-//        mass[1][2] = wordTranslation.getWordTranslation(mass[0][2]);
-//        mass[1][3] = wordTranslation.getWordTranslation(mass[0][3]);
-//        mass[2][0] = wordTranscriptionInRussia.getWordTranscriptionInRussia(mass[0][0]);
-//        mass[2][1] = wordTranscriptionInRussia.getWordTranscriptionInRussia(mass[0][1]);
-//        mass[2][2] = wordTranscriptionInRussia.getWordTranscriptionInRussia(mass[0][2]);
-//        mass[2][3] = wordTranscriptionInRussia.getWordTranscriptionInRussia(mass[0][3]);}
-//        for (int i = 0; i<3; i++){
-//            for (int j =0; j<4; j++){
-//                System.out.print("\t"+mass[i][j]+"\t");
-//            }
-//            System.out.println();
-//        }
-//
-//    }
-//        for (int i = 0; i < numberWords; i++) {
-//            this.word = iterator.next();
-//
-//            if (a == 1) {
-//                System.out.println(word + "\t-\t" + wordTranslation.getWordTranslation(word) + "\t-\t" + wordTranscriptionInRussia.getWordTranscriptionInRussia(word));
-//            } else if (a == 2) {
-//                System.out.println(word + "\t-\t" + wordTranslation.getWordTranslation(word));
-//            } else {
-//                System.out.println("You can choice 1 or 2.");
-//                System.out.println("1 - word + russian transcription + translation;");
-//                System.out.println("2 - word + translation.");
-//            }
-//        }
 
 
-    }
+
     public String getWord() {
         return word;
     }

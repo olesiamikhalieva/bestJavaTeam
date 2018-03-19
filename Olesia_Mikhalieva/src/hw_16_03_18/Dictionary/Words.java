@@ -1,14 +1,13 @@
-package hw_16_03_18;
+package hw_16_03_18.Dictionary;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Words {
 
-    private static Set<String> wordsList = new HashSet<>(40);
+    private static List<String> wordsList = new ArrayList<>(40);
 
 
-    public HashSet<String> getWords() {
+    public ArrayList<String> getWords() {
         wordsList.add("animal");
         wordsList.add("wood");
         wordsList.add("mouse");
@@ -49,6 +48,7 @@ public class Words {
         wordsList.add("mobile");
         wordsList.add("pen");
         wordsList.add("window");
-        return (HashSet<String>) wordsList;
+        Collections.shuffle(wordsList);
+        return (ArrayList<String>) wordsList;
     }
 }
