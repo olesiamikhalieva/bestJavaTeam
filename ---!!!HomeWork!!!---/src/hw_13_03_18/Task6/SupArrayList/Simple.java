@@ -1,4 +1,4 @@
-package hw_14_03_18.Task6.SupArrayList;
+package hw_13_03_18.Task6.SupArrayList;
 
 public interface Simple<E> extends Iterable<E>{
     boolean add(E e);

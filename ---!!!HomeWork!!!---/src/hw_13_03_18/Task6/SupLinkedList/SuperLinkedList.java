@@ -1,4 +1,4 @@
-package hw_14_03_18.Task6.SupLinkedList;
+package hw_13_03_18.Task6.SupLinkedList;
 
 import java.util.Iterator;
 import java.util.Objects;

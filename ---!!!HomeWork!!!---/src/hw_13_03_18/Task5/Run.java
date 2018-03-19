@@ -1,6 +1,4 @@
-package hw_14_03_18.Task5;
-
-import Test.Collection;
+package hw_13_03_18.Task5;
 
 import java.util.*;
 
