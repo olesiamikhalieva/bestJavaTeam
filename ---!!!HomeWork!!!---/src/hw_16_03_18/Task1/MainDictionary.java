@@ -1,12 +1,11 @@
-package hw_16_03_18;
+package hw_16_03_18.Task1;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 
 public class MainDictionary {
     public static void main(String[] args) {
 
-        HashSet<Word> words = new HashSet<>();
+        ArrayList<Word> words = new ArrayList<>();
         words.add(new Word("dictionary", "ˈdikSHəˌnerē", "дикшенери", "словарь"));
         words.add(new Word("duck2","dək2", "дак2", "утка2"));
         words.add(new Word("duck3","dək3", "дак3", "утка3"));
@@ -82,5 +81,10 @@ public class MainDictionary {
         Dictionary dictionary = new Dictionary(words);
 
         dictionary.showWord3x3();
+
+        System.out.println("---------------------------------------------------------------------------------------------------------------------------------------");
+
+        dictionary.showWord3x4();
+
     }
 }

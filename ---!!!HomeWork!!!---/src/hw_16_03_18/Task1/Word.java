@@ -1,4 +1,4 @@
-package hw_16_03_18;
+package hw_16_03_18.Task1;
 
 import java.util.Objects;
 
@@ -29,7 +29,6 @@ public class Word {
     }
 
     public String getTranscription() {
-
         return transcription;
     }
 
