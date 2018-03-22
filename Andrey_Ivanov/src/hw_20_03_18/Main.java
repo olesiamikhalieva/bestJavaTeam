@@ -1,5 +1,7 @@
 package hw_20_03_18;
 
+import hw__26_01_18.task15.Array;
+
 import javax.sound.midi.Soundbank;
 import java.util.*;
 
@@ -8,9 +10,9 @@ public class Main {
     public static void main(String[] args) {
 
         //task1();
-        //task2();
+        task2();
         //task3();
-        task4();
+        //task4();
 
 
     }
@@ -26,9 +28,14 @@ public class Main {
         hashMap.put("Bob", 7);
         hashMap.put("Sos", 10);
         hashMap.put("Kot", 9);
-        for (HashMap.Entry<String, Object> s : hashMap.entrySet()) {
-            System.out.println(s.getKey() + "-" + s.getValue());
-        }
+        hashMap.put("Wolf", 45);
+        hashMap.put("Kit", 15);
+        hashMap.put("Kol", 12);
+        hashMap.put("Wood", 2);
+        hashMap.put("Kolos", 37);
+        hashMap.put("Kosa", 11);
+
+        hashMap.forEach((K, V) -> System.out.println(K + "-" + V));
     }
 
     /* 2.Пользователь вводит набор  произвольных чисел
@@ -37,16 +44,10 @@ public class Main {
     public static void task2() {
 
         HashSet<Integer> hashSet = new HashSet<>();
-        ArrayList<Integer> arrayList = new ArrayList<>();
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите числа:");
-        for (int i = 0; i < 5; i++) {
-            int n = in.nextInt();
-            hashSet.add(n);
-            arrayList.add(n);
-        }
-        System.out.println("Введенные числа: " + arrayList);
-        System.out.println("Избавился от повторений: " + hashSet);
+        String text = "1,2,3,4,5,6,7,8,9,9,9";
+        String[] mass = text.split(",");
+        Set<String> sd = new HashSet<>(Arrays.asList(mass));
+        sd.forEach(s -> System.out.print(s+","));
     }
 
     /*3.Есть карта Map<String, String> map = new HashMap<>();
@@ -56,7 +57,6 @@ public class Main {
 
         Map<String, String> map = new HashMap<>();
         map.put("C", "c");
-        map.put("E", "c");
         if (map.containsKey("E")) {
             System.out.println("Eсть такой ключ");
         } else {
@@ -74,13 +74,11 @@ public class Main {
         Map<String, String> map = new HashMap<>();
         map.put("C", "c");
         map.put("D", "b");
-        if (map.containsKey("B")) {
-            System.out.println("Такой ключ уже есть!");
-        } else {
-            map.put("B", "bob");
-            System.out.println("Положили в коллекцию пару B-bob ");
-        }
-        System.out.println(map);
+        map.putIfAbsent("B","bob");
+
+        map.forEach((V,K)-> System.out.println(V+"-"+K));
+
+
     }
 }
 
