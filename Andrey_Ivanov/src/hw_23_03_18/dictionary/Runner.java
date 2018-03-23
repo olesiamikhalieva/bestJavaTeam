@@ -1,4 +1,4 @@
-package hw_16_03_18.task1_dictionary;
+package hw_23_03_18.dictionary;
 
 import com.sun.org.apache.xpath.internal.SourceTree;
 
