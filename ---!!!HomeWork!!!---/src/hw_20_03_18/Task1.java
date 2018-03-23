@@ -26,6 +26,8 @@ public class Task1 {
             System.out.println(mEntr.getKey() + " - " + mEntr.getValue());
         }
 
+        //hashMap.forEach((K,V)-> System.out.println(K +" - " + V));
+
 //        Set<String> strings = hashMap.keySet();
 //        strings.forEach(s-> System.out.println(s));
 //
