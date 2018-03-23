@@ -1,6 +1,5 @@
 package les_16_03_18;
 
-import hw_09_01_18.Tank.Main;
 import les_06_03_18.Employer;
 import les_06_03_18.Manager;
 
