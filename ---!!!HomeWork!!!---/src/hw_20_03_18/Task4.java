@@ -9,7 +9,8 @@ public class Task4 {
         map.put("C", "c");
         map.put("B", "b");
 
-        map.putIfAbsent("B","b");
+        System.out.println(map.putIfAbsent("B", "b1"));
 
+        map.forEach((K,V)-> System.out.println(K + " - " + V));
     }
 }
