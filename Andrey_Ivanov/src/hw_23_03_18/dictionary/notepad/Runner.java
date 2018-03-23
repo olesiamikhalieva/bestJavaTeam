@@ -10,7 +10,7 @@ public static Map<Integer,Person>notepad=new HashMap<>();
 
         createNotepad();//создание блокнота и вывод записей
         System.out.println();
-        deleteRecord(3);//удаление по записи по ключу и вывод записей после удаления
+        deleteRecord(3);//удаление записи по ключу и вывод записей после удаления
 
 
     }
