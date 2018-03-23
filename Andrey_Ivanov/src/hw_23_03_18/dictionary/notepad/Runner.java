@@ -10,7 +10,7 @@ public static Map<Integer,Person>notepad=new HashMap<>();
 
         createNotepad();//создание блокнота и вывод записей
         System.out.println();
-        deleteRecord(3);//удаление по запси по ключу и вывод записей после удаления
+        deleteRecord(3);//удаление по записи по ключу и вывод записей после удаления
 
 
     }
@@ -28,7 +28,7 @@ public static Map<Integer,Person>notepad=new HashMap<>();
         notepad.put(1, person1);
         notepad.put(2,person2);
         notepad.put(3,person3);
-        
+
         System.out.println("Вывод всех записей в блокноте:");
         notepad.forEach((K, V) -> System.out.println(K+"-"+V.toString()));
     }
