@@ -77,4 +77,9 @@ public class Employer {
         result = 31 * result + coef;
         return result;
     }
+
+    @Override
+    public String toString() {
+        return  name;
+    }
 }
