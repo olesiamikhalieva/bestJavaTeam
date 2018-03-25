@@ -80,6 +80,11 @@ public class Word {
 
     @Override
     public String toString() {
-        return "\nСлово: " + word + "\nТранскрипция: " + transcription + "\nНа русском: " + transcriptionRus + "\nПеревод: " + translate;
-}
+        return "\nWord{" +
+                "word='" + word + '\'' +
+                ", transcription='" + transcription + '\'' +
+                ", transcriptionRus='" + transcriptionRus + '\'' +
+                ", translate='" + translate + '\'' +
+                '}';
+    }
 }
