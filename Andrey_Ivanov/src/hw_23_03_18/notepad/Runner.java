@@ -35,7 +35,7 @@ public static Map<Integer,Person>notepad=new HashMap<>();
 
     public static void deleteRecord(int key){
         notepad.remove(key);
-        System.out.println("Выввод записей после удаления:");
+        System.out.println("Вывод записей после удаления:");
         notepad.forEach((K, V) -> System.out.println(K+"-"+V.toString()));
     }
 }
