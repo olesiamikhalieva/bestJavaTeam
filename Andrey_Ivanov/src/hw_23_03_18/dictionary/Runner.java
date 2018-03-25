@@ -1,9 +1,6 @@
 package hw_23_03_18.dictionary;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Runner {

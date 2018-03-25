@@ -1,4 +1,4 @@
-package hw_23_03_18.dictionary.notepad;
+package hw_23_03_18.notepad;
 
 public abstract class Human {
    private String name;
