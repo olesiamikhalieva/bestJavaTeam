@@ -1,7 +1,5 @@
 package les_06_03_18;
 
-import hw_06_02_18.ClassesBird.Eagle;
-
 import java.util.*;
 
 /**

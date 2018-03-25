@@ -1,9 +1,6 @@
 package les_16_03_18;
 
-import hw_26_01_18.task2.SamsungGalaxyS2;
 import les_06_03_18.Employer;
-
-import java.util.IdentityHashMap;
 
 /**
  * Created by java on 16.03.2018.
