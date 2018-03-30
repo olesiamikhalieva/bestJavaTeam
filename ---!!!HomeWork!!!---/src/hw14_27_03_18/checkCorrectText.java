@@ -8,6 +8,11 @@ public class checkCorrectText {
     public static void main(String[] args) throws Exception {
         File file = new File("---!!!HomeWork!!!---//src//hw14_27_03_18//work");
         File[] files = file.listFiles();
+
+        FileReader fr = new FileReader(files[2]);
+        int g = fr.read();
+
+        System.out.println(g);
 //
 //        BufferedReader br = new BufferedReader(new FileReader(files[2]));
 //        if (!br.readLine().contains(" ")) {
