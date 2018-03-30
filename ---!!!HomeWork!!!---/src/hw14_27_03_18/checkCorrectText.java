@@ -1,25 +1,35 @@
 package hw14_27_03_18;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
+import java.io.*;
+import java.nio.file.Files;
+import java.util.Scanner;
+
+import static hw14_27_03_18.aCheckFile.*;
 
 public class checkCorrectText {
     public static void main(String[] args) throws Exception {
         File file = new File("---!!!HomeWork!!!---//src//hw14_27_03_18//work");
         File[] files = file.listFiles();
 
-        FileReader fr = new FileReader(files[2]);
-        int g = fr.read();
+        for (File f : files) {
+//            BufferedReader br = new BufferedReader(new FileReader(f));
+//            if (br.readLine().contains(" ") == true) {
+//                BufferedWriter bw = new BufferedWriter(new FileWriter(new File(donedir + "//" + f.getName())));
+//                bw.write(br.readLine());
+//            }else{
+//                BufferedWriter bw = new BufferedWriter(new FileWriter(new File(errordir + "//" + f.getName())));
+//                bw.write(br.readLine());
+//            }
 
-        System.out.println(g);
-//
-//        BufferedReader br = new BufferedReader(new FileReader(files[2]));
-//        if (!br.readLine().contains(" ")) {
-//            files[2].renameTo(new File("---!!!HomeWork!!!---//src//hw14_27_03_18//error//" + files[2].getName()));
-//        } else {
-//            files[2].renameTo(new File("---!!!HomeWork!!!---//src//hw14_27_03_18//done//" + files[2].getName()));
-//        }
-//        br.close();
+//            Files.move(f.toPath(),new File(donedir + "//" + f.getName()).toPath());
+
+            BufferedReader br = new BufferedReader(new FileReader(f));
+            if (br.readLine().contains(" ")){
+                f.renameTo(new File(donedir + "//" + f.getName()));
+            }else {
+                f.renameTo(new File(errordir + "//" + f.getName()));
+            }
+            br.close();
+        }
     }
 }
