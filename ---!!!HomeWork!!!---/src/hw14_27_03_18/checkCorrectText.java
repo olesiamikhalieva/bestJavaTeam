@@ -16,6 +16,7 @@ public class checkCorrectText {
             BufferedReader br = new BufferedReader(new FileReader(f));
             String str = br.readLine();
             br.close();
+
             if (str.contains(" ") == true){
                 f.renameTo(new File(donedir + "//" + f.getName()));
             }else{
