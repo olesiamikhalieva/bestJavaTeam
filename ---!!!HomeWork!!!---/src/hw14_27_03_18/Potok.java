@@ -13,6 +13,12 @@ import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
  * Created by java on 27.03.2018.
  */
 public class Potok {
+    static File workdir = new File("---!!!HomeWork!!!---//src//hw14_27_03_18//work");
+    static File donedir = new File("---!!!HomeWork!!!---//src//hw14_27_03_18//done");
+    static File errordir = new File("---!!!HomeWork!!!---//src//hw14_27_03_18//error");
+    static File workf = new File("---!!!HomeWork!!!---//src//hw14_27_03_18//work//work.txt");
+    static File donef = new File("---!!!HomeWork!!!---//src//hw14_27_03_18//done//done.txt");
+    static File errorf = new File("---!!!HomeWork!!!---//src//hw14_27_03_18//error//error.txt");
     public static void main(String[] args) throws IOException {
 
 //        File work = new File("D:\\_aJavaBest Team\\Project\\student_home_works\\0Lessons\\src\\les_27_03_18\\work");
@@ -31,26 +37,35 @@ public class Potok {
 //                System.out.println(file.renameTo(new File("D:/_aJavaBest Team/Project/student_home_works/0Lessons/src/les_27_03_18/work", file.getName())));
 //            }
 //        }
-
-        File workdir = new File("---!!!HomeWork!!!---/src/hw14_27_03_18/work");
+//
         workdir.mkdir();
-        File donedir = new File("---!!!HomeWork!!!---/src/hw14_27_03_18/done");
         donedir.mkdir();
-        File errordir = new File("---!!!HomeWork!!!---/src/hw14_27_03_18/error");
         errordir.mkdir();
-
-        File workf = new File("---!!!HomeWork!!!---/src/hw14_27_03_18/work/work.txt");
         workf.createNewFile();
-        File donef = new File("---!!!HomeWork!!!---/src/hw14_27_03_18/done/done.txt");
         donef.createNewFile();
-        File errorf = new File("---!!!HomeWork!!!---/src/hw14_27_03_18/error/error.txt");
         errorf.createNewFile();
 
-        File[] strings = donedir.listFiles();
+        for (File file : donedir.listFiles()) {
+            remaneFile(file);
+        }
 
-        System.out.println(strings[0].renameTo(new File(String.valueOf(donedir))));
+        for (File file : errordir.listFiles()) {
+           remaneFile(file);
+        }
 
-        Files.move(donef, workf, ATOMIC_MOVE)
+    }
+    public static void remaneFile(File file)throws IOException{
+        if (!file.renameTo(new File(workdir + "//" + file.getName()))){
+            BufferedReader br = new BufferedReader(new FileReader(file));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(new File(workdir + "//" + file.getName())));
 
+            while (br.ready()){
+                bw.write(br.readLine()+"\n");
+            }
+
+            br.close();
+            bw.close();
+            file.delete();
+        }
     }
 }
