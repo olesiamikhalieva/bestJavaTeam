@@ -28,5 +28,6 @@ public class Task_2 {
         FileWriter writer = new FileWriter(file, false);
         writer.write(text);
         writer.flush();
+        writer.close();
     }
 }

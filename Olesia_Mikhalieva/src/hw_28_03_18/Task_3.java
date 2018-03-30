@@ -10,14 +10,13 @@ import java.nio.file.StandardCopyOption;
 
 public class Task_3 {
 
-    public void replaceFiles(File work, File done, File error) throws IOException {
+    public void replaceFiles(File work, File done, File error) {
 
         File[] files = work.listFiles();
         changeFile(files[0]);
         for (int i = 0; i < files.length; i++) {
             try (BufferedReader reader = new BufferedReader(
-                    new InputStreamReader(
-                            new FileInputStream(files[i]), StandardCharsets.UTF_8))) {
+                    new FileReader(files[i]))) {
                 String line;
                 while ((line = reader.readLine()) != null) {
                     if (line.contains(" ")) {
@@ -33,17 +32,17 @@ public class Task_3 {
                         Files.copy(from, to, StandardCopyOption.REPLACE_EXISTING);
                         break;
                     }
-
                 }
             } catch (IOException e) {
-
+               e.printStackTrace();
             }
             files[i].delete();
+
         }
 
     }
 
-    private static void changeFile(File file) throws IOException {
+    private static void changeFile(File file) {
         String line = "";
         try (BufferedReader reader = new BufferedReader(
                 new InputStreamReader(
