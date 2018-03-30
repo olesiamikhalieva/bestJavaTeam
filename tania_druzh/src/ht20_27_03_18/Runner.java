@@ -141,15 +141,17 @@ public class Runner {
             boolean hasSpase = false;
             while((i=fin.read())!=-1){
                 if((char)i == ' ') {
+                    fin.close();
                     moveFile(file,doneDir);
                     hasSpase = true;
                     break;
                 }
             }
             if (!hasSpase) {
+                fin.close();
                 moveFile(file,errorDir);
             }
-            fin.close();
+
         }
         catch(IOException ex){
 
