@@ -12,7 +12,7 @@ import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 /**
  * Created by java on 27.03.2018.
  */
-public class Potok {
+public class aCheckFile {
     static File workdir = new File("---!!!HomeWork!!!---//src//hw14_27_03_18//work");
     static File donedir = new File("---!!!HomeWork!!!---//src//hw14_27_03_18//done");
     static File errordir = new File("---!!!HomeWork!!!---//src//hw14_27_03_18//error");
@@ -57,7 +57,7 @@ public class Potok {
     public static void remaneFile(File file)throws IOException{
         if (!file.renameTo(new File(workdir + "//" + file.getName()))){
             BufferedReader br = new BufferedReader(new FileReader(file));
-            BufferedWriter bw = new BufferedWriter(new FileWriter(new File(workdir + "//" + file.getName())));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(new File(workdir + "//" + file.getName()),true));
 
             while (br.ready()){
                 bw.write(br.readLine()+"\n");
