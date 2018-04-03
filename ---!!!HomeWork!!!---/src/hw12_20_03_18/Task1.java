@@ -1,6 +1,6 @@
 package hw12_20_03_18;
 
-import les_06_03_18.Employer;
+import les5_06_03_18.Employer;
 
 import java.util.HashMap;
 import java.util.Map;
