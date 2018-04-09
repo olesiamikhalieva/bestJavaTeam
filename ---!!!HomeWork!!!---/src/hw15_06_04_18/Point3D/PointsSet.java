@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class PointsSet<E> implements MethodsSet {
 
-    private Point3D[] massE;
+    private E[] massE;
 
-    public PointsSet(Point3D[] massE) {
+    public PointsSet(E[] massE) {
         this.massE = massE;
     }
 
@@ -14,12 +14,12 @@ public class PointsSet<E> implements MethodsSet {
     }
 
     @Override
-    public boolean addPoint(Point3D point3D) {
+    public boolean addPoint(Object point3D) {
         try {
 
-            Point3D[] massPoint = new Point3D[0];
+            E[] massPoint = (E[])new Object[0];
             massPoint = Arrays.copyOf(this.massE, this.massE.length + 1);
-            massPoint[massPoint.length - 1] = point3D;
+            massPoint[massPoint.length - 1] = (E)point3D;
             this.massE = massPoint;
             return true;
 
@@ -33,7 +33,7 @@ public class PointsSet<E> implements MethodsSet {
     public void distance() {
         for (int i = 0; i < this.massE.length - 1; i++) {
             for (int j = 0; j < this.massE.length - 1; j++) {
-                System.out.println("от точки номер " + i + "до точки номер" + j + this.massE[i].distanceTo(this.massE[j]) + "условных единиц");
+              //  System.out.println("от точки номер " + i + "до точки номер" + j + this.massE[i].distanceTo(this.massE[j]) + "условных единиц");
             }
             System.out.println();
         }
