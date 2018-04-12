@@ -28,21 +28,30 @@ public class ATM{
         this.currency = currency;
     }
 
-    public void getMoney(int money) {
+    public int getMoney(int money) {
         lock.lock();
+        int sum = 0;
         try {
-            if (balance - money > 0) {
+            if (balance - money >= 0) {
                 balance -= money;
-                System.out.println("you get " + money + "you have " + balance);
+                System.out.println("Вы сняли -- " + money + ", у вас осталось -- " + balance);
+                sum = money; // если условие верно, то вернем ту сумму, которую запросили
             } else if (balance - money < 0) {
-                System.out.println("you can`t get this sum, check balance " + "you have " + balance + " you get " + money);
+                System.out.println("у вас нат такой суммы на карточке, " + "у вас есть -- " + balance + ", вы пытались снять --" + money);
             } else {
-                System.out.println("you don`t have money");
+                System.out.println("Вы банкрот");
             }
         } finally {
             lock.unlock();
         }
-
+        return sum;
     }
 
+    public boolean setMoney(int money){
+        lock.lock();
+        this.balance += money;
+        System.out.println("Вы добавили к своему вкладу -- " + money + ", Теперь вы имеете -- " + this.balance);
+        lock.unlock();
+        return true;
+    }
 }
