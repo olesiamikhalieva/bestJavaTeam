@@ -1,9 +1,9 @@
-package task14;
+package hw4_26_01_18.task14;
 
-import task14.ComponentsRobot.*;
-import task14.NewRobot.RDefender;
-import task14.NewRobot.RFight;
-import task14.NewRobot.RFly;
+import  hw4_26_01_18.task14.ComponentsRobot.*;
+import  hw4_26_01_18.task14.NewRobot.RDefender;
+import  hw4_26_01_18.task14.NewRobot.RFight;
+import  hw4_26_01_18.task14.NewRobot.RFly;
 
 
 //Todo - good (23_01_18)

@@ -1,4 +1,4 @@
-package task14.ComponentsRobot;
+package hw4_26_01_18.task14.ComponentsRobot;
 
 public class Head {
     public void speak() {

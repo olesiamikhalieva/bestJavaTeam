@@ -1,10 +1,10 @@
-package task14.NewRobot;
+package hw4_26_01_18.task14.NewRobot;
 
-import task14.ComponentsRobot.Arm;
-import task14.ComponentsRobot.Head;
-import task14.ComponentsRobot.Leg;
-import task14.ComponentsRobot.Torso;
-import task14.Robot;
+import hw4_26_01_18.task14.ComponentsRobot.Arm;
+import hw4_26_01_18.task14.ComponentsRobot.Head;
+import hw4_26_01_18.task14.ComponentsRobot.Leg;
+import hw4_26_01_18.task14.ComponentsRobot.Torso;
+import hw4_26_01_18.task14.Robot;
 
 import java.util.Objects;
 
