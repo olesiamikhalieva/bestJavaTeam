@@ -13,7 +13,7 @@ public class ClassRunner {
         System.out.println("------------------------");
         showFields(testClass);
         toLowerCase(testClass);
-        System.out.println("------------------------");
+        System.out.println("----------------------------");
         showFields(testClass);
     }
 
