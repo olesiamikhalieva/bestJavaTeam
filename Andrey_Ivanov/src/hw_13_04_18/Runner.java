@@ -15,9 +15,7 @@ public class Runner {
         toLowerCase(person);
         System.out.println();
         toUpperCase(person);
-        
     }
-
 
     public static void printFields(Person person) throws IllegalAccessException {
 
@@ -29,28 +27,28 @@ public class Runner {
                     + field.getType().getName() + "-" + field.getName() + "=" + field.get(person));
         }
     }
+
     public static void toLowerCase(Person person) throws IllegalAccessException {
         System.out.println("Меняем все большие буквы на маленькие:");
-        Field[]fields=clss.getDeclaredFields();
+        Field[] fields = clss.getDeclaredFields();
         for (Field field : fields) {
-            if (field.getType().getName()=="java.lang.String"){
+            if (field.getType().getName() == "java.lang.String") {
                 field.setAccessible(true);
-                field.set(person,(String) field.get(person).toString().toLowerCase());
-                System.out.println(field.getName()+"="+field.get(person));
+                field.set(person, (String) field.get(person).toString().toLowerCase());
+                System.out.println(field.getName() + "=" + field.get(person));
             }
-
         }
     }
+
     public static void toUpperCase(Person person) throws IllegalAccessException {
         System.out.println("Меняем все маленькие буквы на большие:");
-        Field[]fields=clss.getDeclaredFields();
+        Field[] fields = clss.getDeclaredFields();
         for (Field field : fields) {
-            if (field.getType().getName()=="java.lang.String"){
+            if (field.getType().getName() == "java.lang.String") {
                 field.setAccessible(true);
-                field.set(person,(String) field.get(person).toString().toUpperCase());
-                System.out.println(field.getName()+"="+field.get(person));
+                field.set(person, (String) field.get(person).toString().toUpperCase());
+                System.out.println(field.getName() + "=" + field.get(person));
             }
-
         }
     }
 }
