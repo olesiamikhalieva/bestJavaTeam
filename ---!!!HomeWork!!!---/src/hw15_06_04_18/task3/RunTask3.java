@@ -57,16 +57,17 @@ public class RunTask3 {
     public static void readFileAndWriteMap() throws IOException {
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm:ss:SSS");
+
         HashMap<String, String> hashMap = new HashMap<>();
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("---!!!HomeWork!!!---/src/hw15_06_04_18/task3/file1.txt"));
-        StringBuilder stringBuilder = new StringBuilder();
+        BufferedReader bufferedReader = new BufferedReader(new FileReader("---!!!HomeWork!!!---/src/hw15_06_04_18/task3/file1.txt")); // считываем с файла, который создался потоком
+
+        int i = 0;
         while (bufferedReader.ready()) {
-            hashMap.put(String.valueOf((char) bufferedReader.read()), simpleDateFormat.format(date)); // записываем в отображение символ и время появления
+            hashMap.put("номер " + i++ + " символ -> " + '\'' + String.valueOf((char) bufferedReader.read()) + '\'', simpleDateFormat.format(date)); // записываем в отображение символ и время появления
         }
         bufferedReader.close();
 
-        System.out.println(hashMap.toString());
-
-
+        hashMap.forEach((k,v) -> System.out.println(k + " ---" + v));
+        System.out.println(hashMap.size());
     }
 }
