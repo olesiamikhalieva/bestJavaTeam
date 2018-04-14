@@ -15,20 +15,7 @@ public class Runner {
         toLowerCase(person);
         System.out.println();
         toUpperCase(person);
-
-//        Class clss = Person.class;
-//        Field[] fields = clss.getDeclaredFields();
-//        for (Field field : fields) {
-//            System.out.println(field.getName());
-//            System.out.println(field.getType().getName());
-//            //System.out.println(Modifier.toString(field.getModifiers()));
-//            //System.out.println(field.get(person));
-//            if (field.getType().getName() == "int") {
-//                //field.setAccessible(true);
-//                System.out.println(field.getInt(person));
-//                field.setInt(person, 40);
-//                System.out.println(field.getInt(person));
-//                //System.out.println(Modifier.toString(field.getModifiers()));
+        
     }
 
 
