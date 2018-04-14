@@ -1,8 +1,11 @@
 package hw15_06_04_18.task3;
 
+import javafx.util.converter.DateStringConverter;
+
 import java.io.*;
 import java.lang.reflect.Array;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
@@ -52,18 +55,17 @@ public class RunTask3 {
     }
 
     public static void readFileAndWriteMap() throws IOException {
+        Date date = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("");
+        HashMap<String,Date> hashMap = new HashMap<>();
         BufferedReader bufferedReader = new BufferedReader(new FileReader("---!!!HomeWork!!!---/src/hw15_06_04_18/task3/file1.txt"));
         StringBuilder stringBuilder = new StringBuilder();
         while (bufferedReader.ready()) {
-            stringBuilder.append((char) bufferedReader.read());
+            hashMap.put(String.valueOf((char)bufferedReader.read()),)
         }
-        System.out.println(stringBuilder);
         bufferedReader.close();
 
-        char[] mass = new char[stringBuilder.length()];
-        stringBuilder.toString().getChars(0, stringBuilder.length(), mass,0);
 
-        HashMap<String,Date> hashMap = new HashMap<>();
-        hashMap.
+
     }
 }
