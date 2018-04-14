@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ÐÐµÐ±ÐµÐ»Ñ Ð½Ð° Ð·Ð°ÐºÐ°Ð· Ð² ÐÐ¸ÐµÐ²Ðµ Ð¸ Ð¾Ð±Ð»Ð°ÑÑÐ¸ - ÐÐ°Ð±Ð¾ÑÐ°ÑÐ¾ÑÐ¸Ñ ÐÐµÐ±ÐµÐ»Ð¸</title>
+    <link rel="stylesheet" href="http://labmeb.com.ua/wp-content/themes/meb/style.css">	
+ 	
+<!-- This site is optimized with the Yoast SEO plugin v2.3.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="ÐÐ°Ð±Ð¾ÑÐ°ÑÐ¾ÑÐ¸Ñ Ð¼ÐµÐ±ÐµÐ»Ð¸ - Ð¸Ð·Ð³Ð¾ÑÐ¾Ð²Ð»ÐµÐ½Ð¸Ðµ Ð½Ð° Ð·Ð°ÐºÐ°Ð· ÐºÑÑÐ¾Ð½Ñ, ÑÐºÐ°ÑÐ¾Ð² ÐºÑÐ¿Ðµ."/>
+<link rel="canonical" href="http://labmeb.com.ua/" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="ÐÐµÐ±ÐµÐ»Ñ Ð½Ð° Ð·Ð°ÐºÐ°Ð· Ð² ÐÐ¸ÐµÐ²Ðµ Ð¸ Ð¾Ð±Ð»Ð°ÑÑÐ¸ - ÐÐ°Ð±Ð¾ÑÐ°ÑÐ¾ÑÐ¸Ñ ÐÐµÐ±ÐµÐ»Ð¸" />
+<meta property="og:description" content="ÐÐ°Ð±Ð¾ÑÐ°ÑÐ¾ÑÐ¸Ñ Ð¼ÐµÐ±ÐµÐ»Ð¸ - Ð¸Ð·Ð³Ð¾ÑÐ¾Ð²Ð»ÐµÐ½Ð¸Ðµ Ð½Ð° Ð·Ð°ÐºÐ°Ð· ÐºÑÑÐ¾Ð½Ñ, ÑÐºÐ°ÑÐ¾Ð² ÐºÑÐ¿Ðµ." />
+<meta property="og:url" content="http://labmeb.com.ua/" />
+<meta property="og:site_name" content="Lab Meb" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/labmeb.com.ua\/","name":"Lab Meb","potentialAction":{"@type":"SearchAction","target":"http:\/\/labmeb.com.ua\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Lab Meb &raquo; ÐÐµÐ½ÑÐ° ÐºÐ¾Ð¼Ð¼ÐµÐ½ÑÐ°ÑÐ¸ÐµÐ² Ðº &laquo;ÐÐµÐ±ÐµÐ»Ñ Ð½Ð° Ð·Ð°ÐºÐ°Ð·&raquo;" href="http://labmeb.com.ua/nasha-kompaniya/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/labmeb.com.ua\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.16"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='http://labmeb.com.ua/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://labmeb.com.ua/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-popular-posts-css'  href='http://labmeb.com.ua/wp-content/plugins/wordpress-popular-posts/style/wpp.css?ver=3.3.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://labmeb.com.ua/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://labmeb.com.ua/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://labmeb.com.ua/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://labmeb.com.ua/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.3.16" />
+<link rel='shortlink' href='http://labmeb.com.ua/' />
+		
+<link rel="stylesheet" type="text/css" media="all" href="http://labmeb.com.ua/wp-content/themes/meb/bootstrap/css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" media="all" href="http://labmeb.com.ua/wp-content/themes/meb/bootstrap/css/responsive.css"/>
+
+<script type='text/javascript' src1='http://livedemo00.template-help.com/wordpress_48469/wp-includes/js/swfobject.js?ver=2.2-20120417'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/themes/CherryFramework/js/modernizr.js?ver=2.0.6'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/themes/CherryFramework/js/jflickrfeed.js?ver=1.0'></script>
+ 
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/themes/CherryFramework/bootstrap/js/bootstrap.min.js?ver=2.3.0'></script>
+ 
+
+<link rel="stylesheet" type="text/css" href="http://labmeb.com.ua/wp-content/themes/meb/js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type='text/javascript' src='http://labmeb.com.ua/wp-content/themes/meb/js/fancybox/jquery.fancybox.js?ver=1.3.4'></script>
+<script type="text/javascript">
+//$(document).ready(function() {
+jQuery(document).ready(function ($) {
+  $('a[rel="fancybox"]').fancybox({
+		//fitToView : false
+	});
+	$(".fancybox").fancybox({
+		//fitToView : false
+	});
+});
+</script>	
+  <style type="text/css">.cherry-fixed-layout .main-holder{background:#fafafa;}</style>
+<style type='text/css'>body{background-color:#392e31}.header{background-color:#fdfcfb}</style>
+<style type='text/css'>h1{font:normal 30px/35px Roboto;color:#3d3a38;}h2{font:normal 22px/22px Roboto;color:#3d3a38;}h3{font:normal 18px/18px Roboto;color:#3d3a38;}h4{font:normal 14px/18px Roboto;color:#3d3a38;}h5{font:normal 12px/18px Roboto;color:#3d3a38;}h6{font:normal 12px/18px Roboto;color:#3d3a38;}body{font-weight:normal;}.logo_h__txt,.logo_link{font:normal 46px/48px Roboto;color:#392e31;}.sf-menu>li>a{font:normal 21px/25px Roboto;color:#3d3a38;}.nav.footer-nav a{font:normal 12px/18px Roboto;color:#979091;}</style>
+<!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+		<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
+	</div>
+	<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="http://livedemo00.template-help.com/wordpress_48469/wp-content/themes/CherryFramework/js/jquery.mobile.customized.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+		jQuery(function(){
+			jQuery('.sf-menu').mobileMenu({defaultText: "Navigate to..."});
+		});
+	</script>
+<!--<![endif]-->
+<script type="text/javascript">
+jQuery.noConflict();
+		// Init navigation menu
+		jQuery(function(){
+		// main navigation init
+			jQuery('ul.sf-menu').superfish({
+				delay: 1000, // the delay in milliseconds that the mouse can remain outside a sub-menu without it closing
+				animation: {
+					opacity: "show",
+					height: "show"
+				}, // used to animate the sub-menu open
+				speed: "normal", // animation speed 
+				autoArrows: false, // generation of arrow mark-up (for submenu)
+				disableHI: true // to disable hoverIntent detection
+			});
+
+		//Zoom fix
+		//IPad/IPhone
+			var viewportmeta = document.querySelector && document.querySelector('meta[name="viewport"]'),
+				ua = navigator.userAgent,
+				gestureStart = function () {
+					viewportmeta.content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0";
+				},
+				scaleFix = function () {
+					if (viewportmeta && /iPhone|iPad/.test(ua) && !/Opera Mini/.test(ua)) {
+						viewportmeta.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+						document.addEventListener("gesturestart", gestureStart, false);
+					}
+				};
+			scaleFix();
+		})
+	</script>
+</head>
+<body class="home page page-id-203 page-template page-template-page-home-php">
+<div id="motopress-main" class="main-holder">
+ 
+<header class="motopress-wrapper header">
+<div class="container">
+<div class="row">
+<div class="span12" data-motopress-wrapper-type="header">
+<div class="row">
+<div class="span3" data-motopress-type="static">
+ 
+<div class="logo pull-left">
+<a href="/" class="logo_h logo_h__img"><img src="http://labmeb.com.ua/wp-content/themes/meb/img/logo.png" title=""></a>
+</div>
+  </div>
+<div class="span9" data-motopress-type="static">
+ <span class="top_phone"><img src="http://labmeb.com.ua/wp-content/themes/meb/img/phone.png"><a href="tel:8(063)1322131">+38(063)1322131</a></span>
+<nav class="nav nav__primary clearfix">
+<div class="menu-menutop-container"><ul id="menu-menutop" class="sf-menu"><li id="menu-item-4" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-4"><a href="/">ÐÐ»Ð°Ð²Ð½Ð°Ñ</a></li>
+<li id="menu-item-12" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12"><a href="http://labmeb.com.ua/portfolio/">ÐÐ¾ÑÑÑÐ¾Ð»Ð¸Ð¾</a></li>
+<li id="menu-item-1040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1040"><a href="http://labmeb.com.ua/kontaktyi/">ÐÐ¾Ð½ÑÐ°ÐºÑÑ</a></li>
+</ul></div></nav>  </div>
+</div> </div>
+</div>
+</div>
+</header> 
+
+
+
+
+<div id="slider-wrapper" class="slider">
+<div class="container">
+<script type="text/javascript">
+//    jQuery(window).load(function() {
+		jQuery(function() {
+			var myCamera = jQuery('#camera56319c4f87f34');
+			if (!myCamera.hasClass('motopress-camera')) {
+				myCamera.addClass('motopress-camera');
+				myCamera.camera({
+					autoAdvance         : true, //true, false
+					mobileAutoAdvance   : true, //true, false. Auto-advancing for mobile devices
+					cols                : 12,
+					fx                  : "random", //'random','simpleFade', 'curtainTopLeft', 'curtainTopRight', 'curtainBottomLeft',          'curtainBottomRight', 'curtainSliceLeft', 'curtainSliceRight', 'blindCurtainTopLeft', 'blindCurtainTopRight', 'blindCurtainBottomLeft', 'blindCurtainBottomRight', 'blindCurtainSliceBottom', 'blindCurtainSliceTop', 'stampede', 'mosaic', 'mosaicReverse', 'mosaicRandom', 'mosaicSpiral', 'mosaicSpiralReverse', 'topLeftBottomRight', 'bottomRightTopLeft', 'bottomLeftTopRight', 'bottomLeftTopRight'
+					loader              : "no", //pie, bar, none (even if you choose "pie", old browsers like IE8- can't display it... they will display always a loading bar)
+					navigation          : false, //true or false, to display or not the navigation buttons
+					navigationHover     : false, //if true the navigation button (prev, next and play/stop buttons) will be visible on hover state only, if false they will be visible always
+					pagination          : true,
+					playPause           : false, //true or false, to display or not the play/pause buttons
+					rows                : 8,
+					slicedCols          : 12,
+					slicedRows          : 8,
+					thumbnails          : false,
+					time                : 7000, //milliseconds between the end of the sliding effect and the start of the next one
+					transPeriod         : 1500, //lenght of the sliding effect in milliseconds
+
+					alignment : 'topCenter',
+barDirection : 'leftToRight',
+barPosition : 'top',
+easing : 'easeOutQuad',
+mobileEasing : '',
+mobileFx : '',
+gridDifference : 250,
+imagePath : 'images/',
+minHeight : "100px",
+height : "47.7%",
+loaderColor : '#ffffff',
+loaderBgColor : '#eb8a7c',
+loaderOpacity : 1,
+loaderPadding : 0,
+loaderStroke : 3,
+pieDiameter : 33,
+piePosition : 'rightTop',
+portrait : true,
+					////////callbacks
+					onEndTransition     : function(){}, //this callback is invoked when the transition effect ends
+					onLoaded            : function(){}, //this callback is invoked when the image on a slide has completely loaded
+					onStartLoading      : function(){}, //this callback is invoked when the image on a slide start loading
+					onStartTransition   : function(){} //this callback is invoked when the transition effect starts
+				});
+			}
+		});
+//    });
+</script>
+<div id="camera56319c4f87f34" class="camera_wrap camera">
+<div data-src='http://labmeb.com.ua/wp-content/uploads/2015/10/slide1.jpg' data-link='#' > <div class="camera_caption fadeFromBottom">
+<h2>ÐÐ°Ð±Ð¾ÑÐ°ÑÐ¾ÑÐ¸Ñ ÐÐµÐ±ÐµÐ»Ð¸</h2>
+<h3>ÐÑÑÐ½Ð¸</br>
+Ð¿Ð¾Ð´ Ð·Ð°ÐºÐ°Ð·</h3> </div>
+</div>
+
+<div data-src='http://labmeb.com.ua/wp-content/uploads/2015/10/slide5.jpg' data-link='#' > <div class="camera_caption fadeFromBottom">
+<h2>ÐÐ°Ð±Ð¾ÑÐ°ÑÐ¾ÑÐ¸Ñ ÐÐµÐ±ÐµÐ»Ð¸</h2>
+<h3>Ð¨ÐºÐ°ÑÑ ÐºÑÐ¿Ðµ <br/>
+Ð¿Ð¾Ð´ Ð·Ð°ÐºÐ°Ð·</h3> </div>
+</div>
+
+<div data-src='http://labmeb.com.ua/wp-content/uploads/2015/10/slide2.jpg' data-link='#' > <div class="camera_caption fadeFromBottom">
+<h2>ÐÐ°Ð±Ð¾ÑÐ°ÑÐ¾ÑÐ¸Ñ ÐÐµÐ±ÐµÐ»Ð¸</h2>
+<h3>ÐÐ¿ÑÑ ÑÐ°Ð±Ð¾ÑÑ <br/>
+8 Ð»ÐµÑ</h3> </div>
+</div>
+
+<div data-src='http://labmeb.com.ua/wp-content/uploads/2015/10/slide3.jpg' data-link='#' > <div class="camera_caption fadeFromBottom">
+<h2>ÐÐ°Ð±Ð¾ÑÐ°ÑÐ¾ÑÐ¸Ñ ÐÐµÐ±ÐµÐ»Ð¸</h2>
+<h3>Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑÐ°Ð»ÑÐ½ÑÐ¹<br/>
+Ð´Ð¸Ð·Ð°Ð¹Ð½</h3> </div>
+</div>
+
+<div data-src='http://labmeb.com.ua/wp-content/uploads/2015/10/slide4.jpg' data-link='#' > <div class="camera_caption fadeFromBottom">
+<h2>ÐÐ°Ð±Ð¾ÑÐ°ÑÐ¾ÑÐ¸Ñ ÐÐµÐ±ÐµÐ»Ð¸</h2>
+<h3>ÐÐ¾Ð»ÑÑÐ¾Ð¹ Ð²ÑÐ±Ð¾Ñ<br/>
+Ð¼Ð°ÑÐµÑÐ¸Ð°Ð»Ð¾Ð²</h3> </div>
+</div></div>
+</div>
+</div> 
+
+
+						
+<div class="motopress-wrapper content-holder clearfix"> 
+<div class="container">
+<div class="row">
+<div class="span12" data-motopress-wrapper-file="page-home.php" data-motopress-wrapper-type="content">
+<div class="row">
+<div class="span12" data-motopress-type="loop" data-motopress-loop-file="loop/loop-page.php">
+<div id="post-203" class="post-203 page type-page status-publish hentry page">
+<div class="wrap2"><div class="title-box clearfix home-title"><h2 class="title-box_primary"><span>ÐÐµÐ±ÐµÐ»Ñ Ð½Ð° Ð·Ð°ÐºÐ°Ð·</span></h2></div> 
+
+<div class="row">
+<div class="span6">
+<p><b>ÐÐ°Ð±Ð¾ÑÐ°ÑÐ¾ÑÐ¸Ñ Ð¼ÐµÐ±ÐµÐ»Ð¸</b>  â Ð¿ÑÐ¾Ð¸Ð·Ð²Ð¾Ð´ÑÑÐ²Ð¾ ÑÐ¾Ð²ÑÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹  Ð¸ ÑÑÐ½ÐºÑÐ¸Ð¾Ð½Ð°Ð»ÑÐ½Ð¾Ð¹ ÐºÐ¾ÑÐ¿ÑÑÐ½Ð¾Ð¹ Ð¼ÐµÐ±ÐµÐ»Ð¸ Ð½Ð° Ð·Ð°ÐºÐ°Ð·. Ð¨ÐºÐ°ÑÑ-ÐºÑÐ¿Ðµ,ÐºÑÑÐ½Ð¸,  Ð´ÐµÑÑÐºÐ¸Ðµ, Ð³Ð°ÑÐ´ÐµÑÐ¾Ð±Ð½ÑÐµ, Ð³Ð¾ÑÑÐ¸Ð½ÑÐµ, Ð¿ÑÐ¸ÑÐ¾Ð¶Ð¸Ðµ Ð¸ Ð´ÑÑÐ³Ð¾Ðµ. </p>
+<p><b>ÐÐµÐ±ÐµÐ»Ñ</b> â ÑÐ¾ Ð±ÐµÐ· ÑÐµÐ³Ð¾ ÑÐµÐ»Ð¾Ð²ÐµÐº Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ Ð¾Ð±Ð¾Ð¹ÑÐ¸ÑÑ, Ð¼ÐµÐ±ÐµÐ»Ñ Ð² Ð´Ð¾Ð¼Ðµ ÑÑÐ¾ Ð½Ðµ ÑÐ¾Ð»ÑÐºÐ¾ Ð¾ÑÐ¾ÑÐ¼Ð»ÐµÐ½Ð¸Ðµ Ð¸Ð½ÑÐµÑÑÐµÑÐ°, Ð¼ÐµÐ±ÐµÐ»Ñ ÑÐ»ÑÐ¶Ð¸Ñ Ð´Ð»Ñ ÑÐ´Ð¾Ð±ÑÑÐ²Ð° Ð¸ ÐºÐ¾Ð¼ÑÐ¾ÑÑÐ° ÑÐµÐ»Ð¾Ð²ÐµÐºÐ°. Ð¢Ð°ÐºÐ¶Ðµ Ð¼ÐµÐ±ÐµÐ»Ñ Ð¼Ð¾Ð¶ÐµÑ Ð¿Ð¾Ð´ÑÐµÑÐºÐ½ÑÑÑ Ð²Ð°Ñ Ð¸Ð·ÑÑÐºÐ°Ð½Ð½ÑÐ¹ Ð²ÐºÑÑ ÑÐ²Ð¾ÐµÐ¹ Ð¾ÑÐ¸Ð³Ð¸Ð½Ð°Ð»ÑÐ½Ð¾ÑÑÑÑ Ð¸ ÑÐºÑÐºÐ»ÑÐ·Ð¸Ð²Ð½ÑÐ¼ Ð´Ð¸Ð·Ð°Ð¹Ð½ÐµÑÑÐºÐ¸Ð¼ ÑÐµÑÐµÐ½Ð¸ÐµÐ¼, Ð»ÑÐ±Ð¸Ð¼ÑÐµ ÑÐ²ÐµÑÐ¾Ð²ÑÐµ Ð¿Ð°Ð»Ð¸ÑÑÑ Ð¼Ð¾Ð³ÑÑ ÑÑÐ¿Ð¾ÐºÐ¾Ð¸ÑÑ Ð²Ð°Ñ Ð¸ Ð¿Ð¾Ð´Ð½ÑÑÑ Ð½Ð°ÑÑÑÐ¾ÐµÐ½Ð¸Ðµ</p>
+<p><b>ÐÑ- Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑÐ°Ð»ÑÐ½Ñ</b><br />
+ÐÐ½Ð´Ð¸Ð²Ð¸Ð´ÑÐ°Ð»ÑÐ½ÑÐ¹ ÑÑÐ¸Ð»Ñ Ð¸Ð½ÑÐµÑÑÐµÑÐ¾Ð²  Ð²Ð´Ð¾ÑÐ½Ð¾Ð²Ð»ÑÐµÑ Ð½Ð°Ñ ÑÐ¾Ð·Ð´Ð°Ð²Ð°ÑÑ ÑÐºÑÐºÐ»ÑÐ·Ð¸Ð²Ð½ÑÑ Ð¼ÐµÐ±ÐµÐ»Ñ. Ð¤Ð¾ÑÐ¼Ñ, ÑÐ²ÐµÑÐ°, ÑÐ°ÐºÑÑÑÑ ÑÐ¶Ðµ ÑÐ¾Ð·Ð´Ð°Ð½Ð½Ð¾Ð¹ Ð¾Ð±ÑÑÐ°Ð½Ð¾Ð²ÐºÐ¸ ÐÐ°ÑÐµÐ³Ð¾ Ð´Ð¾Ð¼Ð° Ð¾Ð±ÑÐ·ÑÐ²Ð°ÑÑ Ð½Ð°Ñ Ð¸Ð·Ð³Ð¾ÑÐ¾Ð²Ð¸ÑÑ ÑÐ°ÐºÑÑ Ð¼ÐµÐ±ÐµÐ»Ñ, ÑÑÐ¾Ð±Ñ Ð¾Ð½Ð° Ð´Ð¾Ð¿Ð¾Ð»Ð½Ð¸ÑÐµÐ»ÑÐ½Ð¾ Ð¿Ð¾Ð´ÑÐµÑÐºÐ¸Ð²Ð°Ð»Ð° ÑÐ°ÑÐ°ÐºÑÐµÑ ÐµÐµ Ð²Ð»Ð°Ð´ÐµÐ»ÑÑÐ°, Ð¿Ð¾Ð´ÑÐµÑÐºÐ¸Ð²Ð°Ð»Ð° ÐµÐ³Ð¾ Ð¸ÑÐºÐ»ÑÑÐ¸ÑÐµÐ»ÑÐ½Ð¾ÑÑÑ Ð¸ Ð´Ð°ÑÐ¸Ð»Ð° ÐµÐ¼Ñ ÑÐ¾Ð»ÑÐºÐ¾ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸ÑÐµÐ»ÑÐ½ÑÐµ ÑÐ¼Ð¾ÑÐ¸Ð¸.
+</div>
+<div class="span6">
+<b>ÐÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑÐ½ÑÐµ Ð·Ð°ÑÑÐ°ÑÑ ÐÐ°ÑÐµÐ³Ð¾ Ð²ÑÐµÐ¼ÐµÐ½Ð¸</b><br />
+ÐÐ°ÑÐ° ÑÐ°Ð±Ð¾ÑÐ° Ð¿Ð¾ÑÑÑÐ¾ÐµÐ½Ð° ÑÐ°ÐºÐ¸Ð¼ Ð¾Ð±ÑÐ°Ð·Ð¾Ð¼, ÑÑÐ¾Ð±Ñ ÐÐ°Ð¼ Ð½Ðµ Ð¿ÑÐ¸ÑÐ¾Ð´Ð¸Ð»Ð¾ÑÑ ÑÑÐ°ÑÐ¸ÑÑ Ð²ÑÐµÐ¼Ñ Ð½Ð° Ð¿Ð¾ÐµÐ·Ð´ÐºÐ¸ Ð¿Ð¾ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°Ð¼, ÑÐ°Ð»Ð¾Ð½Ð°Ð¼  Ð¸ ÑÐ¸ÑÐ¼Ð°Ð¼. Ð ÑÐ´Ð¾Ð±Ð½Ð¾Ðµ Ð´Ð»Ñ ÐÐ°Ñ Ð²ÑÐµÐ¼Ñ Ð¼Ñ Ð¿ÑÐ¸ÐµÐ´ÐµÐ¼ Ð½Ð° Ð·Ð°Ð¼ÐµÑ Ñ Ð¾Ð±ÑÐ°Ð·ÑÐ°Ð¼Ð¸ Ð¼Ð°ÑÐµÑÐ¸Ð°Ð»Ð¾Ð² Ð¸ Ð¿Ð¾Ð¼Ð¾Ð¶ÐµÐ¼ Ð¿Ð¾Ð´Ð¾Ð±ÑÐ°ÑÑ Ð¾Ð¿ÑÐ¸Ð¼Ð°Ð»ÑÐ½ÑÐ¹ Ð²Ð°ÑÐ¸Ð°Ð½Ñ. Ð­ÑÐºÐ¸Ð·Ñ Ð±ÑÐ´ÑÑÐµÐ¹ Ð¼ÐµÐ±ÐµÐ»Ð¸ Ð¾Ð±ÑÑÐ¶Ð´Ð°ÑÑÑÑ Ð¸ ÐºÐ¾ÑÑÐµÐºÑÐ¸ÑÑÑÑÑÑ Ð² ÑÐ´Ð¾Ð±Ð½Ð¾Ð¹ Ð´Ð»Ñ Ð²Ð°Ñ ÑÐ¾ÑÐ¼Ðµ â Ð¿Ð¾ ÑÐµÐ»ÐµÑÐ¾Ð½Ñ, Ð¿ÐµÑÐµÐ¿Ð¸ÑÐºÐ¾Ð¹ Ð¸Ð»Ð¸ Ð¿ÑÐ¸ Ð²ÑÑÑÐµÑÐµ </p>
+<p><b>Ð¦ÐµÐ½Ð° Ð¸ ÐºÐ°ÑÐµÑÑÐ²Ð¾</b><br />
+ÐÑ Ð²ÑÐµÐ³Ð´Ð° ÑÑÐ°Ð²Ð¸Ð¼ Ð´Ð»Ñ ÑÐµÐ±Ñ Ð·Ð°Ð´Ð°ÑÑ ÑÐ¾Ð·Ð´Ð°ÑÑ ÑÐ°ÐºÑÑ Ð¼ÐµÐ±ÐµÐ»Ñ, ÑÑÐ¾Ð±Ñ Ð² Ð½ÐµÐ¹ Ð¾Ð¿ÑÐ¸Ð¼Ð°Ð»ÑÐ½Ð¾ ÑÐ¾ÑÐµÑÐ°Ð»Ð¸ÑÑ ÐºÐ°ÑÐµÑÑÐ²Ð¾, ÐºÐ¾Ð¼ÑÐ¾ÑÑ Ð¸ ÑÐ°ÑÐ¸Ð¾Ð½Ð°Ð»ÑÐ½Ð°Ñ ÑÐµÐ½Ð°. Â«ÐÐ°Ð±Ð¾ÑÐ°ÑÐ¾ÑÐ¸Ñ Ð¼ÐµÐ±ÐµÐ»Ð¸Â» Ð¸ÑÐ¿Ð¾Ð»ÑÐ·ÑÐµÑ ÑÐ°Ð¼ÑÐµ ÑÐ¾Ð²ÑÐµÐ¼ÐµÐ½Ð½ÑÐµ, ÐºÐ°ÑÐµÑÑÐ²ÐµÐ½Ð½ÑÐµ Ð¸ Ð½Ð°Ð´ÐµÐ¶Ð½ÑÐµ Ð¼Ð°ÑÐµÑÐ¸Ð°Ð»Ñ. ÐÑÐ¸Ð¼ÐµÐ½ÑÐµÐ¼ ÑÑÑÐ½Ð¸ÑÑÑÑ  Ð²ÐµÐ´ÑÑÐ¸Ñ Ð¼Ð¸ÑÐ¾Ð²ÑÑ Ð¿ÑÐ¾Ð¸Ð·Ð²Ð¾Ð´Ð¸ÑÐµÐ»ÐµÐ¹( ÐÐ²ÑÑÑÐ¸Ñ, ÐÐ¾Ð»ÑÑÐ°, ÐÑÐ°Ð»Ð¸Ñ, ÐÐ°Ð½Ð¸Ñ, ÐÐµÑÐ¼Ð°Ð½Ð¸Ñ)</p>
+<p>Ð¡Ð¾ÑÑÑÐ´Ð½Ð¸ÑÐµÑÑÐ²Ð¾ Ñ Ð½Ð°Ð¼Ð¸ Ð¿ÑÐ¸Ð½ÐµÑÐµÑ ÐÐ°Ð¼  Ð¸Ð½Ð´Ð¸Ð²Ð¸Ð´ÑÐ°Ð»ÑÐ½ÑÐ¹ Ð¿Ð¾Ð´ÑÐ¾Ð´ ÐºÐ¾Ð¼ÑÐ¾ÑÑ , Ð½Ð°Ð´ÐµÐ¶Ð½Ð¾ÑÑÑ, Ð¸ Ð¿Ð¾Ð·Ð¸ÑÐ¸Ð²Ð½Ð¾Ðµ Ð½Ð°ÑÑÑÐ¾ÐµÐ½Ð¸Ðµ.</p>
+<p><b>Ð¡Ð¾Ð·Ð´Ð°Ð²Ð°Ð¹ÑÐµ ÑÑÑ Ð²Ð¼ÐµÑÑÐµ Ñ Ð½Ð°Ð¼Ð¸! </b>
+</div>
+</div> 
+	
+		
+</div>  
+<div class="title-box clearfix home-title1"><h2 class="title-box_primary"><span>ÐÐ¾ÑÑÑÐ¾Ð»Ð¸Ð¾</span></h2></div> <ul class="posts-grid row-fluid unstyled home-grid"><li class="span4"><figure class="featured-thumbnail thumbnail"><a href="http://labmeb.com.ua/spalni/"><img src="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/07/17-370x370.jpg" alt="Image Format"/><span class="zoom-icon"></span></a></figure><div class="clear"></div><h5><a href="http://labmeb.com.ua/spalni/" title="Image Format">Ð¡Ð¿Ð°Ð»ÑÐ½Ð¸ Ð¿Ð¾Ð´ Ð·Ð°ÐºÐ°Ð·</a></h5></li><li class="span4"><figure class="featured-thumbnail thumbnail"><a href="http://labmeb.com.ua/spalni/" ><img src="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/07/3-370x370.jpg" alt="Slideshow Format"/><span class="zoom-icon"></span></a></figure> <div class="clear"></div><h5><a href="http://labmeb.com.ua/dizayn-kuhon/" title="Slideshow Format">ÐÑÑÐ½Ð¸ Ð¿Ð¾Ð´ Ð·Ð°ÐºÐ°Ð·</a></h5> </li><li class="span4"><figure class="featured-thumbnail thumbnail"><a href="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/07/4.jpg" title="Gallery Format" rel="prettyPhoto-1203385288[gallery2]"><img src="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/07/4-370x370.jpg" alt="Gallery Format"/><span class="zoom-icon"></span></a></figure><figure class="featured-thumbnail thumbnail" style="display:none;"><a href="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/07/8.jpg" title="Gallery Format" rel="prettyPhoto-1203385288[gallery2]"><span class="zoom-icon"></span></a></figure><figure class="featured-thumbnail thumbnail" style="display:none;"><a href="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/07/1.jpg" title="Gallery Format" rel="prettyPhoto-1203385288[gallery2]"><span class="zoom-icon"></span></a></figure><div class="clear"></div><h5><a href="http://livedemo00.template-help.com/wordpress_48469/portfolio-view/gallery-format/" title="Gallery Format">ÐÐ±ÐµÐ´ÐµÐ½Ð½ÑÐµ Ð³ÑÑÐ¿Ð¿Ñ</a></h5> </li></ul> <ul class="posts-grid row-fluid unstyled home-grid"><li class="span4"><figure class="featured-thumbnail thumbnail"><a href="http://livedemo00.template-help.com/wordpress_48469/portfolio-view/video-format/" title="Video Format"><img src="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/07/52-370x370.jpg" alt="Video Format"/></a></figure><div class="clear"></div><h5><a href="http://labmeb.com.ua/shkafyi-kupe/" title="Video Format">ÐÐ¸Ð·Ð°Ð¹Ð½ Ð¸ Ð¸Ð·Ð¾ÑÐ¾Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¿Ð¾Ð´ ÐºÐ»ÑÑ</a></h5> </li><li class="span4"><figure class="featured-thumbnail thumbnail"><a href="http://livedemo00.template-help.com/wordpress_48469/portfolio-view/audio-format/" title="Audio Format"><img src="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/07/11-370x370.jpg" alt="Audio Format"/></a></figure><div class="clear"></div><h5><a href="http://labmeb.com.ua/shkafyi-kupe/" title="Audio Format">ÐÐ¾Ð»ÑÑÐ¾Ð¹ Ð²Ð±ÑÐ¾Ñ Ð¼Ð°ÑÐµÑÐ¸Ð°Ð»Ð¾Ð²</a></h5> </li><li class="span4"><figure class="featured-thumbnail thumbnail"><a href="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/06/Depositphotos_20788747_original.jpg" title="Sodales orci et" rel="prettyPhoto-1203385288"><img src="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/06/Depositphotos_20788747_original-370x370.jpg" alt="Sodales orci et"/><span class="zoom-icon"></span></a></figure><div class="clear"></div><h5><a href="http://livedemo00.template-help.com/wordpress_48469/portfolio-view/sodales-orci-et/" title="Sodales orci et">ÐÐ°ÑÐ½ÑÐµ ÑÑÐ¾Ð¹ÐºÐ¸ Ð¸ ÑÑÐ¾Ð»ÐµÑÐ½Ð¸ÑÑ</a></h5> </li></ul> <ul class="posts-grid row-fluid unstyled home-grid"><li class="span4"><figure class="featured-thumbnail thumbnail"><a href="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/06/Depositphotos_2065025_original.jpg" title="In faucibus risus" rel="prettyPhoto-1203385288"><img src="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/06/Depositphotos_2065025_original-370x370.jpg" alt="In faucibus risus"/><span class="zoom-icon"></span></a></figure><div class="clear"></div><h5><a href="http://labmeb.com.ua/shkafyi-kupe/" title="In faucibus risus">Ð¨ÐºÐ°ÑÑ ÐºÑÐ¿Ðµ Ð¸ Ð¼ÐµÐ±ÐµÐ»Ñ Ð´Ð»Ñ ÑÐ¿Ð°Ð»ÐµÐ½</a></h5> </li><li class="span4"><figure class="featured-thumbnail thumbnail"><a href="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/06/asd.jpg" title="In faucibus" rel="prettyPhoto-1203385288"><img src="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/06/asd-370x370.jpg" alt="In faucibus"/><span class="zoom-icon"></span></a></figure><div class="clear"></div><h5><a href="http://livedemo00.template-help.com/wordpress_48469/portfolio-view/in-faucibus/" title="In faucibus">ÐÐµÐ±ÐµÐ»Ñ Ð´Ð»Ñ Ð²Ð°Ð½Ð½ÑÑ</a></h5> </li><li class="span4"><figure class="featured-thumbnail thumbnail"><a href="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/06/10.jpg" title="Malesuada fames ac" rel="prettyPhoto-1203385288"><img src="http://livedemo00.template-help.com/wordpress_48469/wp-content/uploads/2012/06/10-370x370.jpg" alt="Malesuada fames ac"/><span class="zoom-icon"></span></a></figure><div class="clear"></div><h5><a href="http://labmeb.com.ua/shkafyi-kupe/" title="Malesuada fames ac">ÐÐµÐ±ÐµÐ»Ñ Ð´Ð»Ñ Ð³Ð¾ÑÑÐ¸Ð½Ð½ÑÑ</a></h5 </li></ul>  
+<div class="wrap">
+<div class="title-box clearfix wrap-title"><h2 class="title-box_primary"><span>Our history</span></h2></div> 
+<div class="row">
+<div class="span6">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.5&appId=819394564835627";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-page" data-href="https://www.facebook.com/labmebcomua" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/labmebcomua"><a href="https://www.facebook.com/labmebcomua">ÐÐ°Ð±Ð¾ÑÐ°ÑÐ¾ÑÐ¸Ñ ÐÐµÐ±ÐµÐ»Ð¸</a></blockquote></div></div>
+
+</div>
+<div class="span6"> 
+
+
+</div>
+</div> 
+</div>  
+<div class="minus"></div>
+<div class="clear"></div>
+ 
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+							
+			
+
+
+<footer class="motopress-wrapper footer">
+<div class="container">
+<div class="row">
+<div class="span12" data-motopress-wrapper-file="wrapper/wrapper-footer.php" data-motopress-wrapper-type="footer" data-motopress-id="562a88993a9fd">
+<div class="row footer-widgets">
+<div class="span12" data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-1">
+<div id="social_networks-2">
+ÑÐµÐ»: (063)1322131<br>
+email: <a href="mailto:irpin@inbox.ru">irpin@inbox.ru</a>
+<ul class="social social__row clearfix unstyled">
+</ul>
+ 
+</div> </div>
+</div>
+<div class="row copyright">
+<div class="span12" >
+<div id="footer-text" class="footer-text">
+ 
+ 
+</div> </div>
+ 
+</div> </div>
+</div>
+</div>
+</footer>
+ 
+</div>
+<div id="back-top-wrapper" class="visible-desktop">
+<p id="back-top">
+<a href="#top"><span></span></a> </p>
+</div>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.46.0-2013.11.21'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=3.6'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/themes/CherryFramework/js/superfish.js?ver=1.5.3'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/themes/CherryFramework/js/jquery.mobilemenu.js?ver=1.0'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/themes/CherryFramework/js/jquery.easing.1.3.js?ver=1.3'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/themes/CherryFramework/js/jquery.magnific-popup.min.js?ver=0.9.3'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/plugins/cherry-plugin/lib/js/FlexSlider/jquery.flexslider-min.js?ver=2.1'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/themes/CherryFramework/js/jplayer.playlist.min.js?ver=2.3.0'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/themes/CherryFramework/js/jquery.jplayer.min.js?ver=2.4.0'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/themes/CherryFramework/js/camera.min.js?ver=1.3.4'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/themes/CherryFramework/js/jquery.debouncedresize.js?ver=1.0'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/themes/CherryFramework/js/jquery.ba-resize.min.js?ver=1.1'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/themes/CherryFramework/js/jquery.isotope.js?ver=1.5.25'></script>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_48469/wp-content/plugins/cherry-plugin/includes/js/cherry-plugin.js?ver=1.0'></script>
+ 
+</body>
+</html>
