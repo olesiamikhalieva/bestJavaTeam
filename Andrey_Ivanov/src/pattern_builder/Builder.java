@@ -12,21 +12,21 @@ class Builder {
 
     public Builder setWeight(int weight) {
         this.weight = weight;
-        return this;
+        return this;// в каждом сеттере необходимо добавить эту строку
     }
 
-    public Builder(String name) {
+    public Builder(String name) { // конструктор с полем которе точно есть у всех машин-это имя
         this.name = name;
     }
 
     public Builder setColor(String color) {
         this.color = color;
-        return this;
+        return this;// в каждом сеттере необходимо добавить эту строку
     }
 
     public Builder setMaxSpeed(int maxSpeed) {
         this.maxSpeed = maxSpeed;
-        return this;
+        return this;// в каждом сеттере необходимо добавить эту строку
     }
 
     public String getColor() {
@@ -40,10 +40,10 @@ class Builder {
     public String getName() {
         return name;
     }
-    public SportCar build() {
+    public SportCar build() {// обязательный метод для сбора машины
         return new SportCar(this);
     }
-    public SlowCar build1(){
+    public SlowCar build1(){// обязательный метод для сбора машины
         return new SlowCar(this);
     }
 }
