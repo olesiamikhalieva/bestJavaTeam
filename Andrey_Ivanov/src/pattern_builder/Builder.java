@@ -40,10 +40,8 @@ class Builder {
     public String getName() {
         return name;
     }
+
     public SportCar build() {// обязательный метод для сбора машины
         return new SportCar(this);
-    }
-    public SlowCar build1(){// обязательный метод для сбора машины
-        return new SlowCar(this);
     }
 }
