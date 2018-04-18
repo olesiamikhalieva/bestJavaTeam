@@ -1,4 +1,4 @@
-package pattern_builder;
+package patterns.pattern_builder;
 
 class Builder {
     private String name;
