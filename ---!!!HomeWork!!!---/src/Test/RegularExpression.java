@@ -32,8 +32,8 @@ public class RegularExpression {
 //---------------------------------------------------------------------------------------
         System.out.println("\nТретий пример\n");
         String input3 = "Hello Java! Hello JavaScript! JavaSE 8.";
-        //Pattern pattern3 = Pattern.compile("[ ,.!]");
-        Pattern pattern3 = Pattern.compile("\\s*(\\s|,|!|\\.)\\s*");
+        Pattern pattern3 = Pattern.compile("[ ,.!]");
+        //Pattern pattern3 = Pattern.compile("\\s*(\\s|,|!|\\.)\\s*");
         String[] words = pattern3.split(input3);
         for(String word:words)
             System.out.println(word);

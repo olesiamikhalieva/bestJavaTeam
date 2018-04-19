@@ -60,7 +60,7 @@ public class Point3D implements MethodsPoint {
         double y = (point.getY() - this.getY());
         double z = (point.getZ() - this.getZ());
 
-        return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2) + Math.pow(z, 2));
+        return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2) + Math.pow(z, 2)); // высщитаем по формуле расстояние до след точки в декартовой системе координат(см. базовый курс линейной алгкбры)
     }
 
     @Override
