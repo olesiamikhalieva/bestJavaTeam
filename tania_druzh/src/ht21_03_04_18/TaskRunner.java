@@ -16,7 +16,7 @@ public class TaskRunner {
     public static File file5;
 
     public static void main(String[] args) throws IOException {
-        String workDir = "D://_aJavaBestTeam//project//untitled3//work";
+        String workDir = "D:\\_aJavaBestTeam\\project\\untitled2\\student_home_works\\tania_druzh\\src\\ht21_03_04_18";
         file1 = new File(workDir,"text1.txt");
         file2 = new File(workDir,"text2.txt");
         file3 = new File(workDir,"text3.txt");
