@@ -18,10 +18,10 @@ public class PointsSet<E> implements MethodsSet {
     @Override
     public boolean addPoint(Object point3D) {
         try {
-            E[] temp = this.massE;
-            this.massE = (E[]) new Object[temp.length+1];
-            System.arraycopy(temp, 0, this.massE,0,temp.length);
-            this.massE[this.massE.length-1] = (E)point3D;
+            E[] temp = this.massE;                                              // создаем промежуточный массив, в котором хранится текущий массив
+            this.massE = (E[]) new Object[temp.length+1];                       // вместо текущего создаем новый на 1 размер больше
+            System.arraycopy(temp, 0, this.massE,0,temp.length); //копируем в новый массив то, что было до этого
+            this.massE[this.massE.length-1] = (E)point3D;                       // добавляем в массив новый еллемент
             System.out.println("объект успешно добавлен");
             return true;
         } catch (Exception e) {
@@ -33,7 +33,7 @@ public class PointsSet<E> implements MethodsSet {
     @Override
     public void distance() {
         try {
-            Point3D[] point3D = (Point3D[]) this.massE; // прикастовали массив, который здесь хранится к класу Point3D для того, что бы был доступен метод distanceTo
+            Point3D[] point3D = (Point3D[]) this.massE;         // прикастовали массив, который здесь хранится к класу Point3D для того, что бы был доступен метод distanceTo
             for (int i = 0; i < point3D.length - 1; i++) {
                 for (int j = 0; j < point3D.length - 1; j++) {
                     System.out.println("от точки номер " + i + "до точки номер" + j + point3D[i].distanceTo(point3D[j]) + "условных единиц");
