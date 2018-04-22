@@ -1,4 +1,4 @@
-package Pattern.Builder.Builder2;
+package Pattern.Builder.Computer;
 
 public class BuilderExample {
     public static void main(String[] args) {

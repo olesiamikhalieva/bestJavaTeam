@@ -1,4 +1,4 @@
-package Pattern.Builder.Builder2;
+package Pattern.Builder.Computer;
 
 abstract class ComputerBuilder {
     protected Computer computer;
