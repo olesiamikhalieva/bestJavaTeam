@@ -12,12 +12,12 @@ public class Runner {
         String num5 = "+380501487592";
         String num6 = "+938050217979754";
         Pattern p = Pattern.compile("^\\+380(67|97|50|63|93|68|98)\\d{7}$");
-        String[] massNumber = {num1, num2, num3, num4,num5,num6};
-        for (int i = 0; i <massNumber.length ; i++) {
-            Matcher m=p.matcher(massNumber[i]);
-            if(m.find()){
-                System.out.println("Строка "+"num"+(i+1)+"-номер украинского оператора связи:"+ m.group());
-            }else {
+        String[] massNumber = {num1, num2, num3, num4, num5, num6};
+        for (int i = 0; i < massNumber.length; i++) {
+            Matcher m = p.matcher(massNumber[i]);
+            if (m.find()) {
+                System.out.println("Строка " + "num" + (i + 1) + "-номер украинского оператора связи:" + m.group());
+            } else {
                 System.out.println("Строка " + "num" + (i + 1) + " НЕВЕРНЫЙ формат номера:" + massNumber[i]);
             }
         }
