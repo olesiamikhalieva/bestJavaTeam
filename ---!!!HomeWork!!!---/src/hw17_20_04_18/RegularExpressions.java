@@ -13,9 +13,9 @@ public class RegularExpressions {
         String str;
 
         while (true) {
-            str = getNumber();
+            str = getNumber();          //считываем с консоли
             Matcher matcher1 = pattern1.matcher(str);
-            if (matcher1.matches()) { // если да, то завершаем программу
+            if (matcher1.matches()) {   // если да, то завершаем программу
                 break;
             }
             Matcher matcher = pattern.matcher(str);
