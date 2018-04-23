@@ -14,7 +14,8 @@ public class Phone {
         System.out.println(isNumberCorrect("+38098264o025"));
     }
     private static boolean isNumberCorrect(String number){
-        Pattern p = Pattern.compile("^(\\+380)\\d\\d\\d\\d\\d\\d\\d\\d\\d$");
+        //Pattern p = Pattern.compile("^(\\+380)\\d\\d\\d\\d\\d\\d\\d\\d\\d$");
+        Pattern p = Pattern.compile("^(\\+380)\\d{9}$");
         Matcher m = p.matcher(number);
         return m.matches();
     }
