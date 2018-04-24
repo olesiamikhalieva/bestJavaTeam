@@ -1,48 +1,41 @@
 package hw15_06_04_18.Point3D;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 
-public class PointsSet<E> implements MethodsSet {
+public class PointsSet implements MethodsSet {
 
-    private E[] massE;
+    private ArrayList<Point3D> pointMass;
 
-    public PointsSet(E[] massE) {
-        this.massE = massE;
+    public PointsSet(ArrayList<Point3D> massE) {
+        this.pointMass = massE;
     }
 
     public PointsSet() {
-        massE = (E[])new Object[0];
+        pointMass = new ArrayList<>();
     }
 
 
     @Override
-    public boolean addPoint(Object point3D) {
-        try {
-            E[] temp = this.massE;
-            this.massE = (E[]) new Object[temp.length+1];
-            System.arraycopy(temp, 0, this.massE,0,temp.length);
-            this.massE[this.massE.length-1] = (E)point3D;
-            System.out.println("объект успешно добавлен");
-            return true;
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-        return false;
+    public boolean addPoint(Point3D point3D) {
+        pointMass.add(point3D);
+        System.out.println("объект успешно добавлен");
+        return true;
     }
 
     @Override
     public void distance() {
         try {
-            Point3D[] point3D = (Point3D[]) this.massE; // прикастовали массив, который здесь хранится к класу Point3D для того, что бы был доступен метод distanceTo
-            for (int i = 0; i < point3D.length - 1; i++) {
-                for (int j = 0; j < point3D.length - 1; j++) {
-                    System.out.println("от точки номер " + i + "до точки номер" + j + point3D[i].distanceTo(point3D[j]) + "условных единиц");
+            for (int i = 0; i < pointMass.size(); i++) {
+                for (int j = 0; j < pointMass.size(); j++) {
+                    if (i == j) {
+                        continue;
+                    }
+                    System.out.println("от точки номер " + i + " до точки номер " + j + " " + pointMass.get(i).distanceTo(pointMass.get(j)) + " условных единиц");
                 }
                 System.out.println();
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            System.out.println("Несоответствие типов");
         }
     }
 
@@ -54,7 +47,7 @@ public class PointsSet<E> implements MethodsSet {
     @Override
     public String toString() {
         return "PointsSet{" +
-                "massE=" + Arrays.toString(massE) +
+                "pointMass=" + pointMass +
                 '}';
     }
 }
