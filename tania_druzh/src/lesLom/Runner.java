@@ -15,7 +15,7 @@ public class Runner {
         //System.out.println(user1.getName() + user1.getAge());
 
 
-        User user2 = new User.UserBuilder().age(12).countPeacesOfShit(10).lol(true).build();
+        User user2 = new User.UserBuilder().age(12).lol(true).build();
         System.out.println(user2);
     }
 
