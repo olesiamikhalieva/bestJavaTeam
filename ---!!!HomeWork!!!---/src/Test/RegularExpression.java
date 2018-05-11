@@ -9,8 +9,8 @@ public class RegularExpression {
         Pattern pattern = Pattern.compile("Hello");
         Matcher matcher = pattern.matcher(input);
 
-        System.out.println(matcher.find());
-        System.out.println(matcher.group());
+        System.out.println(matcher.find()); // возвращает тру, если подстрока найдена
+        System.out.println(matcher.group()); // если в строке найден кусок строки вернет єту подстроку
         String s = matcher.group();
         System.out.println(s.toUpperCase());
 
@@ -23,7 +23,7 @@ public class RegularExpression {
 
         System.out.println("\n Второй пример \n");
         String input1 = "Hello Java! Hello JavaScript! JavaSE 8.";
-        Pattern pattern1 = Pattern.compile("Java(\\w*)");
+        Pattern pattern1 = Pattern.compile("Java(\\w*)"); // возвращает подстроку и все что после нее
         Matcher matcher1 = pattern1.matcher(input1);
         while (matcher1.find()) {
             System.out.println(matcher1.group());
@@ -32,7 +32,7 @@ public class RegularExpression {
 //---------------------------------------------------------------------------------------
         System.out.println("\nТретий пример\n");
         String input3 = "Hello Java! Hello JavaScript! JavaSE 8.";
-        Pattern pattern3 = Pattern.compile("[ ,.!]");
+        Pattern pattern3 = Pattern.compile("[ ,.!]"); // создает патерн по заданным символам
         //Pattern pattern3 = Pattern.compile("\\s*(\\s|,|!|\\.)\\s*");
         String[] words = pattern3.split(input3);
         for(String word:words)
