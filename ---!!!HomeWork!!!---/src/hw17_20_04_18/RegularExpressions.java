@@ -1,9 +1,11 @@
 package hw17_20_04_18;
 
+import lombok.Data;
+
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+@Data
 public class RegularExpressions {
     public static void main(String[] args) throws Exception {
 
