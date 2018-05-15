@@ -13,7 +13,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Student {
+    private int id;
     private String name;
     private String secName;
     private String thirdName;
+
+    public Student(String name, String secName, String thirdName){
+        this.name = name;
+        this.secName = secName;
+        this.thirdName = thirdName;
+    }
 }

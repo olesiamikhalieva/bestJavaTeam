@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         int index = 0;
-        try (BufferedReader br = new BufferedReader(new FileReader("file1.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("StudDB.txt"))) {
 
             String sCurrentLine;
 
@@ -28,7 +28,7 @@ public class Main {
         students.add(new Student("один2", "два2", "три3"));
         students.add(new Student("один3", "два3", "три3"));
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("file1.txt",true))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("StudDB.txt",true))) {
             for (Student s:students) {
                 bw.write(++index + " " + s.getName() + " " + s.getSecName() + " " + s.getThirdName());
                 bw.newLine();
