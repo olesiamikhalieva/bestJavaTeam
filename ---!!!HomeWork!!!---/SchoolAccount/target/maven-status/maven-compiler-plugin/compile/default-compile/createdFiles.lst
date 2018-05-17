@@ -1,4 +1,5 @@
 fileStorage\Student$StudentBuilder.class
 fileStorage\Student.class
+fileStorage\Journal.class
+fileStorage\Journal$JournalBuilder.class
 fileStorage\Main.class
-fileStorage\School.class
