@@ -145,17 +145,21 @@ public class MethodJournal {
                 String str = br.readLine();
                 stringStudDB.add(str);
                 index = Integer.parseInt(str.substring(0, str.indexOf(" ")));
+   //             System.out.println(index);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
 // не получается добавить индекс в Journal
+
+ //       System.out.println(index);
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(fileJourmalDB, true))) {
             for (Student stud : students) { //цикл, который присваивает индексы студентам, которых нужо добавить в БД
                 stud.setId(++index);
                 stringStudDB.add(stud.toString());// добавляем студента в конец с соответствующим индексом (index), он будет записан в studDb
                 bw.write(index);
                 bw.newLine();
+//                System.out.println(index);
             }
         } catch (IOException e) {
             e.printStackTrace();
