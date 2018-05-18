@@ -1,4 +1,4 @@
-package Log;
+package hw_29_04_18.Log;
 
 import java.sql.*;
 
