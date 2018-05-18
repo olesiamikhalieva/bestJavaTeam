@@ -9,13 +9,19 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         ThreeStud(); //записываем 3 студентов в файл
-        Journal.addStudentInJournal(); // добавляем всех студентов в журна
+        MethodJournal.addStudentInJournal(); // добавляем всех студентов в журнал
 
-        System.out.println(Journal.getStudentByIndex(2));
-        System.out.println(Journal.getStudentByName("Имя5"));
-        Student student = Student.builder().id(1).address("dsf").age(1).name("dfcz").secName("ff").thirdName("fg").build();
-        Journal.addStudentInJournal(student);
-        System.out.println(Journal.studentVisit(10));
+        System.out.println(MethodJournal.getStudentByIndex(2));
+        System.out.println(MethodJournal.getStudentByName("Имя5"));
+        MethodJournal.addStudentInJournal(Student.builder().id(1).address("dsf").age(1).name("dfcz").secName("ff").thirdName("fg").build());
+        System.out.println(MethodJournal.studentVisit(10));
+//        MethodJournal.addStudentsInJournalWithoutVisit(Student.builder().id(1).address("123456").age(150).name("Добавляем").secName("Одного").thirdName("Студента").build());
+
+//        ArrayList<Student>students = new ArrayList<>();
+//        students.add(Student.builder().id(1).address("123456").age(150).name("Добавляем1").secName("пачку1").thirdName("Студентов1").build());
+//        students.add(Student.builder().id(1).address("123456").age(175).name("Добавляем2").secName("пачку2").thirdName("Студентов2").build());
+//        students.add(Student.builder().id(1).address("123456").age(7).name("Добавляем3").secName("пачку3").thirdName("Студентов3").build());
+//        MethodJournal.addStudentsInJournalWithoutVisit(students);
     }
 
     public static void ThreeStud() {
