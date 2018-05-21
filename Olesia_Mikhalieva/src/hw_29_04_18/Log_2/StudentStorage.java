@@ -9,19 +9,33 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class StudentStorage{
+public class StudentStorage {
 
+    Student student;
     private static String file;
+    private static ArrayList<Student> students = new ArrayList<>();
 
     public StudentStorage(String file) {
         this.file = file;
     }
 
+    public static ArrayList<Student> getStudents() {
+        return students;
+    }
 
-    public void addStudentToFile(ArrayList<Student> students) {
-        int index = ifEmptyFile()+1;
+    public void addStudent(Student student) {
+        students.add(student);
+    }
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file,true))) {
+    public static String getFile() {
+        return file;
+    }
+
+
+    public void addStudentToFile() {
+        int index = ifEmptyFile() + 1;
+
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file, true))) {
             for (Student student : students) {
                 bw.write(index + " " + student.getName() + " " + student.getSecName() + " " + student.getThirdname());
                 bw.newLine();
@@ -32,10 +46,10 @@ public class StudentStorage{
         }
     }
 
-    public void updateStudentFile(ArrayList<Student>students){
+    public void updateStudentFile() {
         int index = 1;
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file,false))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file, false))) {
             for (Student student : students) {
                 bw.write(index + " " + student.getName() + " " + student.getSecName() + " " + student.getThirdname());
                 bw.newLine();
@@ -53,13 +67,30 @@ public class StudentStorage{
             String sCurrentLine;
             while ((sCurrentLine = br.readLine()) != null) {
                 System.out.println(sCurrentLine);
-                index = Integer.parseInt((sCurrentLine.substring(0,sCurrentLine.indexOf(" "))));
+                index = Integer.parseInt((sCurrentLine.substring(0, sCurrentLine.indexOf(" "))));
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
         return index;
     }
+
+    public int getIndexByStudent(Student student) throws IOException {
+        int index = 0;
+
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+
+            String sCurrentLine;
+            while ((sCurrentLine = br.readLine()) != null) {
+                if (sCurrentLine.contains(student.getName()) && sCurrentLine.contains(student.getSecName()) && sCurrentLine.contains(student.getThirdname())) {
+                    index = Integer.parseInt(sCurrentLine.substring(0, sCurrentLine.indexOf(" ")));
+                    break;
+                }
+            }
+        }
+        return index;
+    }
+
 
     public void getStudentByIndex(int index) throws IOException {
         List<String> lines = Files.readAllLines(Paths.get(file));
@@ -73,9 +104,6 @@ public class StudentStorage{
             } else {
                 count1++;
             }
-        }
-        if (count == count1) {
-            System.out.println("No such index.");
         }
     }
 
@@ -97,7 +125,7 @@ public class StudentStorage{
     }
 
 
-    public void deleteSudentsByIndex(int index, ArrayList<Student>students) throws IOException {
+    public void deleteSudentsByIndex(int index) throws IOException {
         ArrayList<String> arrayList = new ArrayList<>();
         int count = 0;
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {

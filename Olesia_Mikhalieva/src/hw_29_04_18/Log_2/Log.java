@@ -11,27 +11,15 @@ import java.util.ArrayList;
 public class Log {
 
 
-    private int id;
-    private ArrayList<String> dates ;
+    private ArrayList<Integer> id;
+    private ArrayList<String> dates;
 
-    public Log(String fileStudentStogage) {
-        try (BufferedReader br = new BufferedReader(new FileReader(fileStudentStogage))) {
 
-            String sCurrentLine;
-            while ((sCurrentLine = br.readLine()) != null) {
-                System.out.println(sCurrentLine);
-                this.id = Integer.parseInt((sCurrentLine.substring(0, sCurrentLine.indexOf(" "))));
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public int getId() {
+    public ArrayList<Integer> getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(ArrayList<Integer> id) {
         this.id = id;
     }
 
