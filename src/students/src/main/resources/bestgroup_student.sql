@@ -1,5 +1,4 @@
-create table student
-(
+create table student(
 	name varchar(50) not null,
 	ser_name varchar(50) not null,
 	phone varchar(30) not null,
