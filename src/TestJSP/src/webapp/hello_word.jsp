@@ -1,4 +1,4 @@
-<%--
+<%@ page import="com.JDBCPostgreSQLExample" %><%--
   Created by IntelliJ IDEA.
   User: java
   Date: 08.06.2018
@@ -11,8 +11,12 @@
     <title>Title</title>
 </head>
 <body>
-<h1> Hello world </h1>
 <br/><br/>
-<p> Time now is <%=new java.util.Date() %></p>
+<%
+    for (String str : JDBCPostgreSQLExample.OUTPUT())
+    {
+        out.println(str);
+    }
+%>
 </body>
 </html>
